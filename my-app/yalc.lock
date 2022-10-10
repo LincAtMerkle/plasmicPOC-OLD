@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "plasmic-chakra-ui-cc": {
+      "signature": "073f59388ce1e4b00c6a107c09413a7e",
+      "file": true
+    }
+  }
+}

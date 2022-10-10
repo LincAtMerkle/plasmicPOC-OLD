@@ -1,0 +1,56 @@
+{
+  "version": "0.1.8",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "^2.3.5",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^6",
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "plasmic-chakra-ui-cc",
+  "author": "Lincoln Mitchell",
+  "module": "dist/plasmic-chakra-ui-cc.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/plasmic-chakra-ui-cc.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/plasmic-chakra-ui-cc.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "dependencies": {
+    "plasmic-chakra-ui-cc": "file:.yalc/plasmic-chakra-ui-cc"
+  },
+  "yalcSig": "bf7a91744f34760e0bbd3a0024ff0676"
+}
