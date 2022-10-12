@@ -110,7 +110,7 @@ import registerComponent, {
           "whiteAlpha",
           "blackAlpha",
           "gray",
-          "red",
+          "#ff00ff",
           "orange",
           "yellow",
           "green",

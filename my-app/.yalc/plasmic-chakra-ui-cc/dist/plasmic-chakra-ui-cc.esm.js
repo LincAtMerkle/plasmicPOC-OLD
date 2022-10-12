@@ -96,7 +96,7 @@ var buttonMeta = {
     },
     colorScheme: {
       type: "choice",
-      options: ["whiteAlpha", "blackAlpha", "gray", "red", "orange", "yellow", "green", "teal", "blue", "cyan", "purple", "pink", "linkedin", "facebook", "messenger", "whatsapp", "twitter", "telegram"]
+      options: ["whiteAlpha", "blackAlpha", "gray", "#ff00ff", "orange", "yellow", "green", "teal", "blue", "cyan", "purple", "pink", "linkedin", "facebook", "messenger", "whatsapp", "twitter", "telegram"]
     },
     iconSpacing: "number",
     isActive: {
