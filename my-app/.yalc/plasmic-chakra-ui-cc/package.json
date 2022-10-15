@@ -1,5 +1,5 @@
 {
-  "version": "0.2.2",
+  "version": "0.3.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -81,5 +81,5 @@
       "last 1 safari version"
     ]
   },
-  "yalcSig": "2057b8c1208f8f01f7f0d35c93856924"
+  "yalcSig": "ab14e4c8d962500c1640f1ae270d72aa"
 }

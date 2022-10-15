@@ -1,10 +1,10 @@
-import { ComponentStyleConfig } from '@chakra-ui/react'
+import { ComponentStyleConfig, SliderProvider } from '@chakra-ui/react'
 
 const Button: ComponentStyleConfig = {
   // The styles all button have in common
   baseStyle: {
     fontWeight: 'btn-font-weight',
-    textTransform: 'uppercase',
+    textTransform: 'lowercase',
     width: 'auto',
     borderRadius: 'btn-border-radius',
     fontFamily: 'btn-font-family',

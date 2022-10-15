@@ -1,15 +1,15 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { ThemeContext } from './plasmic-host'
 import { useContext } from 'react'
-import theme from '../styles/theme/index'
+import extendTheme from '../styles/theme'
 
 function MyApp({ Component, pageProps }) {
-    const {figmaTokensTheme} = useContext(ThemeContext)
     return (
-      <ChakraProvider resetCSS theme={figmaTokensTheme}>
+      <ChakraProvider resetCSS theme={extendTheme}>
           <Component {...pageProps} />
       </ChakraProvider>
-  )
+    //   <Component {...pageProps} />
+)
   }
   
   export default MyApp
