@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@plasmicapp/host": "^1.0.80",
+    "@plasmicapp/react-web": "^0.2.112"
+  }
+}
