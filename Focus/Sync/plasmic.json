@@ -1,0 +1,89 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "inlined",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "5qqynfEyE1GRjXiSU2SzXg",
+      "projectApiToken": "2lAamrbG7UGR5Dtl0mZnXu5NMGWcQWUYSmVQUUA8kHXH5Rgf1mK98YqwI7M8C0UgvTuswvOXBPt2BRKpQ",
+      "projectName": "FocusDocTest",
+      "version": "latest",
+      "cssFilePath": "plasmic/focus_doc_test/plasmic_focus_doc_test.module.css",
+      "components": [
+        {
+          "id": "TGeMzutafjGO",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "5qqynfEyE1GRjXiSU2SzXg",
+          "renderModuleFilePath": "plasmic/focus_doc_test/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "Homepage.jsx"
+          },
+          "cssFilePath": "plasmic/focus_doc_test/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "HtSj_bf-pk",
+          "name": "TokenDocumentation",
+          "type": "managed",
+          "projectId": "5qqynfEyE1GRjXiSU2SzXg",
+          "renderModuleFilePath": "plasmic/focus_doc_test/PlasmicTokenDocumentation.jsx",
+          "importSpec": {
+            "modulePath": "TokenDocumentation.jsx"
+          },
+          "cssFilePath": "plasmic/focus_doc_test/PlasmicTokenDocumentation.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "9J0quWnlrK",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "L2W7U30za3",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "9Jt8zyUGZpp5z",
+        "name": "Screen",
+        "projectId": "5qqynfEyE1GRjXiSU2SzXg",
+        "contextFilePath": "plasmic/focus_doc_test/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.186",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.186/dist/plasmic.schema.json"
+}

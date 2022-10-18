@@ -1,0 +1,7 @@
+.name {
+  width: 100%;
+  height: auto;
+  max-width: 105px;
+  position: relative;
+  min-width: 0;
+}

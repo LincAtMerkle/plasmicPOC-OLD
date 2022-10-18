@@ -1,11 +1,11 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
-import TokenTemplate  from "../sync/components/TokenTemplate"
+import TokenDocumentation  from "../Sync/components/TokenDocumentation"
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: "3zhG9z8RSkaFG4kUrEQkA",
-      token: "WBUOXsa7qs95LfFHPbVxz5NeFWssozQitMqa39W7na5GQS3FoJIzI8EjTHaMGa6cqBr6YzhYP6zdRgUpjvw",
+      id: "5qqynfEyE1GRjXiSU2SzXg",
+      token: "2lAamrbG7UGR5Dtl0mZnXu5NMGWcQWUYSmVQUUA8kHXH5Rgf1mK98YqwI7M8C0UgvTuswvOXBPt2BRKpQ",
     },
   ],
 
@@ -24,8 +24,11 @@ export const PLASMIC = initPlasmicLoader({
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // PLASMIC.registerComponent(...);
-PLASMIC.registerComponent(TokenTemplate, {
-  name: "TokenTemplate",
+
+PLASMIC.registerComponent(TokenDocumentation, {
+  name: 'TokenDocumentation',
   props: {
+    children: 'slot',
+    color: 'string'
   }
 });

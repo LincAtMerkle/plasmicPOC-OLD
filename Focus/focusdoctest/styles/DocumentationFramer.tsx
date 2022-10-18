@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Documentation } from "./Documentation"
 import { tokenSetOrder } from "./figmaTokensChakra/$metadata.json"
-import TokenDocumentation from "../../sync/components/TokenTemplate"
+import TokenDocumentation from "../../Sync/components/TokenDocumentation"
 
 // This is a Component that needs to be registered so these props can be exposed:
 // addPropertyControls(ChakraDocs, {
