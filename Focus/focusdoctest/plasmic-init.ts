@@ -1,5 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
-import TokenDocumentation  from "../Sync/components/TokenDocumentation"
+import ChakraDocs  from "./styles/ChakraDocs"
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -25,8 +25,8 @@ export const PLASMIC = initPlasmicLoader({
 
 // PLASMIC.registerComponent(...);
 
-PLASMIC.registerComponent(TokenDocumentation, {
-  name: 'TokenDocumentation',
+PLASMIC.registerComponent(ChakraDocs, {
+  name: 'ChakraDocs',
   props: {
     children: 'slot',
     color: 'string'
