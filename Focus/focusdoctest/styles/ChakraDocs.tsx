@@ -26,13 +26,13 @@ export default function ChakraDocs(props) {
                         return (
                             <div key={`token-docs-${i}`} style={{ padding: "8" }}>
                                 <TokenDocumentation
-                                    // style={{
-                                    //     width: "100%",
-                                    //     justifyContent: "space-between",
-                                    // }}
-                                    // onCopy={() => {
-                                    //     onTokenCopy(value, tokenName)
-                                    // }}
+                                    style={{
+                                        width: "100%",
+                                        justifyContent: "space-between",
+                                    }}
+                                    onCopy={() => {
+                                        onTokenCopy(value, tokenName)
+                                    }}
                                     description={description}
                                     textValue={value}
                                     tokenName={tokenName}
