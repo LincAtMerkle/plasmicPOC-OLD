@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Documentation } from "./Documentation"
-import { tokenSetOrder } from "./figmaTokensChakra/$metadata.json"
 import TokenDocumentation from "../components/TokenDocumentation"
 
 export default function ChakraDocs(props) {
@@ -34,21 +33,21 @@ export default function ChakraDocs(props) {
                                     // onCopy={() => {
                                     //     onTokenCopy(value, tokenName)
                                     // }}
-                                    // description={description}
-                                    // textValue={value}
-                                    // tokenName={tokenName}
-                                    // fill={value}
-                                    // variant={variant}
-                                    // borderWidth={parseInt(value)}
-                                    // radius={value}
-                                    // opacity={value}
-                                    // fontSize={parseInt(value)}
-                                    // size={parseInt(value)}
-                                    // copyButtonColor={
-                                    //     copiedToken === `${tokenName}${value}`
-                                    //         ? "#66BB66"
-                                    //         : "#6666FF"
-                                    // }
+                                    description={description}
+                                    textValue={value}
+                                    tokenName={tokenName}
+                                    fill={value}
+                                    variant={variant}
+                                    borderWidth={parseInt(value)}
+                                    radius={value}
+                                    opacity={value}
+                                    fontSize={parseInt(value)}
+                                    size={parseInt(value)}
+                                    copyButtonColor={
+                                        copiedToken === `${tokenName}${value}`
+                                            ? "#66BB66"
+                                            : "#6666FF"
+                                    }
                                 />
                                 x
                             </div>
