@@ -90,7 +90,7 @@ function PlasmicTokenDocumentation__RenderFunc(props: {
         sty.name
       )}
     >
-      {"value "}
+      {"valueZZZ"}
     </div>
   ) as React.ReactElement | null;
 }

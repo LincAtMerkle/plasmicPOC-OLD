@@ -4,7 +4,7 @@ import metadata from './figmaTokensChakra/$metadata.json'
 import lightTokens from './documentationTokens/light.json'
 import darkTokens from './documentationTokens/dark.json'
 
-interface DocumentationComponentProps {
+export default interface DocumentationComponentProps {
   value: string
   variant: string
   tokenName: string
@@ -18,7 +18,8 @@ export function Documentation({ set = 'core/color', path = '', theme = 'light', 
     async function loadData() {
       try {
         if (metadata.tokenSetOrder.includes(set)) {
-          const data = await import(`./figmaTokensChakra/${set}.js`)
+          // const data = await import(`./figmaTokensChakra/${set}.json`)
+          const data = await import(`./figmaTokensChakra/comp/button.json`)
           setData(data.default)
         } else {
           setError(`Token set not found: ${set}. No such path found in metadata.json`)
@@ -82,6 +83,5 @@ export function Documentation({ set = 'core/color', path = '', theme = 'light', 
   if (error) {
     return <h3>{error}</h3>
   }
-
   return render(tokenData)
 }
