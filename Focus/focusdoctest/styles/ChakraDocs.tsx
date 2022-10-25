@@ -24,33 +24,33 @@ export default function ChakraDocs(props: JSX.IntrinsicAttributes & { set?: stri
             render={(data) => {
                 console.log(data)
                 return data.map(
-                    ({ name, value, tokenName, variant, description }) => {
+                    ({ value, tokenName, variant, description }: any, i: any) => {
                         return (
-                            <div style={{ padding: 8 }}>
+                            <div key={`token-docs-${i}`} style={{ padding: 8 }}>
                                  <TokenDocumentation
-                                    name={value}
-                                    // style={{
-                                    //     width: "100%",
-                                    //     justifyContent: "space-between",
-                                    // }}
-                                    // onCopy={() => {
-                                    //     onTokenCopy(value, tokenName)
-                                    // }}
-                                    // description={description}
-                                    // textValue={value}
-                                    // tokenName={tokenName}
-                                    // fill={value}
-                                    // variant={variant}
-                                    // borderWidth={parseInt(value)}
-                                    // radius={value}
-                                    // opacity={value}
-                                    // fontSize={parseInt(value)}
-                                    // size={parseInt(value)}
-                                    // copyButtonColor={
-                                    //     copiedToken === `${tokenName}${value}`
-                                    //         ? "#66BB66"
-                                    //         : "#6666FF"
-                                    // }
+                                    // name={value}
+                                    style={{
+                                        width: "100%",
+                                        justifyContent: "space-between",
+                                    }}
+                                    onCopy={() => {
+                                        onTokenCopy(value, tokenName)
+                                    }}
+                                    description={description}
+                                    textValue={value}
+                                    tokenName={tokenName}
+                                    fill={value}
+                                    variant={variant}
+                                    borderWidth={parseInt(value)}
+                                    radius={value}
+                                    opacity={value}
+                                    fontSize={parseInt(value)}
+                                    size={parseInt(value)}
+                                    copyButtonColor={
+                                        copiedToken === `${tokenName}${value}`
+                                            ? "#66BB66"
+                                            : "#6666FF"
+                                    }
                                 />
                             </div>
                         )

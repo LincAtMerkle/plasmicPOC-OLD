@@ -51,7 +51,10 @@ type ArgPropType = keyof PlasmicTokenDocumentation__ArgsType;
 export const PlasmicTokenDocumentation__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicTokenDocumentation__OverridesType = {
-  name?: p.Flex<"div">;
+  root?: p.Flex<"div">;
+  tokenName?: p.Flex<"div">;
+  textValue?: p.Flex<"div">;
+  description?: p.Flex<"div">;
 };
 
 export interface DefaultTokenDocumentationProps {
@@ -76,33 +79,74 @@ function PlasmicTokenDocumentation__RenderFunc(props: {
   };
 
   return (
-    <div
-      data-plasmic-name={"name"}
-      data-plasmic-override={overrides.name}
-      data-plasmic-root={true}
-      data-plasmic-for-node={forNode}
-      className={classNames(
-        projectcss.all,
-        projectcss.__wab_text,
-        projectcss.root_reset,
-        projectcss.plasmic_default_styles,
-        projectcss.plasmic_mixins,
-        sty.name
-      )}
-    >
-      {"valueZZZ"}
-    </div>
+    true ? (
+      <div
+        data-plasmic-name={"root"}
+        data-plasmic-override={overrides.root}
+        data-plasmic-root={true}
+        data-plasmic-for-node={forNode}
+        className={classNames(
+          projectcss.all,
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          sty.root
+        )}
+      >
+        <div
+          data-plasmic-name={"tokenName"}
+          data-plasmic-override={overrides.tokenName}
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.tokenName
+          )}
+        >
+          {"tokenName"}
+        </div>
+
+        <div
+          data-plasmic-name={"textValue"}
+          data-plasmic-override={overrides.textValue}
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.textValue
+          )}
+        >
+          {"value"}
+        </div>
+
+        <div
+          data-plasmic-name={"description"}
+          data-plasmic-override={overrides.description}
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.description
+          )}
+        >
+          {"description"}
+        </div>
+      </div>
+    ) : null
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  name: ["name"]
+  root: ["root", "tokenName", "textValue", "description"],
+  tokenName: ["tokenName"],
+  textValue: ["textValue"],
+  description: ["description"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  name: "div";
+  root: "div";
+  tokenName: "div";
+  textValue: "div";
+  description: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -153,7 +197,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "name") {
+  if (nodeName === "root") {
     func.displayName = "PlasmicTokenDocumentation";
   } else {
     func.displayName = `PlasmicTokenDocumentation.${nodeName}`;
@@ -163,9 +207,12 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicTokenDocumentation = Object.assign(
   // Top-level PlasmicTokenDocumentation renders the root element
-  makeNodeComponent("name"),
+  makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    tokenName: makeNodeComponent("tokenName"),
+    textValue: makeNodeComponent("textValue"),
+    description: makeNodeComponent("description"),
 
     // Metadata about props expected for PlasmicTokenDocumentation
     internalVariantProps: PlasmicTokenDocumentation__VariantProps,

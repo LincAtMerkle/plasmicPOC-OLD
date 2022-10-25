@@ -10,7 +10,7 @@ export default interface DocumentationComponentProps {
   tokenName: string
 }
 
-export function Documentation({ set = 'core/color', path = '', theme = 'light', render }: { set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {
+export function Documentation({ set = 'comp/button', path = '', theme = 'light', render }: { set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {
   const [data, setData] = useState<Record<string, any>>()
   const [error, setError] = useState('')
 

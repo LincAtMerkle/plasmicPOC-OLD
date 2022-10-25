@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -29,19 +29,6 @@
       "cssFilePath": "plasmic/focus_doc_test/plasmic_focus_doc_test.module.css",
       "components": [
         {
-          "id": "TGeMzutafjGO",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "5qqynfEyE1GRjXiSU2SzXg",
-          "renderModuleFilePath": "plasmic/focus_doc_test/PlasmicHomepage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/index.tsx"
-          },
-          "cssFilePath": "plasmic/focus_doc_test/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "HtSj_bf-pk",
           "name": "TokenDocumentation",
           "type": "managed",
@@ -53,6 +40,19 @@
           "cssFilePath": "plasmic/focus_doc_test/PlasmicTokenDocumentation.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "sEXs3om_hI",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "5qqynfEyE1GRjXiSU2SzXg",
+          "renderModuleFilePath": "plasmic/focus_doc_test/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/focus_doc_test/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [],
@@ -69,6 +69,16 @@
           "id": "L2W7U30za3",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/data-sources"
+        },
+        {
+          "id": "HD1HSWW5so",
+          "name": "ChakraDocs",
+          "componentImportPath": "./styles/ChakraDocs"
+        },
+        {
+          "id": "4hqEhs2eF8",
+          "name": "Documentation",
+          "componentImportPath": "./styles/Documentation"
         }
       ]
     }
