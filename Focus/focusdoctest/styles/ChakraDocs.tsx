@@ -24,34 +24,14 @@ export default function ChakraDocs(props: JSX.IntrinsicAttributes & { set?: stri
             render={(data) => {
                 console.log(data)
                 return data.map(
-                    ({ value, tokenName, variant, description }: any, i: any) => {
+                    ({ value, color, tokenName, variant, description }: any, i: any) => {
                         return (
                             <div key={`token-docs-${i}`} style={{ padding: 8 }}>
                                  <TokenDocumentation
-                                    // name={value}
-                                    style={{
-                                        width: "100%",
-                                        justifyContent: "space-between",
-                                    }}
-                                    onCopy={() => {
-                                        onTokenCopy(value, tokenName)
-                                    }}
-                                    description={description}
-                                    textValue={value}
                                     tokenName={tokenName}
-                                    fill={value}
-                                    variant={variant}
-                                    borderWidth={parseInt(value)}
-                                    radius={value}
-                                    opacity={value}
-                                    fontSize={parseInt(value)}
-                                    size={parseInt(value)}
-                                    copyButtonColor={
-                                        copiedToken === `${tokenName}${value}`
-                                            ? "#66BB66"
-                                            : "#6666FF"
-                                    }
-                                />
+                                    textValue={value}
+                                    description={description}
+                                    color={{ props: { style: { backgroundColor: value } } }}                               />
                             </div>
                         )
                     }

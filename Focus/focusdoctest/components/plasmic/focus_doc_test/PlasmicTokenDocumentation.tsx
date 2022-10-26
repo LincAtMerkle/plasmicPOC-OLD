@@ -55,6 +55,7 @@ export type PlasmicTokenDocumentation__OverridesType = {
   tokenName?: p.Flex<"div">;
   textValue?: p.Flex<"div">;
   description?: p.Flex<"div">;
+  color?: p.Flex<"div">;
 };
 
 export interface DefaultTokenDocumentationProps {
@@ -128,16 +129,25 @@ function PlasmicTokenDocumentation__RenderFunc(props: {
         >
           {"description"}
         </div>
+
+        {true ? (
+          <div
+            data-plasmic-name={"color"}
+            data-plasmic-override={overrides.color}
+            className={classNames(projectcss.all, sty.color)}
+          />
+        ) : null}
       </div>
     ) : null
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "tokenName", "textValue", "description"],
+  root: ["root", "tokenName", "textValue", "description", "color"],
   tokenName: ["tokenName"],
   textValue: ["textValue"],
-  description: ["description"]
+  description: ["description"],
+  color: ["color"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -147,6 +157,7 @@ type NodeDefaultElementType = {
   tokenName: "div";
   textValue: "div";
   description: "div";
+  color: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -213,6 +224,7 @@ export const PlasmicTokenDocumentation = Object.assign(
     tokenName: makeNodeComponent("tokenName"),
     textValue: makeNodeComponent("textValue"),
     description: makeNodeComponent("description"),
+    color: makeNodeComponent("color"),
 
     // Metadata about props expected for PlasmicTokenDocumentation
     internalVariantProps: PlasmicTokenDocumentation__VariantProps,

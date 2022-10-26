@@ -13,14 +13,14 @@
 .tokenName {
   width: 100%;
   height: auto;
-  max-width: 105px;
+  max-width: none;
   min-width: 0;
 }
 .textValue {
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: none;
   color: #ff0000;
   min-width: 0;
 }
@@ -28,7 +28,17 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: none;
   color: #1e8e00;
   min-width: 0;
+}
+.color {
+  background: #110e0e;
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 8px;
 }
