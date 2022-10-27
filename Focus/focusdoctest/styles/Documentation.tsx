@@ -10,16 +10,20 @@ export default interface DocumentationComponentProps {
   tokenName: string
 }
 
-export function Documentation({ set = 'comp/button', path = '', theme = 'light', render }: { set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {
+export function Documentation({ set = 'comp/button', path = '', theme = 'light', render }: { 
+    set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element 
+  }) {
+  // console.log('SET: ${set[0][0]}')
+  const tempSet = 'comp/button'
   const [data, setData] = useState<Record<string, any>>()
   const [error, setError] = useState('')
-
   useEffect(() => {
     async function loadData() {
       try {
         if (metadata.tokenSetOrder.includes(set)) {
-          // const data = await import(`./figmaTokensChakra/${set}.json`)
-          const data = await import(`./figmaTokensChakra/comp/button.json`)
+          // const data = await import(`./figmaTokensChakra/${tempSet}.json`)
+          // const data = await import(`./figmaTokensChakra/comp/button.json`)
+          const data = await import(`./figmaTokensChakra/${set}.json`)
           setData(data.default)
         } else {
           setError(`Token set not found: ${set}. No such path found in metadata.json`)

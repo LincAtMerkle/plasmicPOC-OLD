@@ -2,7 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { Documentation } from "./Documentation"
 import TokenDocumentation from "../components/TokenDocumentation"
 
-export default function ChakraDocs(props: JSX.IntrinsicAttributes & { set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {
+export default function ChakraDocs(props: JSX.IntrinsicAttributes & { 
+    set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {
     const [copiedToken, setCopiedToken] = useState("")
     const onTokenCopy = async (value: string, tokenName: any) => {
         if (!navigator?.clipboard) {
@@ -16,13 +17,13 @@ export default function ChakraDocs(props: JSX.IntrinsicAttributes & { set?: stri
             alert("Error copying value")
         }
     }
-
+    console.log(`SET: ${props.set}`)
     return (
         <div>
         <Documentation
             {...props}
+            set={props.set}
             render={(data) => {
-                console.log(data)
                 return data.map(
                     ({ value, color, tokenName, variant, description }: any, i: any) => {
                         return (
