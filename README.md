@@ -1,12 +1,11 @@
 # plasmicPOC
 
-This is a repo that merges two projects:
+This is a repo is about replacing Framer with Plasmic. The original repo was:
 
-1. How to Create a Plasmic Package ( React | Code Components | TSDX | Chakra UI) 
-https://www.youtube.com/watch?v=RzpfG3c1wYY
-
-2. FigmaTokens Chakra POC (using Framer) 
+FigmaTokens Chakra POC (using Framer) 
 https://github.com/esthercheran/chakraPOC
 We did a live stream on this: https://www.youtube.com/watch?v=7St9GZlJH4k 
 
-The idea is to swap out Framer with Plasmic and see if it performs better.
+
+In addition
+Many more Chakra UI compoents have been added by Mr Bisket.
