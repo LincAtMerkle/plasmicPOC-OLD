@@ -84,6 +84,74 @@ import {
   FormHelperText,
 } from "@chakra-ui/react";
 
+  
+  export default function PlasmicHost() {
+    return PLASMIC && <PlasmicCanvasHost />;
+  }
+      
+  
+  registerComponent(Documentation, {
+    name: 'Documentation',
+    importPath: './styles/Documentation',
+    props: {
+      }
+    }
+  )
+  
+  registerComponent(ChakraDocs, {
+    name: 'ChakraDocs',
+    importPath: './styles/ChakraDocs',
+    props: {
+      theme: {
+        type: 'choice',
+        title: "Theme",
+        options: ["light", "dark"],
+        defaultValue: "",
+        description: "Theme",
+      },
+      path: {
+        type: 'string',
+        title: "Tokens path",
+        defaultValue: "",
+        description: "Tokens path",
+      },
+      set: {
+        type: 'choice',
+        // options: tokenSetOrder,
+        options: [
+          "core/border",
+          "core/color",
+          "core/opacity",
+          "core/size",
+          "core/space",
+          "core/typography",
+          "comp/avatar",
+          "comp/button",
+          "comp/checkbox",
+          "comp/heading",
+          "comp/icon",
+          "comp/icon-button",
+          "comp/input",
+          "comp/radio",
+          "comp/select",
+          "comp/switch",
+          "comp/tab",
+          "comp/tag",
+          "comp/text",
+          "comp/tooltip",
+          "semantic/light",
+          "semantic/dark",
+          "Brand-ChakraDemo/light",
+          "Brand-ChakraDemo/dark"
+        ],
+        title: "Token set",
+        defaultValue: "core/color",
+        description: "Token set",
+      }
+    }
+  });
+
+// Mr Biscuits Charkra UI registraions 
 
 function Option({
   value,
@@ -2479,78 +2547,4 @@ props: {
     hidden: props => !props.hasStripe
   },
 },
-});
-export default function PlasmicHost() {
-return (
-  <div>
-    <ChakraProvider>
-      <PlasmicCanvasHost />
-    </ChakraProvider>
-  </div>
-);
-}
-
-// export default function PlasmicHost() {
-//   return PLASMIC && <PlasmicCanvasHost />;
-// }
-    
-
-PLASMIC.registerComponent(Documentation, {
-  name: 'Documentation',
-  importPath: './styles/Documentation',
-  props: {
-    }
-  }
-)
-
-PLASMIC.registerComponent(ChakraDocs, {
-  name: 'ChakraDocs',
-  importPath: './styles/ChakraDocs',
-  props: {
-      theme: {
-      type: 'choice',
-      title: "Theme",
-      options: ["light", "dark"],
-      defaultValue: "light",
-      description: "Theme",
-    },
-    path: {
-      type: 'string',
-      title: "Tokens path",
-      defaultValue: "",
-      description: "Tokens path",
-    },
-    set: {
-      type: 'choice',
-      options: [
-        "core/border",
-        "core/color",
-        "core/opacity",
-        "core/size",
-        "core/space",
-        "core/typography",
-        "comp/avatar",
-        "comp/button",
-        "comp/checkbox",
-        "comp/heading",
-        "comp/icon",
-        "comp/icon-button",
-        "comp/input",
-        "comp/radio",
-        "comp/select",
-        "comp/switch",
-        "comp/tab",
-        "comp/tag",
-        "comp/text",
-        "comp/tooltip",
-        "semantic/light",
-        "semantic/dark",
-        "Brand-ChakraDemo/light",
-        "Brand-ChakraDemo/dark"
-      ],
-      title: "Token set",
-      defaultValue: "core/color",
-      description: "Token set",
-    }
-  }
-});
+})
