@@ -2,21 +2,21 @@ import { ComponentStyleConfig } from '@chakra-ui/react'
 
 const Button: ComponentStyleConfig = {
   // The styles all button have in common
+
+    // textTransform: 'uppercase',
   baseStyle: {
     fontWeight: 'btn-font-weight',
-    textTransform: 'uppercase',
     width: 'auto',
     borderRadius: 'btn-border-radius',
     fontFamily: 'btn-font-family',
     border: 'btn-border-width',
     borderStyle: 'solid',
-    backgroundColor: 'btn-primary-default-background-color'
   },
   // Four sizes: xs,sm,md and large
   sizes: {
     xs: {
-      paddingLeft: 'btn-xs-padding-left',
-      paddingRight: 'btn-xs-padding-right',
+      pl: 'btn-xs-padding-left',
+      pr: 'btn-xs-padding-right',
       h: 'btn-xs-height',
       fontSize: 'btn-xs-text-size'
     },
@@ -41,6 +41,11 @@ const Button: ComponentStyleConfig = {
   },
   // Two variants: outline and solid
   variants: {
+    // ghost: variantGhost,
+    // outline: variantOutline,
+    // solid: variantSolid,
+    // link: variantLink,
+    // unstyled: variantUnstyled,
     primary: {
       bg: 'btn-primary-default-background-color',
       color: 'btn-primary-default-text-color',
@@ -115,12 +120,18 @@ const Button: ComponentStyleConfig = {
         borderColor: 'btn-negative-disabled-border-color',
         iconColor:'btn-negative-disabled-icon-color'
 
+      },
+      sm: {
+        bg: 'red',
+        fontSize: 'sm'
       }
     }
   },
   // The default size and variant values
   defaultProps: {
-    variant: 'primary'
+    variant: 'primary',
+    size: "md",
+    colorScheme: "blue"
   }
 }
 

@@ -5,7 +5,6 @@ import extendTheme from '../styles/theme'
 function MyApp({ Component, pageProps }) {
     return (
       <ChakraProvider resetCSS theme={extendTheme}>
-        xxx
           <Component {...pageProps} />
       </ChakraProvider>
 )
