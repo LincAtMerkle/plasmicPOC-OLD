@@ -77,6 +77,7 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  CheckCircleIcon,
   FormControl,
   FormLabel,
   FormErrorMessage,
@@ -296,11 +297,11 @@ parentComponentName: "ButtonGroup",
 props: {
   size: {
     type: "choice",
-    options: ["xl", "sm", "md", "lg"],
+    options: ["xs", "sm", "md", "lg"],
   },
   variant: {
     type: "choice",
-    options: ["primary", "ghost", "outline", "solid", "link", "unstyled"],
+    options: ["sm", "primary", "secondary", "negative", "ghost", "outline", "solid", "link", "unstyled"],
     defaultValue: "solid",
   },
   colorScheme: {
@@ -327,6 +328,10 @@ props: {
     ],
   },
   iconSpacing: "number",
+  leftIcon: {
+    type: "slot",
+    value:  [<CheckCircleIcon/>],
+  },
   isActive: {
     type: "boolean",
   },
@@ -343,7 +348,7 @@ props: {
       value: "Button",
     },
   },
-},
+}
 });
 
 registerComponent(Stack, {
@@ -1161,6 +1166,21 @@ registerComponent(Text, {
 name: "Text",
 importPath: "@chakra-ui/react",
 props: {
+  align: {
+    type: "choice",
+    options: ["left", "right", "center", "justify"],
+    defaultValue: "left",
+  },
+  casing: {
+    type: "choice",
+    options: ["uppercase", "lowercase", "capitalise", "none"],
+    defaultValue: "lowercase",
+  },
+  decoration: {
+    type: "choice",
+    options: ["underline", "line-through", "none"],
+    defaultValue: "none",
+  },
   children: {
     type: "slot",
     defaultValue: [
@@ -2415,8 +2435,21 @@ props: {
 registerComponent(AccordionIcon, {
 name: "AccordionIcon",
 importPath: "@chakra-ui/react",
-parentComponentName: "AccordionButton",
-props: {},
+parentComponentName: "AccordionItem",
+props: {
+  children: 'slot',
+  name: 'string'
+}
+});
+
+registerComponent(CheckCircleIcon, {
+name: "CheckCircleIcon",
+importPath: "@chakra-ui/react",
+parentComponentName: "Button",
+props: {
+  children: 'slot',
+  name: 'string'
+}
 });
 
 registerComponent(FormControl, {
