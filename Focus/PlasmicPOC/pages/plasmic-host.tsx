@@ -77,13 +77,14 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  CheckCircleIcon,
   FormControl,
   FormLabel,
   FormErrorMessage,
   FormHelperText,
 } from "@chakra-ui/react";
-
+import {
+  CheckCircleIcon,
+} from "@chakra-ui/icons";
 
   
   export default function PlasmicHost() {
@@ -328,10 +329,6 @@ props: {
     ],
   },
   iconSpacing: "number",
-  leftIcon: {
-    type: "slot",
-    value:  [<CheckCircleIcon/>],
-  },
   isActive: {
     type: "boolean",
   },
@@ -340,6 +337,24 @@ props: {
   },
   isLoading: {
     type: "boolean",
+  },
+  leftIcon: {
+    type: "slot",
+    hidePlaceholder: true,
+    allowedComponents: ["CheckCircleIcon"],
+    defaultValue: {
+      type: "component",
+      name: "CheckCircleIcon",
+    },
+  },
+  rightIcon: {
+    type: "slot",
+    hidePlaceholder: true,
+    allowedComponents: ["CheckCircleIcon"],
+    defaultValue: {
+      type: "component",
+      name: "CheckCircleIcon",
+    },
   },
   children: {
     type: "slot",
@@ -2443,14 +2458,14 @@ props: {
 });
 
 registerComponent(CheckCircleIcon, {
-name: "CheckCircleIcon",
-importPath: "@chakra-ui/react",
-parentComponentName: "Button",
-props: {
-  children: 'slot',
-  name: 'string'
-}
-});
+  name: "CheckCircleIcon",
+  importPath: "@chakra-ui/react",
+  parentComponentName: "Button",
+  props: {
+    children: 'slot',
+    name: 'string'
+  }
+  });
 
 registerComponent(FormControl, {
 name: "FormControl",
