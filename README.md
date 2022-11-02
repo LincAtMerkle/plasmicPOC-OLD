@@ -7,5 +7,4 @@ https://github.com/esthercheran/chakraPOC
 We did a live stream on this: https://www.youtube.com/watch?v=7St9GZlJH4k 
 
 
-In addition
-Many more Chakra UI compoents have been added by Mr Bisket.
+In addition many more Chakra UI compoents have been added by Mr Bisket.
