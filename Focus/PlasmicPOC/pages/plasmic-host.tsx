@@ -4,10 +4,11 @@ import Script from 'next/script';
 import { PlasmicCanvasHost } from '@plasmicapp/loader-nextjs';
 import { PLASMIC } from '../plasmic-init';
 import ChakraDocs  from "../styles/ChakraDocs";
+import ButtonPreview  from "../styles/ButtonPreview";
 // How do I import this? Was it there in Esthers code?
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
-import {  registerComponent } from "@plasmicapp/host";
+import { registerComponent } from "@plasmicapp/host";
 import {
   AspectRatio,
   Image,
@@ -77,13 +78,14 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  CheckCircleIcon,
   FormControl,
   FormLabel,
   FormErrorMessage,
   FormHelperText,
 } from "@chakra-ui/react";
-
+import {
+  CheckCircleIcon,
+} from "@chakra-ui/icons";
 
   
   export default function PlasmicHost() {
@@ -99,6 +101,13 @@ import {
     }
   )
   
+  registerComponent(ButtonPreview, {
+    name: 'ButtonPreview',
+    importPath: './styles/ButtonPreview',
+    props: {
+    }
+  })
+
   registerComponent(ChakraDocs, {
     name: 'ChakraDocs',
     importPath: './styles/ChakraDocs',
@@ -328,10 +337,6 @@ props: {
     ],
   },
   iconSpacing: "number",
-  leftIcon: {
-    type: "slot",
-    value:  [<CheckCircleIcon/>],
-  },
   isActive: {
     type: "boolean",
   },
@@ -340,6 +345,24 @@ props: {
   },
   isLoading: {
     type: "boolean",
+  },
+  leftIcon: {
+    type: "slot",
+    hidePlaceholder: true,
+    allowedComponents: ["CheckCircleIcon"],
+    defaultValue: {
+      type: "component",
+      name: "CheckCircleIcon",
+    },
+  },
+  rightIcon: {
+    type: "slot",
+    hidePlaceholder: true,
+    allowedComponents: ["CheckCircleIcon"],
+    defaultValue: {
+      type: "component",
+      name: "CheckCircleIcon",
+    },
   },
   children: {
     type: "slot",
@@ -350,6 +373,7 @@ props: {
   },
 }
 });
+
 
 registerComponent(Stack, {
 name: "Stack",
@@ -1461,6 +1485,10 @@ registerComponent(Tabs, {
 name: "Tabs",
 importPath: "@chakra-ui/react",
 props: {
+  index: {
+      type: "number",
+      editOnly: true
+    },
   align: {
     type: "choice",
     options: ["start", "center", "end"],
@@ -2443,14 +2471,14 @@ props: {
 });
 
 registerComponent(CheckCircleIcon, {
-name: "CheckCircleIcon",
-importPath: "@chakra-ui/react",
-parentComponentName: "Button",
-props: {
-  children: 'slot',
-  name: 'string'
-}
-});
+  name: "CheckCircleIcon",
+  importPath: "@chakra-ui/react",
+  parentComponentName: "Button",
+  props: {
+    children: 'slot',
+    name: 'string'
+  }
+  });
 
 registerComponent(FormControl, {
 name: "FormControl",
