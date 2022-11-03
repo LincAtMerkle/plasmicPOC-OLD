@@ -11,6 +11,8 @@ const Button: ComponentStyleConfig = {
     fontFamily: 'btn-font-family',
     border: 'btn-border-width',
     borderStyle: 'solid',
+    display: 'flex',
+    flexDirection: 'column',
   },
   // Four sizes: xs,sm,md and large
   sizes: {

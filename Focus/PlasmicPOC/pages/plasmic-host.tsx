@@ -1476,6 +1476,10 @@ registerComponent(Tabs, {
 name: "Tabs",
 importPath: "@chakra-ui/react",
 props: {
+  index: {
+      type: "number",
+      editOnly: true
+    },
   align: {
     type: "choice",
     options: ["start", "center", "end"],
