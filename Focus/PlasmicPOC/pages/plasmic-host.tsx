@@ -4,10 +4,11 @@ import Script from 'next/script';
 import { PlasmicCanvasHost } from '@plasmicapp/loader-nextjs';
 import { PLASMIC } from '../plasmic-init';
 import ChakraDocs  from "../styles/ChakraDocs";
+import ButtonPreview  from "../styles/ButtonPreview";
 // How do I import this? Was it there in Esthers code?
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
-import {  registerComponent } from "@plasmicapp/host";
+import { registerComponent } from "@plasmicapp/host";
 import {
   AspectRatio,
   Image,
@@ -100,6 +101,13 @@ import {
     }
   )
   
+  registerComponent(ButtonPreview, {
+    name: 'ButtonPreview',
+    importPath: './styles/ButtonPreview',
+    props: {
+    }
+  })
+
   registerComponent(ChakraDocs, {
     name: 'ChakraDocs',
     importPath: './styles/ChakraDocs',
@@ -365,6 +373,7 @@ props: {
   },
 }
 });
+
 
 registerComponent(Stack, {
 name: "Stack",
