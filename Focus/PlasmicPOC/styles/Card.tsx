@@ -48,7 +48,7 @@ export default function Card(props: ButtonProps, {className}: { className?: stri
               </HStack>
               <Stack spacing="3" direction={{ base: 'column-reverse', md: 'row' }}>
                 <Button variant="secondary">Download</Button>
-                <Button {...props} >View</Button>
+                <Button {...props} >{props.title}</Button>
               </Stack>
             </Stack>
           </Box>

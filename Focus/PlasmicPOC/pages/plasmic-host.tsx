@@ -97,6 +97,15 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     name: 'Card',
     importPath: './styles/Card',
     props: {
+      variant: {
+        type: "choice",
+        options: ["sm", "primary", "secondary", "negative", "ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      title: {
+        type: "string",
+        defaultValue: "Button",
+      }
       }
     }
   )
