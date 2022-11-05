@@ -8,6 +8,7 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // How do I import this? Was it there in Esthers code?
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
+import Card from "../styles/Card";
 import { registerComponent } from "@plasmicapp/host";
 import {
   AspectRatio,
@@ -83,16 +84,23 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from "@chakra-ui/react";
-import {
-  CheckCircleIcon,
-} from "@chakra-ui/icons";
+import {CheckCircleIcon} from "@chakra-ui/icons";
+
 
   
   export default function PlasmicHost() {
     return PLASMIC && <PlasmicCanvasHost />;
   }
       
-  
+
+  registerComponent(Card, {
+    name: 'Card',
+    importPath: './styles/Card',
+    props: {
+      }
+    }
+  )
+
   registerComponent(Documentation, {
     name: 'Documentation',
     importPath: './styles/Documentation',
