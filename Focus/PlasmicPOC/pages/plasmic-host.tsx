@@ -9,6 +9,7 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
 import Card from "../styles/Card";
+import CardFunLab from "../styles/CardFunLab";
 import { registerComponent } from "@plasmicapp/host";
 import {
   AspectRatio,
@@ -17,7 +18,6 @@ import {
   ButtonGroup,
   Checkbox,
   CheckboxGroup,
-  Stack,
   Input,
   NumberInput,
   NumberInputField,
@@ -83,6 +83,10 @@ import {
   FormLabel,
   FormErrorMessage,
   FormHelperText,
+  Stack,
+  VStack,
+  HStack,
+  Box
 } from "@chakra-ui/react";
 import {CheckCircleIcon} from "@chakra-ui/icons";
 
@@ -97,15 +101,23 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     name: 'Card',
     importPath: './styles/Card',
     props: {
-      variant: {
-        type: "choice",
-        options: ["sm", "primary", "secondary", "negative", "ghost", "outline", "solid", "link", "unstyled"],
-        defaultValue: "solid",
-      },
-      title: {
-        type: "string",
-        defaultValue: "Button",
+      title: 'string',
+      description: 'string',
+      file: 'string',
+      size: 'string',
+      Button1: 'string',
+      Button2: 'string',
       }
+    }
+  )
+
+  registerComponent(CardFunLab, {
+    name: 'CardFunLab',
+    importPath: './styles/CardFunLab',
+    props: {
+      title: 'string',
+      description: 'string',
+      ButtonText: 'string',
       }
     }
   )
@@ -421,6 +433,32 @@ props: {
   },
 },
 });
+
+
+
+registerComponent(Box, {
+  name: "Box",
+  importPath: "@chakra-ui/react",
+  props: {
+    borderWidth: {
+      type: "string",
+      defaultValue: "1px",
+    },
+    p: {
+      type: "string",
+      defaultValue: "4",
+    },
+    borderRadius: {
+      type: "string",
+      defaultValue: "lg",
+    },
+    children: {
+      type: "slot",
+    },
+  },
+  });
+
+
 
 registerComponent(Checkbox, {
 name: "Checkbox",
@@ -2386,6 +2424,7 @@ props: {
       { type: "component", name: "AccordionItem" },
     ],
   },
+  
 },
 });
 
