@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "copy-tokens; yarn resolve-tokens; transform2CSS; next dev",
+    "dev": "npm run copy-tokens && npm run resolve-tokens && npm run transform2CSS && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
