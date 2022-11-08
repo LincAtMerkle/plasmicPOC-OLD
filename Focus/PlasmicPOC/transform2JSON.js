@@ -89,7 +89,7 @@ const themeOutput = themeMeta.map((theme) => {
   return {
     name: themeName,
     class: themeName,
-    color: "#ff00ff",
+    color: "#ff0000",
     path: `${themeConfig.platforms.css.buildPath}${themeName}.json`,
   };
 });
