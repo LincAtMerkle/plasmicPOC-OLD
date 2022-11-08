@@ -778,7 +778,7 @@
         "type": "color"
       },
       "500": {
-        "value": "#ff00ff",
+        "value": "#00ffff",
         "type": "color",
         "description": "#a855f7"
       },
