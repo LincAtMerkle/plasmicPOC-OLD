@@ -33,7 +33,7 @@
       "btn-secondary-disabled-text-color": "#6b7280",
       "btn-secondary-disabled-border-color": "#d1d5db",
       "btn-secondary-disabled-icon-color": "#6b7280",
-      "btn-negative-default-background-color": "#ff00ff",
+      "btn-negative-default-background-color": "#0000ff",
       "btn-negative-default-text-color": "#ffffff",
       "btn-negative-default-border-color": "#f87171",
       "btn-negative-default-icon-color": "#ffffff",
