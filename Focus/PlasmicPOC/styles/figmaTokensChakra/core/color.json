@@ -778,8 +778,9 @@
         "type": "color"
       },
       "500": {
-        "value": "#a855f7",
-        "type": "color"
+        "value": "#ff00ff",
+        "type": "color",
+        "description": "#a855f7"
       },
       "600": {
         "value": "#9333ea",
