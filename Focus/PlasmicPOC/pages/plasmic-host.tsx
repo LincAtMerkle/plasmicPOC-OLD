@@ -118,6 +118,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       title: 'string',
       description: 'string',
       ButtonText: 'string',
+      imageSrc: 'string',
       }
     }
   )
