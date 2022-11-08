@@ -1,4 +1,4 @@
-# plasmicPOC
+# plasmicPOC - FigmaToken + ChakraUI + Plasmic
 
 This is a repo is about replacing Framer with Plasmic. The original repo was:
 
