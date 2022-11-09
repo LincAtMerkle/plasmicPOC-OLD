@@ -159,7 +159,6 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
         type: 'choice',
         title: "Theme",
         options: ["light", "dark"],
-        defaultValue: "",
         description: "Theme",
       },
       path: {
@@ -198,7 +197,6 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           "Brand-ChakraDemo/dark"
         ],
         title: "Token set",
-        defaultValue: "core/color",
         description: "Token set",
       }
     }
