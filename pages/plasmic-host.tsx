@@ -157,7 +157,6 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     props: {
       theme: {
         type: 'choice',
-        title: "Theme",
         options: ["light", "dark"],
         description: "Theme",
       },
@@ -197,6 +196,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           "Brand-ChakraDemo/dark"
         ],
         title: "Token set",
+        defaultValue: "core/color",
         description: "Token set",
       }
     }
