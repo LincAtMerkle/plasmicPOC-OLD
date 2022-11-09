@@ -42,7 +42,7 @@ function TokenDocumentation_(
   // By default, we are just piping all TokenDocumentationProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicTokenDocumentation name={{ ref }} {...props} />;
+  return <PlasmicTokenDocumentation root={{ ref }} {...props} />;
 }
 
 const TokenDocumentation = React.forwardRef(TokenDocumentation_);
