@@ -29,6 +29,7 @@ export default function ChakraDocs(props: JSX.IntrinsicAttributes & {
                         return (
                             <div key={`token-docs-${i}`} style={{ padding: 8 }}>
                                  <TokenDocumentation
+                                    //@ts-ignore
                                     tokenName={tokenName}
                                     textValue={value}
                                     description={description}

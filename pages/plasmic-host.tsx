@@ -161,9 +161,9 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
         description: "Theme",
       },
       path: {
+        //@ts-ignore
         type: 'string',
         title: "Tokens path",
-        defaultValue: "",
         description: "Tokens path",
       },
       set: {
@@ -195,8 +195,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           "Brand-ChakraDemo/light",
           "Brand-ChakraDemo/dark"
         ],
-        title: "Token set",
-        defaultValue: "core/color",
+        // title: "Token set",
         description: "Token set",
       }
     }
@@ -1606,9 +1605,6 @@ props: {
   direction: {
     type: "choice",
     options: ["ltr", "rtl"],
-  },
-  index: {
-    type: "number",
   },
   isFitted: "boolean",
   isLazy: "boolean",
