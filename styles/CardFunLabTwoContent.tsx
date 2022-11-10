@@ -8,7 +8,7 @@ export default function CardFunLabTwoContent({Children, className, imageSrc }) {
   }
   return (    
     <div className={className} >
-      <Image width="100%" height="192px" src={imageSrc}/>
+      <Image alt="image" width="100%" height="192px" src={imageSrc}/>
       <Stack spacing="6" p={{ base: '1', md: '6' }}>
         {Children}
       </Stack>

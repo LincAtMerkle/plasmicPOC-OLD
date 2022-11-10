@@ -136,8 +136,8 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   )
 
   registerComponent(CardFunLabTwoContent, {
-    name: 'CardFunLabTwo',
-    importPath: './styles/CardFunLabTwo',
+    name: 'CardFunLabTwoContent',
+    importPath: './styles/CardFunLabTwoContent',
     props: {
       imageSrc: 'string',
       }
@@ -145,8 +145,8 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   )
 
   registerComponent(CardFunLabTwoSubContent, {
-    name: 'CardFunLabTwo',
-    importPath: './styles/CardFunLabTwo',
+    name: 'CardFunLabTwoSubContent',
+    importPath: './styles/CardFunLabTwoSubContent',
     props: {
       title: 'string',
       description: 'string',
