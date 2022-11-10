@@ -11,6 +11,9 @@ import { Documentation } from "../styles/Documentation";
 import Card from "../styles/Card";
 import CardFunLab from "../styles/CardFunLab";
 import CardFunLabTwo from "../styles/CardFunLabTwo";
+import CardFunLabTwoContent from "../styles/CardFunLabTwoContent";
+import CardFunLabTwoSubContent from "../styles/CardFunLabTwoSubContent";
+
 import { registerComponent } from "@plasmicapp/host";
 import {
   AspectRatio,
@@ -128,13 +131,30 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     name: 'CardFunLabTwo',
     importPath: './styles/CardFunLabTwo',
     props: {
-      title: 'string',
-      description: 'string',
-      ButtonText: 'string',
+      }
+    }
+  )
+
+  registerComponent(CardFunLabTwoContent, {
+    name: 'CardFunLabTwo',
+    importPath: './styles/CardFunLabTwo',
+    props: {
       imageSrc: 'string',
       }
     }
   )
+
+  registerComponent(CardFunLabTwoSubContent, {
+    name: 'CardFunLabTwo',
+    importPath: './styles/CardFunLabTwo',
+    props: {
+      title: 'string',
+      description: 'string',
+      ButtonText: 'string',
+      }
+    }
+  )
+
 
   registerComponent(Documentation, {
     name: 'Documentation',
