@@ -1,8 +1,8 @@
 {
   "colors": {
     "light": {
-      "btn-primary-default-background-color": "#ff00ff",
-      "btn-primary-default-text-color": "#0000ff",
+      "btn-primary-default-background-color": "#ffff00",
+      "btn-primary-default-text-color": "#ffffff",
       "btn-primary-default-border-color": "#0ea5e9",
       "btn-primary-default-icon-color": "#ffffff",
       "btn-primary-hover-background-color": "#38bdf8",
