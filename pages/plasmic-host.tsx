@@ -131,6 +131,13 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     name: 'CardFunLabTwo',
     importPath: './styles/CardFunLabTwo',
     props: {
+      children: {
+          type: "slot",
+          defaultValue: {
+            type: "component",
+            name: "CardFunLabTwoContent",
+          },
+        },
       }
     }
   )
@@ -140,7 +147,14 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     importPath: './styles/CardFunLabTwoContent',
     props: {
       imageSrc: 'string',
-      }
+      children: {
+        type: "slot",
+        defaultValue: {
+          type: "component",
+          name: "CardFunLabTwoSubContent",
+        },
+      },
+    }
     }
   )
 
@@ -151,7 +165,10 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       title: 'string',
       description: 'string',
       ButtonText: 'string',
-      }
+      children: {
+        type: "slot",
+      },
+    }
     }
   )
 
