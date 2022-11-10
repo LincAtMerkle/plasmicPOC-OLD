@@ -29,6 +29,7 @@ export default function ChakraDocs({
             {theme}-{path}{set}
             <div>TEST</div>
             <Documentation
+            //@ts-ignore
                 {...props}
                 render={(data) => {
                     console.log(data)
@@ -37,6 +38,7 @@ export default function ChakraDocs({
                             return (
                                 <div key={`token-docs-${i}`} style={{ padding: "8" }}>
                                     <TokenDocumentation
+                                        //@ts-ignore
                                         style={{
                                             width: "100%",
                                             justifyContent: "space-between",
@@ -44,6 +46,7 @@ export default function ChakraDocs({
                                         onCopy={() => {
                                             onTokenCopy(value, tokenName)
                                         }}
+                                        //@ts-ignore
                                         className={props.className}
                                         description={description}
                                         textValue={value}

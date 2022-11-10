@@ -17,6 +17,7 @@ import { FiFileText } from 'react-icons/fi'
 // export default function Card(props: ButtonProps, {className}: { className?: string }) {
 export default function Card({ className, title, description, file, size, Button1, Button2 }) {
 
+  //@ts-ignore
   Card.defaultProps = {
     title: "title",
     description: "description",
