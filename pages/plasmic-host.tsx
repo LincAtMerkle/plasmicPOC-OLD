@@ -145,6 +145,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   registerComponent(CardFunLabTwoContent, {
     name: 'CardFunLabTwoContent',
     importPath: './styles/CardFunLabTwoContent',
+    parentComponentName: "CardFunLabTwo",
     props: {
       imageSrc: 'string',
       children: {
@@ -161,13 +162,11 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   registerComponent(CardFunLabTwoSubContent, {
     name: 'CardFunLabTwoSubContent',
     importPath: './styles/CardFunLabTwoSubContent',
+    parentComponentName: "CardFunLabTwoContent",
     props: {
       title: 'string',
       description: 'string',
       ButtonText: 'string',
-      children: {
-        type: "slot",
-      },
     }
     }
   )
