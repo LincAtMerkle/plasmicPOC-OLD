@@ -1,17 +1,5 @@
 import * as React from 'react'
-import {
-  Box,
-  Button, 
-  ButtonProps,
-  Container,
-  HStack,
-  Icon,
-  Square,
-  Stack,
-  Text,
-  useColorModeValue,
-  Image
-} from '@chakra-ui/react'
+import { Box, Button, Container, Stack, Text, Image } from '@chakra-ui/react'
 import { FiFileText } from 'react-icons/fi'
 
 
