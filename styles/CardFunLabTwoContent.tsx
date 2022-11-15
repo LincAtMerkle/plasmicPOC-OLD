@@ -1,16 +1,28 @@
-import * as React from 'react'
+import { ReactNode } from 'react';
 import {Stack,Image} from '@chakra-ui/react'
 
-export default function CardFunLabTwoContent({Children, className, imageSrc }) {
+
+export interface CardFunLabTwoContentProps {
+  className?: string;
+  imageSrc?: string;
+  children: ReactNode;
+}
+
+
+export default function CardFunLabTwoContent({
+  children,
+  imageSrc,
+  className, 
+  }:CardFunLabTwoContentProps) {
   //@ts-ignore
   CardFunLabTwoContent.defaultProps = {
     imageSrc: "Image.png"
   }
   return (    
-    <div className={className} >
+    <div>
       <Image alt="image" width="100%" height="192px" src={imageSrc}/>
-      <Stack spacing="6" p={{ base: '1', md: '6' }}>
-        {Children}
+      <Stack spacing="6" p={{ base: '5', md: '6' }}>
+      {children}
       </Stack>
     </div>
   );

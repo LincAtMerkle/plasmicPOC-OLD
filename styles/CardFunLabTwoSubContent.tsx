@@ -1,7 +1,18 @@
-import * as React from 'react'
+import { ReactNode } from 'react';
 import {Button, Text} from '@chakra-ui/react'
 
-export default function CardFunLabTwoSubContent({Children, className, title, description, ButtonText }) {
+export interface CardFunLabTwoSubContentProps {
+  className?: string;
+  title?: string;
+  description?: string;
+  ButtonText?: string;
+}
+
+export default function CardFunLabTwoSubContent({
+  className, 
+  title, 
+  description, 
+  ButtonText }:CardFunLabTwoSubContentProps) {
 
   //@ts-ignore
   CardFunLabTwoSubContent.defaultProps = {
@@ -10,7 +21,7 @@ export default function CardFunLabTwoSubContent({Children, className, title, des
     ButtonText: "Book online",
   }
   return (    
-    <div className={className} style={{backgroundColor:"red"}}>
+    <>
       <Text fontFamily="SignPainter HouseSlant" fontSize="50px" fontWeight="medium" color="white" lineHeight="90%">
         {title}
       </Text>
@@ -20,6 +31,6 @@ export default function CardFunLabTwoSubContent({Children, className, title, des
       <Button width="136px" fontFamily="SignPainter HouseSlant" fontSize="20px" variant="primary">
         {ButtonText}
       </Button>
-    </div>
+    </>
   );
 }
