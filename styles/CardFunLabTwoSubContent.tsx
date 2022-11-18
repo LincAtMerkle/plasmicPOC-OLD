@@ -12,7 +12,8 @@ export default function CardFunLabTwoSubContent({
   className, 
   title, 
   description, 
-  ButtonText }:CardFunLabTwoSubContentProps) {
+  ButtonText 
+  }:CardFunLabTwoSubContentProps) {
 
   //@ts-ignore
   CardFunLabTwoSubContent.defaultProps = {

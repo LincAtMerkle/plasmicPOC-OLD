@@ -1,9 +1,9 @@
 {
   "colors": {
     "light": {
-      "btn-primary-default-background-color": "#fff",
-      "btn-primary-default-text-color": "#2A315B",
-      "btn-primary-default-border-color": "#fff",
+      "btn-primary-default-background-color": "#ffff00",
+      "btn-primary-default-text-color": "#ffffff",
+      "btn-primary-default-border-color": "#0ea5e9",
       "btn-primary-default-icon-color": "#ffffff",
       "btn-primary-hover-background-color": "#38bdf8",
       "btn-primary-hover-text-color": "#ffffff",
@@ -1416,7 +1416,7 @@
   },
   "radii": {
     "light": {
-      "btn-border-radius": "50px",
+      "btn-border-radius": "4px",
       "semantic-ui-border-radius": "0px",
       "semantic-border-radius-small": "0px",
       "semantic-border-radius-medium": "4px",

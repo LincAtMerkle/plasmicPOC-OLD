@@ -1,17 +1,24 @@
 import * as React from 'react'
-import { Box, Button, Container, Stack, Text, Image } from '@chakra-ui/react'
+import { Box, Button, Container, Stack, Text, Image} from '@chakra-ui/react'
 import { FiFileText } from 'react-icons/fi'
 
 
-export default function CardFunLab({ className, imageSrc, title, description, ButtonText }) {
+type CardFunLabProps = { 
+  className?: string,
+  title?: string,
+  description?: string,
+  ButtonText?: string,
+  imageSrc?: string
+ };
 
-  //@ts-ignore
-  CardFunLab.defaultProps = {
-    title: "We do Parties and Functions",
-    description: "Get ready for the craziest round of mini golf you've ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia.",
-    ButtonText: "Book online",
-    imageSrc: "Image.png"
-  }
+export default function CardFunLab({ 
+  className, 
+  title = "We do Parties and Functions", 
+  description = "Get ready for the craziest round of mini golf you've ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia.", 
+  ButtonText = "Book online",
+  imageSrc = "Image.png"
+}:CardFunLabProps) {
+
   
     return (    
       <div className={className} >
@@ -30,7 +37,7 @@ export default function CardFunLab({ className, imageSrc, title, description, Bu
       >
         <Image width="100%" height="192px" src={imageSrc}/>
         <Stack spacing="6" 
-        p={{ base: '1', md: '6' }}
+        p={{ base: '5', md: '6' }}
         >
             <Text fontFamily="SignPainter HouseSlant" fontSize="50px" fontWeight="medium" color="white" lineHeight="90%">
               {title}
@@ -46,5 +53,5 @@ export default function CardFunLab({ className, imageSrc, title, description, Bu
     </Container>
   </Box>
   </div>
-  );
+  )
 }

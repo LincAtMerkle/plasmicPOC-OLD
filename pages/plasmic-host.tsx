@@ -8,7 +8,7 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // How do I import this? Was it there in Esthers code?
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
-import Card from "../styles/Card";
+import CardOld from "../styles/CardOld";
 import CardFunLab from "../styles/CardFunLab";
 import CardFunLabTwo from "../styles/CardFunLabTwo";
 import CardFunLabTwoContent from "../styles/CardFunLabTwoContent";
@@ -22,6 +22,10 @@ import {
   ButtonGroup,
   Checkbox,
   CheckboxGroup,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
   Input,
   NumberInput,
   NumberInputField,
@@ -101,9 +105,9 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   }
       
 
-  registerComponent(Card, {
-    name: 'Card',
-    importPath: './styles/Card',
+  registerComponent(CardOld, {
+    name: 'CardOld',
+    importPath: './styles/CardOld',
     props: {
       title: 'string',
       description: 'string',
@@ -114,6 +118,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       }
     }
   )
+
 
   registerComponent(CardFunLab, {
     name: 'CardFunLab',
@@ -169,6 +174,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     }
   )
 
+
   registerComponent(CardFunLabTwoSubContent, {
     name: 'CardFunLabTwoSubContent',
     importPath: './styles/CardFunLabTwoSubContent',
@@ -181,6 +187,109 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     }
   )
 
+  
+  registerComponent(Card, {
+    name: 'Card',
+    importPath: './styles/Card',
+    props: {
+      size: {
+        type: "choice",
+        options: ["sm", "md", "lg"],
+        },
+      variant: {
+        type: "choice",
+        options: ["elevated", "outline", "filled", "unstyled"],
+        },
+      children: {
+        type: "slot",
+        allowedComponents: ["CardBody,CardHeader, CardFooter"],
+        defaultValue: [
+          // {
+          //   type: "component",
+          //   name: "CardHeader",
+          // },
+          {
+            type: "component",
+            name: "CardBody",
+          },
+          {
+            type: "component",
+            name: "CardFooter",
+          },
+          ],
+        },
+      }
+    }
+  )
+
+  registerComponent(CardHeader, {
+    name: 'CardHeader',
+    importPath: './CardHeader',
+    props: {
+      size: {
+        type: 'choice',
+        options: ['sm', 'md', 'lg'],
+      },
+      children: {
+        type: 'slot',
+        defaultValue: [
+          {
+            type: 'component',
+            name: 'Heading',
+          },
+        ],
+      },
+    },
+  });
+
+  registerComponent(CardBody, {
+    name: 'CardBody',
+    importPath: './styles/CardBody',
+    props: {
+      children: {
+        type: "slot",
+        allowedComponents: ["Stack", "Image"],
+        defaultValue: [
+          {
+          type: "component",
+          name: "Image",
+          },
+          {
+            type: "component",
+            name: "Stack",
+            // props: {
+            //   children: {
+            //     type: "slot",
+            //     allowedComponents: ["Heading", "Text"],
+            //     defaultValue: [
+            //       {type: "component", name: "Heading"},
+            //       {type: "component", name: "Text"},
+            //       {type: "component", name: "Text"}
+            //     ]
+            //   }
+            // }
+            }
+          ]
+        }
+      }
+    }
+  )
+
+  registerComponent(CardFooter, {
+    name: 'CardFooter',
+    importPath: './styles/CardFooter',
+    props: {
+      children: {
+        type: "slot",
+        allowedComponents: ["Button"],
+        defaultValue: [{
+          type: "component",
+          name: "Button",
+          }]
+        }
+      }
+    }
+  )
 
   registerComponent(Documentation, {
     name: 'Documentation',
