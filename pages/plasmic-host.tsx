@@ -9,10 +9,9 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
 import CardOld from "../styles/CardOld";
-import CardFunLab from "../styles/CardFunLab";
-import CardFunLabTwo from "../styles/CardFunLabTwo";
-import CardFunLabTwoContent from "../styles/CardFunLabTwoContent";
-import CardFunLabTwoSubContent from "../styles/CardFunLabTwoSubContent";
+import CardCustom from "../styles/CardCustom";
+import CardCustomContent from "../styles/CardCustomContent";
+import CardCustomSubContent from "../styles/CardCustomSubContent";
 
 import { registerComponent } from "@plasmicapp/host";
 import {
@@ -119,75 +118,6 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     }
   )
 
-
-  registerComponent(CardFunLab, {
-    name: 'CardFunLab',
-    importPath: './styles/CardFunLab',
-    props: {
-      title: 'string',
-      description: 'string',
-      ButtonText: 'string',
-      imageSrc: 'string',
-      }
-    }
-  )
-
-  registerComponent(CardFunLabTwo, {
-    name: 'CardFunLabTwo',
-    importPath: './styles/CardFunLabTwo',
-    props: {
-      children: {
-          type: "slot",
-          allowedComponents: ["CardFunLabTwoContent"],
-          defaultValue: [{
-            type: "component",
-            name: "CardFunLabTwoContent",
-            props: {
-              imageSrc: "Image.png"
-            }
-          }],
-        },
-      }
-    }
-  )
-
-  registerComponent(CardFunLabTwoContent, {
-    name: 'CardFunLabTwoContent',
-    importPath: './styles/CardFunLabTwoContent',
-    parentComponentName: "CardFunLabTwo",
-    props: {
-      imageSrc: 'string',
-      children: {
-        type: "slot",
-        allowedComponents: ["CardFunLabTwoSubContent"],
-        defaultValue: [{
-          type: "component",
-          name: "CardFunLabTwoSubContent",
-          props: {
-            title: "We do Parties and Functions",
-            description: "Get ready for the craziest round of mini golf you've ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia.",
-            ButtonText: "Book online",
-          }
-        }],
-      },
-    }
-    }
-  )
-
-
-  registerComponent(CardFunLabTwoSubContent, {
-    name: 'CardFunLabTwoSubContent',
-    importPath: './styles/CardFunLabTwoSubContent',
-    parentComponentName: "CardFunLabTwoContent",
-    props: {
-      title: 'string',
-      description: 'string',
-      ButtonText: 'string',
-    }
-    }
-  )
-
-  
   registerComponent(Card, {
     name: 'Card',
     importPath: './styles/Card',
@@ -221,6 +151,8 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       }
     }
   )
+
+
 
   registerComponent(CardHeader, {
     name: 'CardHeader',
@@ -257,17 +189,15 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           {
             type: "component",
             name: "Stack",
-            // props: {
-            //   children: {
-            //     type: "slot",
-            //     allowedComponents: ["Heading", "Text"],
-            //     defaultValue: [
-            //       {type: "component", name: "Heading"},
-            //       {type: "component", name: "Text"},
-            //       {type: "component", name: "Text"}
-            //     ]
-            //   }
-            // }
+            props: {
+              children: 
+                [
+                  {type: "component", name: "Heading"},
+                  {type: "component", name: "Text"},
+                  {type: "component", name: "Text"}
+                ]
+              
+            }
             }
           ]
         }
@@ -290,6 +220,64 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       }
     }
   )
+  
+  registerComponent(CardCustom, {
+    name: 'CardCustom',
+    importPath: './styles/CardCustom',
+    props: {
+      padding: 'string',
+      margin:'string',
+        children: {
+          type: "slot",
+          allowedComponents: ["CardCustomContent"],
+          defaultValue: [{
+            type: "component",
+            name: "CardCustomContent",
+            props: {
+              imageSrc: "Image.png"
+            }
+          }],
+        },
+      }
+    }
+  )
+
+  registerComponent(CardCustomContent, {
+    name: 'CardCustomContent',
+    importPath: './styles/CardCustomContent',
+    parentComponentName: "CardCustom",
+    props: {
+      imageSrc: 'string',
+      children: {
+        type: "slot",
+        allowedComponents: ["CardCustomSubContent"],
+        defaultValue: [{
+          type: "component",
+          name: "CardCustomSubContent",
+          props: {
+            title: "We do Parties and Functions",
+            description: "Get ready for the craziest round of mini golf you've ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia.",
+            ButtonText: "Book online",
+          }
+        }],
+      },
+    }
+    }
+  )
+
+
+  registerComponent(CardCustomSubContent, {
+    name: 'CardCustomSubContent',
+    importPath: './styles/CardCustomSubContent',
+    parentComponentName: "CardCustomContent",
+    props: {
+      title: 'string',
+      description: 'string',
+      ButtonText: 'string',
+    }
+    }
+  )
+
 
   registerComponent(Documentation, {
     name: 'Documentation',
