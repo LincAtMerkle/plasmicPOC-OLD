@@ -16,6 +16,7 @@ import Switch from './components/switch'
 import IconButton from './components/iconbutton'
 import Heading from './components/heading'
 import Text from './components/text'
+import Card from './components/card'
 import getChakraSemanticTokens from '../getChakraSemanticTokens'
 import figmaTokensJson from '../figmaTokens.json'
 const semanticTokens = getChakraSemanticTokens(figmaTokensJson)
@@ -32,7 +33,8 @@ const overrides = {
     Switch,
     IconButton,
     Heading,
-    Text
+    Text,
+    Card
     // Other components go here
   }
 }
