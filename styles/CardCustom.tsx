@@ -6,22 +6,37 @@ import {
 
 export interface CardCustomProps {
   className?: string;
-  imageSrc?: string;
+  maxW?: string;
   padding?: string;
   margin?: string;
+  bg?: string;
+  borderRadius?: string;
+  overflow?: string;
+  imageSrc?: string;
   children: ReactNode;
 }
 
 export default function CardCustom({
-  children,
-  imageSrc = "Image.png",
   className,
-  padding ="0px",
-  margin="0px"
+  maxW="sm",
+  padding="0px",
+  margin="0px", 
+  bg="#F05933",
+  borderRadius="32px",
+  overflow='hidden',
+  imageSrc = "Image.png",
+  children,
 }:CardCustomProps) {  
   return (    
     <div className={className} >
-      <Card maxW='sm' padding={padding} margin={margin} bg="#F05933" borderRadius="32px" overflow='hidden'>
+      <Card 
+        maxW={maxW} 
+        padding={padding}
+        margin={margin} 
+        bg={bg} 
+        borderRadius={borderRadius} 
+        overflow={overflow}
+        >
         <Image src={imageSrc} />
         {children}
       </Card>

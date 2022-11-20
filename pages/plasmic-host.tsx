@@ -225,16 +225,21 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     name: 'CardCustom',
     importPath: './styles/CardCustom',
     props: {
+      maxW: 'string',
       padding: 'string',
-      margin:'string',
-        children: {
-          type: "slot",
-          allowedComponents: ["CardCustomContent"],
-          defaultValue: [{
-            type: "component",
-            name: "CardCustomContent",
-            props: {
-              imageSrc: "Image.png"
+      margin: 'string',
+      bg: 'string',
+      borderRadius: 'string',
+      overflow: 'string',
+      imageSrc: 'string',
+      children: {
+        type: "slot",
+        allowedComponents: ["CardCustomContent"],
+        defaultValue: [{
+          type: "component",
+          name: "CardCustomContent",
+          props: {
+            imageSrc: "Image.png"
             }
           }],
         },
@@ -247,7 +252,15 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     importPath: './styles/CardCustomContent',
     parentComponentName: "CardCustom",
     props: {
-      imageSrc: 'string',
+      mt: 'string',
+      spacing: 'string',
+      border: 'string',
+      borderRadius: 'string',
+      width: 'string',
+      fontFamily: 'string',
+      fontSize: 'string',
+      variant: 'string',
+      ButtonText: 'string',
       children: {
         type: "slot",
         allowedComponents: ["CardCustomSubContent"],
@@ -273,7 +286,15 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     props: {
       title: 'string',
       description: 'string',
-      ButtonText: 'string',
+      fontFamilyHeading: 'string',
+      fontSizeHeading: 'string',
+      fontWeightHeading: 'string',
+      colorHeading: 'string',
+      lineHeightHeading: 'string',
+      colorText: 'string',
+      fontFamilyText: 'string',
+      fontSizeText: 'string',
+      lineHeightText: 'string',
     }
     }
   )
