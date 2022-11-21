@@ -22,11 +22,11 @@ export default function CardCustom({
   maxW="sm",
   padding="0px",
   margin="0px", 
-  bg="#F05933",
-  borderRadius="32px",
-  overflow='hidden',
+  // bg="#F05933",
+  borderRadius = "32px",
+  overflow ='hidden',
   imageSrc = "Image.png",
-  variant="primary",
+  // variant = "filled",
   children,
 }:CardCustomProps) {  
   return (    
@@ -35,10 +35,10 @@ export default function CardCustom({
         maxW={maxW} 
         padding={padding}
         margin={margin} 
-        bg={bg} 
+        // bg={bg} 
         borderRadius={borderRadius} 
         overflow={overflow}
-        variant={variant}
+        // variant={variant}
         >
         <Image alt="alt" src={imageSrc} />
         {children}
