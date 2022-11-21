@@ -20,12 +20,11 @@
     "comp/tag",
     "comp/text",
     "comp/tooltip",
-    "comp/cardx",
+    "comp/card",
     "semantic/light",
     "semantic/dark",
     "Brand-ChakraDemo/light",
     "Brand-ChakraDemo/dark",
-    "comp/card",
     "Card_Copy"
   ]
 }
