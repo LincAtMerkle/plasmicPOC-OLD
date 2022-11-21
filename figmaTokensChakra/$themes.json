@@ -27,7 +27,6 @@
       "comp/tooltip": "enabled",
       "Brand-ChakraDemo/light": "disabled",
       "Brand-ChakraDemo/dark": "disabled",
-      "Card_Copy": "disabled",
       "comp/card": "disabled"
     },
     "$figmaStyleReferences": {}
@@ -60,7 +59,6 @@
       "comp/tooltip": "enabled",
       "Brand-ChakraDemo/light": "disabled",
       "Brand-ChakraDemo/dark": "disabled",
-      "Card_Copy": "disabled",
       "comp/card": "disabled"
     },
     "$figmaStyleReferences": {}

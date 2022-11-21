@@ -1,20 +1,20 @@
 {
-    "card": {
-      "primary": {
-        "default": {
-          "background-color": {
-            "value": "{semantic.color.actions.cta.default.background-color}",
-            "type": "color"
-          }
-        }
-      }
-    },
-    "semantic": {
-      "border-width": {
-        "inputs": {
-          "value": "{border-width.1}",
-          "type": "borderWidth"
+  "card": {
+    "primary": {
+      "default": {
+        "background-color": {
+          "value": "{semantic.color.actions.cta.default.background-color}",
+          "type": "color"
         }
       }
     }
+  },
+  "semantic": {
+    "border-width": {
+      "inputs": {
+        "value": "{border-width.1}",
+        "type": "borderWidth"
+      }
+    }
   }
+}
