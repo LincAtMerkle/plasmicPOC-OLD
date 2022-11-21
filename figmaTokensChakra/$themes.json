@@ -29,7 +29,7 @@
       "Brand-ChakraDemo/dark": "disabled",
       "comp/card": "disabled",
       "Card_Copy": "disabled",
-      "comp/Cardx": "disabled"
+      "comp/cardx": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -63,7 +63,7 @@
       "Brand-ChakraDemo/dark": "disabled",
       "comp/card": "disabled",
       "Card_Copy": "disabled",
-      "comp/Cardx": "disabled"
+      "comp/cardx": "disabled"
     },
     "$figmaStyleReferences": {}
   }
