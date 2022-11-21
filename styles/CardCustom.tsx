@@ -13,6 +13,7 @@ export interface CardCustomProps {
   borderRadius?: string;
   overflow?: string;
   imageSrc?: string;
+  variant?: string;
   children: ReactNode;
 }
 
@@ -25,21 +26,22 @@ export default function CardCustom({
   borderRadius="32px",
   overflow='hidden',
   imageSrc = "Image.png",
+  variant="primary",
   children,
 }:CardCustomProps) {  
   return (    
-    <div className={className} >
       <Card 
+        className={className}
         maxW={maxW} 
         padding={padding}
         margin={margin} 
         bg={bg} 
         borderRadius={borderRadius} 
         overflow={overflow}
+        variant={variant}
         >
-        <Image src={imageSrc} />
+        <Image alt="alt" src={imageSrc} />
         {children}
       </Card>
-    </div>
   );
 }

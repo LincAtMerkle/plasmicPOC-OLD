@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import {CardBody,Divider,CardFooter,Button, Stack,Image} from '@chakra-ui/react'
+import {CardBody,Divider,CardFooter,Button, Stack} from '@chakra-ui/react'
 
 
 export interface CardCustomContentProps {

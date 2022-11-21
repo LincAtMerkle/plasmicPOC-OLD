@@ -239,7 +239,6 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           type: "component",
           name: "CardCustomContent",
           props: {
-            imageSrc: "Image.png"
             }
           }],
         },
@@ -270,14 +269,12 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           props: {
             title: "We do Parties and Functions",
             description: "Get ready for the craziest round of mini golf you've ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia.",
-            ButtonText: "Book online",
           }
         }],
       },
     }
     }
   )
-
 
   registerComponent(CardCustomSubContent, {
     name: 'CardCustomSubContent',

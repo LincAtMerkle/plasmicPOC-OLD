@@ -1,7 +1,12 @@
 
 import { ComponentStyleConfig } from '@chakra-ui/react'
 
-const Card: ComponentStyleConfig = {
+const CardCustom: ComponentStyleConfig = {
+
+  baseStyle: {
+    bg: 'card-primary-default-background-color',
+  },
+  
   variants: {
     primary: {
       bg: 'card-primary-default-background-color',
@@ -9,10 +14,11 @@ const Card: ComponentStyleConfig = {
     },
   },
   defaultProps: {
-    variant: 'primary',
+    variant: 'fill',
     size: "md",
-    colorScheme: "blue"
+    colorScheme: "blue",
+    bg: "#ff00ff",
   }
 }
 
-export default Card
+export default CardCustom

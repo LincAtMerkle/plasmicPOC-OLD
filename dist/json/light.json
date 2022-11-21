@@ -704,7 +704,8 @@
       "tab-selected-solid-text-color": "#ffffff",
       "text-text-color": "#374151",
       "tooltip-text-color": "#f3f4f6",
-      "tooltip-background-color": "#9ca3af"
+      "tooltip-background-color": "#9ca3af",
+      "card-primary-default-background-color": "#0000ff"
     }
   },
   "radii": {
