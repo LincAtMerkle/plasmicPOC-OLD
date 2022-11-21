@@ -26,7 +26,10 @@
       "comp/text": "enabled",
       "comp/tooltip": "enabled",
       "Brand-ChakraDemo/light": "disabled",
-      "Brand-ChakraDemo/dark": "disabled"
+      "Brand-ChakraDemo/dark": "disabled",
+      "comp/card": "disabled",
+      "Card_Copy": "disabled",
+      "comp/Cardx": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -57,7 +60,10 @@
       "comp/text": "enabled",
       "comp/tooltip": "enabled",
       "Brand-ChakraDemo/light": "disabled",
-      "Brand-ChakraDemo/dark": "disabled"
+      "Brand-ChakraDemo/dark": "disabled",
+      "comp/card": "disabled",
+      "Card_Copy": "disabled",
+      "comp/Cardx": "disabled"
     },
     "$figmaStyleReferences": {}
   }
