@@ -23,7 +23,8 @@ const Button: ComponentStyleConfig = {
       fontSize: 'btn-xs-text-size'
     },
     sm: {
-      paddingLeft: 'btn-sm-padding-left',
+      // paddingLeft: 'btn-sm-padding-left',
+      paddingLeft: '100px',
       paddingRight: 'btn-sm-padding-right',
       height: 'btn-sm-height',
       fontSize: 'btn-sm-text-size'
@@ -49,7 +50,8 @@ const Button: ComponentStyleConfig = {
     // link: variantLink,
     // unstyled: variantUnstyled,
     primary: {
-      bg: 'btn-primary-default-background-color',
+      // bg: 'btn-primary-default-background-color',
+      bg: '#ff00ff',
       color: 'btn-primary-default-text-color',
       borderColor: 'btn-primary-default-border-color',
       iconColor:"btn-primary-default-icon-color",
@@ -132,8 +134,8 @@ const Button: ComponentStyleConfig = {
   // The default size and variant values
   defaultProps: {
     variant: 'primary',
-    size: "md",
-    colorScheme: "blue"
+    size: "sm",
+    // colorScheme: "red"
   }
 }
 

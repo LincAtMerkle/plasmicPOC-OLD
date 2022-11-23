@@ -120,15 +120,17 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
 
   registerComponent(Card, {
     name: 'Card',
-    importPath: './styles/Card',
+    importPath: '@chakra-ui/react',
     props: {
       size: {
         type: "choice",
         options: ["sm", "md", "lg"],
+        defaultValue: "lg",
         },
       variant: {
         type: "choice",
-        options: ["elevated", "outline", "filled", "unstyled"],
+        options: ["primary", "elevated", "outline", "filled", "unstyled"],
+        defaultValue: "primary",
         },
       children: {
         type: "slot",
@@ -156,7 +158,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
 
   registerComponent(CardHeader, {
     name: 'CardHeader',
-    importPath: './CardHeader',
+    importPath: '@chakra-ui/react',
     props: {
       size: {
         type: 'choice',
@@ -176,7 +178,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
 
   registerComponent(CardBody, {
     name: 'CardBody',
-    importPath: './styles/CardBody',
+    importPath: '@chakra-ui/react',
     props: {
       children: {
         type: "slot",
@@ -207,7 +209,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
 
   registerComponent(CardFooter, {
     name: 'CardFooter',
-    importPath: './styles/CardFooter',
+    importPath: '@chakra-ui/react',
     props: {
       children: {
         type: "slot",
@@ -232,6 +234,8 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       borderRadius: 'string',
       overflow: 'string',
       imageSrc: 'string',
+      variant: 'string',
+      // size: 'string',
       children: {
         type: "slot",
         allowedComponents: ["CardCustomContent"],
@@ -511,8 +515,8 @@ props: {
   },
   variant: {
     type: "choice",
-    options: ["sm", "primary", "secondary", "negative", "ghost", "outline", "solid", "link", "unstyled"],
-    defaultValue: "solid",
+    options: ["primary", "secondary", "negative", "ghost", "outline", "solid", "link", "unstyled"],
+    defaultValue: "primary",
   },
   colorScheme: {
     type: "choice",
