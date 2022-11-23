@@ -114,6 +114,11 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       size: 'string',
       Button1: 'string',
       Button2: 'string',
+      variant: {
+        type: "choice",
+        options: ["primary", "elevated", "outline", "filled", "unstyled"],
+        defaultValue: "primary",
+        },
       }
     }
   )
@@ -125,12 +130,12 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       size: {
         type: "choice",
         options: ["sm", "md", "lg"],
-        defaultValue: "lg",
+        // defaultValue: "lg",
         },
       variant: {
         type: "choice",
         options: ["primary", "elevated", "outline", "filled", "unstyled"],
-        defaultValue: "primary",
+        // defaultValue: "primary",
         },
       children: {
         type: "slot",

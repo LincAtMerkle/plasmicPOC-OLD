@@ -23,8 +23,8 @@ const Button: ComponentStyleConfig = {
       fontSize: 'btn-xs-text-size'
     },
     sm: {
-      // paddingLeft: 'btn-sm-padding-left',
-      paddingLeft: '100px',
+      paddingLeft: 'btn-sm-padding-left',
+      // paddingLeft: '100px',
       paddingRight: 'btn-sm-padding-right',
       height: 'btn-sm-height',
       fontSize: 'btn-sm-text-size'
@@ -37,6 +37,7 @@ const Button: ComponentStyleConfig = {
     },
     lg: {
       paddingLeft: 'btn-lg-padding-left',
+      // paddingLeft: '200px',
       paddingRight: 'btn-lg-padding-right',
       height: 'btn-lg-height',
       fontSize: 'btn-lg-text-size'
@@ -134,7 +135,7 @@ const Button: ComponentStyleConfig = {
   // The default size and variant values
   defaultProps: {
     variant: 'primary',
-    size: "sm",
+    size: "lg",
     // colorScheme: "red"
   }
 }

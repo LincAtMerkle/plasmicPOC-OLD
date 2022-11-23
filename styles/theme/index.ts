@@ -1,5 +1,19 @@
 // theme/index.js
+import { theme as proTheme } from '@chakra-ui/pro-theme'
 import { extendTheme } from '@chakra-ui/react'
+
+export const theme = extendTheme(
+  {
+    colors: { ...proTheme.colors, brand: proTheme.colors.purple },
+  },
+  {
+    fonts: {
+      heading: "'SignPainter HouseSlant','Albert Sans','Fira CodeVariable', -apple-system, system-ui, sans-serif",
+      body: "'Fira CodeVariable', -apple-system, system-ui, sans-serif",
+    },
+  },
+  proTheme,
+)
 
 // Global style overrides
 import styles from './styles'
@@ -17,6 +31,7 @@ import IconButton from './components/iconbutton'
 import Heading from './components/heading'
 import Text from './components/text'
 import Card from './components/card'
+import CardOld from './components/cardOld'
 import getChakraSemanticTokens from '../getChakraSemanticTokens'
 import figmaTokensJson from '../figmaTokens.json'
 const semanticTokens = getChakraSemanticTokens(figmaTokensJson)
@@ -34,7 +49,8 @@ const overrides = {
     IconButton,
     Heading,
     Text,
-    Card
+    Card,
+    CardOld
     // Other components go here
   }
 }

@@ -2,10 +2,9 @@
 // This function creates a set of function that helps us create multipart component styles.
 // const helpers = createMultiStyleConfigHelpers(['Card'])
 
-import { defineStyleConfig } from "@chakra-ui/system"
+import { ComponentStyleConfig } from '@chakra-ui/react'
 
-const Card  = {
-  
+const CardOld: ComponentStyleConfig = {
   baseStyle: {
     // fontWeight: 'btn-font-weight',
     // width: 'auto',
@@ -15,6 +14,7 @@ const Card  = {
     // borderStyle: 'solid',
     // display: 'flex',
     // flexDirection: 'column',
+    bg: "blue"
   },
   sizes: {
     sm: {
@@ -36,7 +36,7 @@ const Card  = {
   variants: {
     primary: {
       // bg: 'card-primary-default-background-color',
-      // bg: '#ff00ff',
+      bg: '#ff00ff',
       // color: 'card-primary-default-text-color',
       color: '#ffff00',
       size: "lg",
@@ -49,10 +49,10 @@ const Card  = {
     },
   },
   defaultProps: {
-    variant: 'unstyled',
+    variant: 'primary',
     size: "lg",
     // bg: 'lime',
   }
 }
 
-export default Card
+export default CardOld

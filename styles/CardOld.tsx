@@ -1,74 +1,75 @@
+import { ReactNode } from 'react';
 import * as React from 'react'
 import {
   Box,
-  Button, 
-  ButtonProps,
-  Container,
-  HStack,
-  Icon,
-  Square,
-  Stack,
-  Text,
-  useColorModeValue,
+  Image, 
+  Button
 } from '@chakra-ui/react'
-import { FiFileText } from 'react-icons/fi'
+
+export interface CardOldProps {
+  className?: string;
+  bg?: string;
+  imageUrl?: string;
+  title?: string;
+  description?: string;
+  mt?: string;
+  spacing?: string;
+  border?: string;
+  borderRadius?: string;
+  width?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  variant?: string;
+  buttonText?: string;
+  children: ReactNode;
+}
 
 
-// export default function Card(props: ButtonProps, {className}: { className?: string }) {
-export default function CardOld({ className, title, description, file, size, Button1, Button2 }) {
+export default function CardOld({
+  className,
+  bg = "lime",
+  imageUrl = 'Image.png',
+  title = 'We do Parties and Functions',
+  description = 'Get ready for the craziest round of mini golf youve ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia',
+  mt = '6',
+  spacing = '3',
+  border = "none",
+  borderRadius = "32px",
+  width = "136px",
+  fontFamily = "SignPainter HouseSlant",
+  fontSize = "20px",
+  variant = "primary",
+  buttonText = "Book online",
 
-  //@ts-ignore
-  CardOld.defaultProps = {
-    title: "title",
-    description: "description",
-    file: "file",
-    size: "size",
-    Button1: "Button1",
-    Button2: "Button2",
-  }
-  
-    return (    
-      <div className={className} >
-    <Box as="section" py={{ base: '4', md: '8' }}>
-    <Container maxW="3xl">
-      <Box
-        bg="bg-surface"
-        boxShadow={useColorModeValue('sm', 'sm-dark')}
-        borderRadius="lg"
-        p={{ base: '4', md: '6' }}
-      >
-        <Stack spacing="5">
-        <Stack spacing="1">
-            <Text fontSize="lg" fontWeight="medium">
-              {title}
-            </Text>
-            <Text fontSize="sm" color="muted">
-              {description}
-            </Text>
-          </Stack>
-          <Box borderWidth={{ base: '0', md: '1px' }} p={{ base: '0', md: '4' }} borderRadius="lg">
-            <Stack justify="space-between" direction={{ base: 'column', md: 'row' }} spacing="5">
-              <HStack spacing="3">
-                <Square size="10" bg="bg-subtle" borderRadius="lg">
-                  <Icon as={FiFileText} boxSize="5" />
-                </Square>
-                <Box fontSize="sm">
-                  <Text color="empahsized" fontWeight="medium">
-                    {file}
-                  </Text>
-                  <Text color="muted">{size}</Text>
-                </Box>
-              </HStack>
-              <Stack spacing="3" direction={{ base: 'column-reverse', md: 'row' }}>
-                <Button variant="secondary">{Button1}</Button>
-                <Button variant="primary">{Button2}</Button>
-              </Stack>
-            </Stack>
+}:CardOldProps) {
+  return (
+    <div className={className}>
+      <Box bg={bg} maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+        <Image src={imageUrl} alt="alt" />
+        <Box p={mt}>
+          <Box
+            mt={mt}
+            fontWeight='semibold'
+            as='h4'
+            lineHeight='tight'
+            noOfLines={1}
+          >
+            {title}
           </Box>
-        </Stack>
+          <Box>
+            {description}
+          </Box>
+          <Button 
+            border={border} 
+            borderRadius={borderRadius} 
+            width={width} 
+            fontFamily={fontFamily} 
+            fontSize={fontSize} 
+            variant={variant}>
+            {buttonText}
+          </Button>
+        </Box>
       </Box>
-    </Container>
-  </Box>
-  </div>
-  );
+    </div>
+  )
 }
