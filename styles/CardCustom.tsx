@@ -27,7 +27,7 @@ export default function CardCustom({
   borderRadius = "32px",
   overflow ='hidden',
   imageSrc = "Image.png",
-  variant = "filled",
+  variant = "primary",
   size = "sm",
   children,
 }:CardCustomProps) {  

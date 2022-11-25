@@ -2,25 +2,29 @@
 // This function creates a set of function that helps us create multipart component styles.
 // const helpers = createMultiStyleConfigHelpers(['Card'])
 
-import { ComponentStyleConfig } from '@chakra-ui/react'
+// import { ComponentStyleConfig } from '@chakra-ui/react'
 
-const CardOld: ComponentStyleConfig = {
+// const CardBox: ComponentStyleConfig = {
+import { defineStyleConfig } from "@chakra-ui/system"
+
+const CardBox  = {
+
   baseStyle: {
-    // fontWeight: 'btn-font-weight',
-    // width: 'auto',
-    // borderRadius: 'btn-border-radius',
-    // fontFamily: 'btn-font-family',
-    // border: 'btn-border-width',
-    // borderStyle: 'solid',
-    // display: 'flex',
-    // flexDirection: 'column',
+    fontWeight: 'btn-font-weight',
+    width: 'auto',
+    borderRadius: 'btn-border-radius',
+    fontFamily: 'btn-font-family',
+    border: 'btn-border-width',
+    borderStyle: 'solid',
+    display: 'flex',
+    flexDirection: 'column',
     bg: "blue"
   },
   sizes: {
     sm: {
       // fontSize: 'sm',
-      px: 100, // <-- px is short for paddingLeft and paddingRight
-      py: 100, // <-- py is short for paddingTop and paddingBottom
+      px: 1, // <-- px is short for paddingLeft and paddingRight
+      py: 1, // <-- py is short for paddingTop and paddingBottom
       },
     md: {
       fontSize: 'md',
@@ -35,24 +39,24 @@ const CardOld: ComponentStyleConfig = {
     },
   variants: {
     primary: {
-      // bg: 'card-primary-default-background-color',
-      bg: '#ff00ff',
+      bg: 'card-primary-default-background-color',
+      // bg: '#ff00ff',
       // color: 'card-primary-default-text-color',
       color: '#ffff00',
       size: "lg",
     },
     outline: {
       // bg: 'card-primary-default-background-color',
-      bg: 'red',
+      bg: 'blue',
       // color: 'card-primary-default-text-color',
       color: '#ffff00',
     },
   },
   defaultProps: {
-    variant: 'primary',
-    size: "lg",
+    variant: 'outline',
+    size: "sm",
     // bg: 'lime',
   }
 }
 
-export default CardOld
+export default CardBox

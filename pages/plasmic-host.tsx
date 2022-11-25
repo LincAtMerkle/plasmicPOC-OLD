@@ -8,7 +8,7 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // How do I import this? Was it there in Esthers code?
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
-import CardOld from "../styles/CardOld";
+import CardBox from "../styles/CardBox";
 import CardCustom from "../styles/CardCustom";
 import CardCustomContent from "../styles/CardCustomContent";
 import CardCustomSubContent from "../styles/CardCustomSubContent";
@@ -104,9 +104,9 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   }
       
 
-  registerComponent(CardOld, {
-    name: 'CardOld',
-    importPath: './styles/CardOld',
+  registerComponent(CardBox, {
+    name: 'CardBox',
+    importPath: './styles/CardBox',
     props: {
       title: 'string',
       description: 'string',

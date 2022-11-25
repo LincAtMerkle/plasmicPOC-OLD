@@ -7,6 +7,9 @@ import { defineStyleConfig } from "@chakra-ui/system"
 const Card  = {
   
   baseStyle: {
+    container: {
+      bg: 'lime',
+    }
     // fontWeight: 'btn-font-weight',
     // width: 'auto',
     // borderRadius: 'btn-border-radius',
@@ -17,6 +20,7 @@ const Card  = {
     // flexDirection: 'column',
   },
   sizes: {
+      bg: 'red',
     sm: {
       // fontSize: 'sm',
       px: 100, // <-- px is short for paddingLeft and paddingRight
@@ -35,11 +39,11 @@ const Card  = {
     },
   variants: {
     primary: {
-      // bg: 'card-primary-default-background-color',
-      // bg: '#ff00ff',
-      // color: 'card-primary-default-text-color',
-      color: '#ffff00',
-      size: "lg",
+      container: {
+        bg: 'card-primary-default-background-color',
+        color: 'card-primary-default-text-color',
+        size: "lg",
+      },
     },
     outline: {
       // bg: 'card-primary-default-background-color',
@@ -49,8 +53,8 @@ const Card  = {
     },
   },
   defaultProps: {
-    variant: 'unstyled',
-    size: "lg",
+    variant: 'primary',
+    size: "sm",
     // bg: 'lime',
   }
 }
