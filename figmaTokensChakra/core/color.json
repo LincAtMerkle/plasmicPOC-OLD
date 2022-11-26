@@ -546,7 +546,6 @@
         "type": "color"
       }
     },
-    // Can this be part of neutrals ?
     "B&W": {
       "black": {
         "value": "#000000",
