@@ -51,8 +51,8 @@ const Button: ComponentStyleConfig = {
     // link: variantLink,
     // unstyled: variantUnstyled,
     primary: {
-      // bg: 'btn-primary-default-background-color',
-      bg: '#ff00ff',
+      bg: 'btn-primary-default-background-color',
+      // bg: '#ff00ff',
       color: 'btn-primary-default-text-color',
       borderColor: 'btn-primary-default-border-color',
       iconColor:"btn-primary-default-icon-color",
@@ -64,7 +64,8 @@ const Button: ComponentStyleConfig = {
       },
       _active: {
         bg: 'btn-primary-active-background-color',
-        color: 'btn-primary-active-text-color',
+        // color: 'btn-primary-active-text-color',
+        color: '#fff',
         borderColor: 'btn-primary-active-border-color',
         iconColor:'btn-primary-active-icon-color'
       },

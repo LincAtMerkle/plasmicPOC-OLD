@@ -41,8 +41,6 @@ const Card  = {
     primary: {
       container: {
         bg: 'card-primary-default-background-color',
-        color: 'card-primary-default-text-color',
-        size: "lg",
       },
     },
     outline: {
