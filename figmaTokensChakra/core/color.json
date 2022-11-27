@@ -71,5 +71,255 @@
         "type": "color"
       }
     }
+  },
+  "saturation": {
+    "multipler": {
+      "lg": {
+        "value": "99",
+        "type": "variables"
+      },
+      "md": {
+        "value": "80",
+        "type": "variables"
+      },
+      "sm": {
+        "value": "50",
+        "type": "variables"
+      },
+      "0,5": {
+        "value": "0.5",
+        "type": "variables"
+      }
+    },
+    "sm": {
+      "inL10": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.10}",
+        "type": "variables"
+      },
+      "inL20": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.20}",
+        "type": "variables"
+      },
+      "inL30": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.30}",
+        "type": "variables"
+      },
+      "inL40": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.40}",
+        "type": "variables"
+      },
+      "inL50": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.50}",
+        "type": "variables"
+      },
+      "inL60": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.60}",
+        "type": "variables"
+      },
+      "inL70": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.70}",
+        "type": "variables"
+      },
+      "inL80": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.80}",
+        "type": "variables"
+      },
+      "inL90": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.90}",
+        "type": "variables"
+      },
+      "inL95": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.95}",
+        "type": "variables"
+      },
+      "inL99": {
+        "value": "{saturation.multipler.sm} - {saturation.ratio.99}",
+        "type": "variables"
+      }
+    },
+    "md": {
+      "inL10": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.10}",
+        "type": "variables"
+      },
+      "inL20": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.20}",
+        "type": "variables"
+      },
+      "inL30": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.30}",
+        "type": "variables"
+      },
+      "inL40": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.40}",
+        "type": "variables"
+      },
+      "inL50": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.50}",
+        "type": "variables"
+      },
+      "inL60": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.60}",
+        "type": "variables"
+      },
+      "inL70": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.70}",
+        "type": "variables"
+      },
+      "inL80": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.80}",
+        "type": "variables"
+      },
+      "inL90": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.90}",
+        "type": "variables"
+      },
+      "inL95": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.95}",
+        "type": "variables"
+      },
+      "inL99": {
+        "value": "{saturation.multipler.md} - {saturation.ratio.99}",
+        "type": "variables"
+      }
+    },
+    "lg": {
+      "inL10": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.10}",
+        "type": "variables"
+      },
+      "inL20": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.20}",
+        "type": "variables"
+      },
+      "inL30": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.30}",
+        "type": "variables"
+      },
+      "inL40": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.40}",
+        "type": "variables"
+      },
+      "inL50": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.50}",
+        "type": "variables"
+      },
+      "inL60": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.60}",
+        "type": "variables"
+      },
+      "inL70": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.70}",
+        "type": "variables"
+      },
+      "inL80": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.80}",
+        "type": "variables"
+      },
+      "inL90": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.90}",
+        "type": "variables"
+      },
+      "inL95": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.95}",
+        "type": "variables"
+      },
+      "inL99": {
+        "value": "{saturation.multipler.lg} - {saturation.ratio.99}",
+        "type": "variables"
+      }
+    },
+    "ratio": {
+      "10": {
+        "value": "{lightness.10} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "20": {
+        "value": "{lightness.20} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "30": {
+        "value": "{lightness.30} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "40": {
+        "value": "{lightness.40} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "50": {
+        "value": "{lightness.50} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "60": {
+        "value": "{lightness.60} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "70": {
+        "value": "{lightness.70} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "80": {
+        "value": "{lightness.80} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "90": {
+        "value": "{lightness.90} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "95": {
+        "value": "{lightness.95} * {saturation.multipler.0,5}",
+        "type": "variables"
+      },
+      "99": {
+        "value": "{lightness.99} * {saturation.multipler.0,5}",
+        "type": "variables"
+      }
+    },
+  "lightness": {
+    "10": {
+      "value": "10",
+      "type": "variables"
+    },
+    "20": {
+      "value": "20",
+      "type": "variables"
+    },
+    "30": {
+      "value": "30",
+      "type": "variables"
+    },
+    "40": {
+      "value": "40",
+      "type": "variables"
+    },
+    "50": {
+      "value": "50",
+      "type": "variables"
+    },
+    "60": {
+      "value": "60",
+      "type": "variables"
+    },
+    "70": {
+      "value": "70",
+      "type": "variables"
+    },
+    "80": {
+      "value": "80",
+      "type": "variables"
+    },
+    "90": {
+      "value": "90",
+      "type": "variables"
+    },
+    "95": {
+      "value": "95",
+      "type": "variables"
+    },
+    "99": {
+      "value": "99",
+      "type": "variables"
+    }
   }
+}
 }

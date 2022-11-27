@@ -1,0 +1,192 @@
+{
+    "Primary": {
+      "navy": {
+        "value": "#222b5c",
+        "type": "color"
+      },
+      "teal": {
+        "value": "#28acaf",
+        "type": "color"
+      },
+      "orange": {
+        "value": "#f15a34",
+        "type": "color"
+      }
+    },
+    "Secondary": {
+      "yellow": {
+        "value": "#ffc20e",
+        "type": "color"
+      }
+    },
+    "Palette": {
+      "Navy": {
+        "navy5": {
+          "value": "hsla(255,0%,100%,0.01)",
+          "type": "color"
+        },
+        "navy10": {
+          "value": "#e9eaef",
+          "type": "color"
+        },
+        "navy20": {
+          "value": "#d3d5de",
+          "type": "color"
+        },
+        "navy30": {
+          "value": "#bdbfce",
+          "type": "color"
+        },
+        "navy40": {
+          "value": "#a7aabe",
+          "type": "color"
+        },
+        "navy50": {
+          "value": "#9095ad",
+          "type": "color"
+        },
+        "navy60": {
+          "value": "#7a809d",
+          "type": "color"
+        },
+        "navy70": {
+          "value": "#646b8d",
+          "type": "color"
+        },
+        "navy80": {
+          "value": "#4e557d",
+          "type": "color"
+        },
+        "navy90": {
+          "value": "#38406c",
+          "type": "color"
+        }
+      },
+      "Teal": {
+        "teal5": {
+          "value": "#f4fbfb",
+          "type": "color"
+        },
+        "teal10": {
+          "value": "#e9f7f7",
+          "type": "color"
+        },
+        "teal20": {
+          "value": "#d4eeef",
+          "type": "color"
+        },
+        "teal30": {
+          "value": "#bee6e7",
+          "type": "color"
+        },
+        "teal40": {
+          "value": "#a9dedf",
+          "type": "color"
+        },
+        "teal50": {
+          "value": "#93d6d7",
+          "type": "color"
+        },
+        "teal60": {
+          "value": "#7ecdcf",
+          "type": "color"
+        },
+        "teal70": {
+          "value": "#68c5c7",
+          "type": "color"
+        },
+        "teal80": {
+          "value": "#53bdbf",
+          "type": "color"
+        },
+        "teal90": {
+          "value": "#3eb4b7",
+          "type": "color"
+        }
+      },
+      "Orange": {
+        "orange5": {
+          "value": "#fef7f5",
+          "type": "color"
+        },
+        "orange10": {
+          "value": "#feefeb",
+          "type": "color"
+        },
+        "orange20": {
+          "value": "#fcded6",
+          "type": "color"
+        },
+        "orange30": {
+          "value": "#fbcdc2",
+          "type": "color"
+        },
+        "orange40": {
+          "value": "#f9bdae",
+          "type": "color"
+        },
+        "orange50": {
+          "value": "#f8ac99",
+          "type": "color"
+        },
+        "orange60": {
+          "value": "#f79c85",
+          "type": "color"
+        },
+        "orange70": {
+          "value": "#f58b71",
+          "type": "color"
+        },
+        "orange80": {
+          "value": "#f47b5d",
+          "type": "color"
+        },
+        "orange90": {
+          "value": "#f26a48",
+          "type": "color"
+        }
+      },
+      "Yellow": {
+        "yellow5": {
+          "value": "#fffcf3",
+          "type": "color"
+        },
+        "yellow10": {
+          "value": "#fff9e7",
+          "type": "color"
+        },
+        "yellow20": {
+          "value": "#fff3cf",
+          "type": "color"
+        },
+        "yellow30": {
+          "value": "#ffedb7",
+          "type": "color"
+        },
+        "yellow40": {
+          "value": "#ffe79f",
+          "type": "color"
+        },
+        "yellow50": {
+          "value": "#ffe086",
+          "type": "color"
+        },
+        "yellow60": {
+          "value": "#ffda6e",
+          "type": "color"
+        },
+        "yellow70": {
+          "value": "#ffd557",
+          "type": "color"
+        },
+        "yellow80": {
+          "value": "#ffce3e",
+          "type": "color"
+        },
+        "yellow90": {
+          "value": "#ffc927",
+          "type": "color"
+        }
+      }
+    }
+  }
