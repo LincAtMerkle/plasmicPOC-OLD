@@ -1,882 +1,882 @@
 {
-    "source": {
-      "gray": {
-        "value": "210",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+  "source": {
+    "gray": {
+      "value": "210",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "red": {
+      "value": "10",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "orange": {
+      "value": "25",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "yellow": {
+      "value": "50",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "green": {
+      "value": "130",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "cyan": {
+      "value": "180",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "blue": {
+      "value": "210",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "purple": {
+      "value": "270",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "pink": {
+      "value": "320",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "neutral": {
+      "value": "360",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    }
+  },
+  "source-product": {
+    "brand-1": {
+      "value": "{source.blue}",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "brand-2": {
+      "value": "{source.cyan}",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "brand-3": {
+      "value": "{source.purple}",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    },
+    "brand-4": {
+      "value": "{source.orange}",
+      "type": "color",
+      "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+    }
+  },
+  "ref": {
+    "gray": {
+      "10": {
+        "value": "hsla({source.gray}, {saturation.sm.inL10}%, {lightness.10}%)",
+        "type": "color"
       },
-      "red": {
-        "value": "10",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "20": {
+        "value": "hsla({source.gray}, {saturation.sm.inL20}%, {lightness.20}%)",
+        "type": "color"
       },
-      "orange": {
-        "value": "25",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "30": {
+        "value": "hsla({source.gray}, {saturation.sm.inL30}%, {lightness.30}%)",
+        "type": "color"
       },
-      "yellow": {
-        "value": "50",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "40": {
+        "value": "hsla({source.gray}, {saturation.sm.inL40}%, {lightness.40}%)",
+        "type": "color"
       },
-      "green": {
-        "value": "130",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "50": {
+        "value": "hsla({source.gray}, {saturation.sm.inL50}%, {lightness.50}%)",
+        "type": "color"
       },
-      "cyan": {
-        "value": "180",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "60": {
+        "value": "hsla({source.gray}, {saturation.sm.inL60}%, {lightness.60}%)",
+        "type": "color"
       },
-      "blue": {
-        "value": "210",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "70": {
+        "value": "hsla({source.gray}, {saturation.sm.inL70}%, {lightness.70}%)",
+        "type": "color"
       },
-      "purple": {
-        "value": "270",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "80": {
+        "value": "hsla({source.gray}, {saturation.sm.inL80}%, {lightness.80}%)",
+        "type": "color"
       },
-      "pink": {
-        "value": "320",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "90": {
+        "value": "hsla({source.gray}, {saturation.sm.inL90}%, {lightness.90}%)",
+        "type": "color"
       },
-      "neutral": {
-        "value": "360",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+      "95": {
+        "value": "hsla({source.gray}, {saturation.sm.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.gray}, {saturation.sm.inL99}%, {lightness.99}%)",
+        "type": "color"
       }
     },
-    "source-product": {
+    "red": {
+      "10": {
+        "value": "hsla({source.red}, {saturation.md.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.red}, {saturation.md.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.red}, {saturation.md.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.red}, {saturation.md.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.red}, {saturation.md.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.red}, {saturation.md.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.red}, {saturation.md.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.red}, {saturation.md.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.red}, {saturation.md.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.red}, {saturation.md.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.red}, {saturation.md.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "orange": {
+      "10": {
+        "value": "hsla({source.orange}, {saturation.lg.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.orange}, {saturation.lg.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.orange}, {saturation.lg.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.orange}, {saturation.lg.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.orange}, {saturation.lg.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.orange}, {saturation.lg.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.orange}, {saturation.lg.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.orange}, {saturation.lg.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.orange}, {saturation.lg.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.orange}, {saturation.lg.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.orange}, {saturation.lg.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "yellow": {
+      "10": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.yellow}, {saturation.lg.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "green": {
+      "10": {
+        "value": "hsla({source.green}, {saturation.md.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.green}, {saturation.md.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.green}, {saturation.md.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.green}, {saturation.md.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.green}, {saturation.md.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.green}, {saturation.md.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.green}, {saturation.md.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.green}, {saturation.md.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.green}, {saturation.md.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.green}, {saturation.md.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.green}, {saturation.md.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "cyan": {
+      "10": {
+        "value": "hsla({source.cyan}, {saturation.md.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.cyan}, {saturation.md.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.cyan}, {saturation.md.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.cyan}, {saturation.md.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.cyan}, {saturation.md.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.cyan}, {saturation.md.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.cyan}, {saturation.md.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.cyan}, {saturation.md.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.cyan}, {saturation.md.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.cyan}, {saturation.md.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.cyan}, {saturation.md.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "blue": {
+      "10": {
+        "value": "hsla({source.blue}, {saturation.lg.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.blue}, {saturation.lg.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.blue}, {saturation.lg.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.blue}, {saturation.lg.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.blue}, {saturation.lg.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.blue}, {saturation.lg.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.blue}, {saturation.lg.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.blue}, {saturation.lg.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.blue}, {saturation.lg.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.blue}, {saturation.lg.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.blue}, {saturation.lg.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "purple": {
+      "10": {
+        "value": "hsla({source.purple}, {saturation.md.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.purple}, {saturation.md.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.purple}, {saturation.md.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.purple}, {saturation.md.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.purple}, {saturation.md.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.purple}, {saturation.md.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.purple}, {saturation.md.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.purple}, {saturation.md.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.purple}, {saturation.md.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.purple}, {saturation.md.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.purple}, {saturation.md.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "pink": {
+      "10": {
+        "value": "hsla({source.pink}, {saturation.md.inL10}%, {lightness.10}%)",
+        "type": "color"
+      },
+      "20": {
+        "value": "hsla({source.pink}, {saturation.md.inL20}%, {lightness.20}%)",
+        "type": "color"
+      },
+      "30": {
+        "value": "hsla({source.pink}, {saturation.md.inL30}%, {lightness.30}%)",
+        "type": "color"
+      },
+      "40": {
+        "value": "hsla({source.pink}, {saturation.md.inL40}%, {lightness.40}%)",
+        "type": "color"
+      },
+      "50": {
+        "value": "hsla({source.pink}, {saturation.md.inL50}%, {lightness.50}%)",
+        "type": "color"
+      },
+      "60": {
+        "value": "hsla({source.pink}, {saturation.md.inL60}%, {lightness.60}%)",
+        "type": "color"
+      },
+      "70": {
+        "value": "hsla({source.pink}, {saturation.md.inL70}%, {lightness.70}%)",
+        "type": "color"
+      },
+      "80": {
+        "value": "hsla({source.pink}, {saturation.md.inL80}%, {lightness.80}%)",
+        "type": "color"
+      },
+      "90": {
+        "value": "hsla({source.pink}, {saturation.md.inL90}%, {lightness.90}%)",
+        "type": "color"
+      },
+      "95": {
+        "value": "hsla({source.pink}, {saturation.md.inL95}%, {lightness.95}%)",
+        "type": "color"
+      },
+      "99": {
+        "value": "hsla({source.pink}, {saturation.md.inL99}%, {lightness.99}%)",
+        "type": "color"
+      }
+    },
+    "neutral": {
+      "black": {
+        "value": "hsla({source.neutral}, {saturation.md.inL10}%, 0%)",
+        "type": "color"
+      },
+      "white": {
+        "value": "hsla({source.neutral}, {saturation.md.inL10}%, 100%)",
+        "type": "color"
+      }
+    },
+    "product": {
       "brand-1": {
-        "value": "{source.blue}",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+        "primary": {
+          "10": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL10}%, {lightness.10}%)",
+            "type": "color"
+          },
+          "20": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL20}%, {lightness.20}%)",
+            "type": "color"
+          },
+          "30": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL30}%, {lightness.30}%)",
+            "type": "color"
+          },
+          "40": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-1}, {saturation.lg.inL99}%, {lightness.99}%)",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "10": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL10}%, {lightness.10}%)",
+            "type": "color"
+          },
+          "20": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL20}%, {lightness.20}%)",
+            "type": "color"
+          },
+          "30": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL30}%, {lightness.30}%)",
+            "type": "color"
+          },
+          "40": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-1}, {saturation.sm.inL99}%, {lightness.99}%)",
+            "type": "color"
+          }
+        }
       },
       "brand-2": {
-        "value": "{source.cyan}",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+        "primary": {
+          "10": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL10}%, {lightness.10}%)",
+            "type": "color"
+          },
+          "20": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL20}%, {lightness.20}%)",
+            "type": "color"
+          },
+          "30": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL30}%, {lightness.30}%)",
+            "type": "color"
+          },
+          "40": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-2}, {saturation.md.inL99}%, {lightness.99}%)",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "10": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL10}%, {lightness.10}%)",
+            "type": "color"
+          },
+          "20": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL20}%, {lightness.20}%)",
+            "type": "color"
+          },
+          "30": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL30}%, {lightness.30}%)",
+            "type": "color"
+          },
+          "40": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-2}, {saturation.sm.inL99}%, {lightness.99}%)",
+            "type": "color"
+          }
+        }
       },
       "brand-3": {
-        "value": "{source.purple}",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
+        "primary": {
+          "10": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL10}%, {lightness.10}%)",
+            "type": "color"
+          },
+          "20": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL20}%, {lightness.20}%)",
+            "type": "color"
+          },
+          "30": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL30}%, {lightness.30}%)",
+            "type": "color"
+          },
+          "40": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-3}, {saturation.md.inL99}%, {lightness.99}%)",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "10": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL10}%, {lightness.10}%)",
+            "type": "color"
+          },
+          "20": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL20}%, {lightness.20}%)",
+            "type": "color"
+          },
+          "30": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL30}%, {lightness.30}%)",
+            "type": "color"
+          },
+          "40": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-3}, {saturation.sm.inL99}%, {lightness.99}%)",
+            "type": "color"
+          }
+        }
       },
       "brand-4": {
-        "value": "{source.orange}",
-        "type": "color",
-        "description": "⛔ not used in projects. It hue and Saturation source for \"ref.color\""
-      }
-    },
-    "ref": {
-      "gray": {
-        "10": {
-          "value": "hsla({source.gray}, {saturation.sm.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.gray}, {saturation.sm.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.gray}, {saturation.sm.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.gray}, {saturation.sm.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.gray}, {saturation.sm.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.gray}, {saturation.sm.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.gray}, {saturation.sm.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.gray}, {saturation.sm.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.gray}, {saturation.sm.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.gray}, {saturation.sm.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.gray}, {saturation.sm.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "red": {
-        "10": {
-          "value": "hsla({source.red}, {saturation.md.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.red}, {saturation.md.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.red}, {saturation.md.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.red}, {saturation.md.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.red}, {saturation.md.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.red}, {saturation.md.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.red}, {saturation.md.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.red}, {saturation.md.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.red}, {saturation.md.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.red}, {saturation.md.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.red}, {saturation.md.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "orange": {
-        "10": {
-          "value": "hsla({source.orange}, {saturation.lg.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.orange}, {saturation.lg.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.orange}, {saturation.lg.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.orange}, {saturation.lg.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.orange}, {saturation.lg.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.orange}, {saturation.lg.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.orange}, {saturation.lg.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.orange}, {saturation.lg.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.orange}, {saturation.lg.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.orange}, {saturation.lg.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.orange}, {saturation.lg.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "yellow": {
-        "10": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.yellow}, {saturation.lg.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "green": {
-        "10": {
-          "value": "hsla({source.green}, {saturation.md.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.green}, {saturation.md.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.green}, {saturation.md.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.green}, {saturation.md.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.green}, {saturation.md.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.green}, {saturation.md.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.green}, {saturation.md.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.green}, {saturation.md.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.green}, {saturation.md.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.green}, {saturation.md.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.green}, {saturation.md.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "cyan": {
-        "10": {
-          "value": "hsla({source.cyan}, {saturation.md.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.cyan}, {saturation.md.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.cyan}, {saturation.md.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.cyan}, {saturation.md.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.cyan}, {saturation.md.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.cyan}, {saturation.md.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.cyan}, {saturation.md.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.cyan}, {saturation.md.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.cyan}, {saturation.md.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.cyan}, {saturation.md.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.cyan}, {saturation.md.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "blue": {
-        "10": {
-          "value": "hsla({source.blue}, {saturation.lg.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.blue}, {saturation.lg.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.blue}, {saturation.lg.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.blue}, {saturation.lg.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.blue}, {saturation.lg.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.blue}, {saturation.lg.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.blue}, {saturation.lg.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.blue}, {saturation.lg.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.blue}, {saturation.lg.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.blue}, {saturation.lg.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.blue}, {saturation.lg.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "purple": {
-        "10": {
-          "value": "hsla({source.purple}, {saturation.md.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.purple}, {saturation.md.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.purple}, {saturation.md.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.purple}, {saturation.md.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.purple}, {saturation.md.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.purple}, {saturation.md.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.purple}, {saturation.md.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.purple}, {saturation.md.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.purple}, {saturation.md.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.purple}, {saturation.md.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.purple}, {saturation.md.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "pink": {
-        "10": {
-          "value": "hsla({source.pink}, {saturation.md.inL10}%, {lightness.10}%)",
-          "type": "color"
-        },
-        "20": {
-          "value": "hsla({source.pink}, {saturation.md.inL20}%, {lightness.20}%)",
-          "type": "color"
-        },
-        "30": {
-          "value": "hsla({source.pink}, {saturation.md.inL30}%, {lightness.30}%)",
-          "type": "color"
-        },
-        "40": {
-          "value": "hsla({source.pink}, {saturation.md.inL40}%, {lightness.40}%)",
-          "type": "color"
-        },
-        "50": {
-          "value": "hsla({source.pink}, {saturation.md.inL50}%, {lightness.50}%)",
-          "type": "color"
-        },
-        "60": {
-          "value": "hsla({source.pink}, {saturation.md.inL60}%, {lightness.60}%)",
-          "type": "color"
-        },
-        "70": {
-          "value": "hsla({source.pink}, {saturation.md.inL70}%, {lightness.70}%)",
-          "type": "color"
-        },
-        "80": {
-          "value": "hsla({source.pink}, {saturation.md.inL80}%, {lightness.80}%)",
-          "type": "color"
-        },
-        "90": {
-          "value": "hsla({source.pink}, {saturation.md.inL90}%, {lightness.90}%)",
-          "type": "color"
-        },
-        "95": {
-          "value": "hsla({source.pink}, {saturation.md.inL95}%, {lightness.95}%)",
-          "type": "color"
-        },
-        "99": {
-          "value": "hsla({source.pink}, {saturation.md.inL99}%, {lightness.99}%)",
-          "type": "color"
-        }
-      },
-      "neutral": {
-        "black": {
-          "value": "hsla({source.neutral}, {saturation.md.inL10}%, 0%)",
-          "type": "color"
-        },
-        "white": {
-          "value": "hsla({source.neutral}, {saturation.md.inL10}%, 100%)",
-          "type": "color"
-        }
-      },
-      "product": {
-        "brand-1": {
-          "primary": {
-            "10": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-1}, {saturation.lg.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
+        "primary": {
+          "10": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL10}%, {lightness.10}%)",
+            "type": "color"
           },
-          "secondary": {
-            "10": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-1}, {saturation.sm.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
+          "20": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL20}%, {lightness.20}%)",
+            "type": "color"
+          },
+          "30": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL30}%, {lightness.30}%)",
+            "type": "color"
+          },
+          "40": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-4}, {saturation.lg.inL99}%, {lightness.99}%)",
+            "type": "color"
           }
         },
-        "brand-2": {
-          "primary": {
-            "10": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-2}, {saturation.md.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
+        "secondary": {
+          "10": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL10}%, {lightness.10}%)",
+            "type": "color"
           },
-          "secondary": {
-            "10": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-2}, {saturation.sm.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
-          }
-        },
-        "brand-3": {
-          "primary": {
-            "10": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-3}, {saturation.md.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
+          "20": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL20}%, {lightness.20}%)",
+            "type": "color"
           },
-          "secondary": {
-            "10": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-3}, {saturation.sm.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
-          }
-        },
-        "brand-4": {
-          "primary": {
-            "10": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-4}, {saturation.lg.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
+          "30": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL30}%, {lightness.30}%)",
+            "type": "color"
           },
-          "secondary": {
-            "10": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL10}%, {lightness.10}%)",
-              "type": "color"
-            },
-            "20": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL20}%, {lightness.20}%)",
-              "type": "color"
-            },
-            "30": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL30}%, {lightness.30}%)",
-              "type": "color"
-            },
-            "40": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL40}%, {lightness.40}%)",
-              "type": "color"
-            },
-            "50": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL50}%, {lightness.50}%)",
-              "type": "color"
-            },
-            "60": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL60}%, {lightness.60}%)",
-              "type": "color"
-            },
-            "70": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL70}%, {lightness.70}%)",
-              "type": "color"
-            },
-            "80": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL80}%, {lightness.80}%)",
-              "type": "color"
-            },
-            "90": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL90}%, {lightness.90}%)",
-              "type": "color"
-            },
-            "95": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL95}%, {lightness.95}%)",
-              "type": "color"
-            },
-            "99": {
-              "value": "hsla({source-product.brand-4}, {saturation.sm.inL99}%, {lightness.99}%)",
-              "type": "color"
-            }
+          "40": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL40}%, {lightness.40}%)",
+            "type": "color"
+          },
+          "50": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL50}%, {lightness.50}%)",
+            "type": "color"
+          },
+          "60": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL60}%, {lightness.60}%)",
+            "type": "color"
+          },
+          "70": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL70}%, {lightness.70}%)",
+            "type": "color"
+          },
+          "80": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL80}%, {lightness.80}%)",
+            "type": "color"
+          },
+          "90": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL90}%, {lightness.90}%)",
+            "type": "color"
+          },
+          "95": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL95}%, {lightness.95}%)",
+            "type": "color"
+          },
+          "99": {
+            "value": "hsla({source-product.brand-4}, {saturation.sm.inL99}%, {lightness.99}%)",
+            "type": "color"
           }
         }
       }
-    },
+    }
+  },
   "saturation": {
     "multipler": {
       "lg": {
@@ -1079,7 +1079,8 @@
         "value": "{lightness.99} * {saturation.multipler.0,5}",
         "type": "variables"
       }
-    },
+    }
+  },
   "lightness": {
     "10": {
       "value": "10",
@@ -1126,5 +1127,4 @@
       "type": "variables"
     }
   }
-}
 }
