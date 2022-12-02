@@ -1,5 +1,5 @@
 {
-  "btn": {
+  "card": {
     "border-radius": {
       "value": "{semantic.border-radius.actions}",
       "type": "borderRadius"
