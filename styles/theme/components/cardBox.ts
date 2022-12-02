@@ -2,12 +2,11 @@
 // This function creates a set of function that helps us create multipart component styles.
 // const helpers = createMultiStyleConfigHelpers(['Card'])
 
-// import { ComponentStyleConfig } from '@chakra-ui/react'
+// import { defineStyleConfig } from "@chakra-ui/system"
 
-// const CardBox: ComponentStyleConfig = {
-import { defineStyleConfig } from "@chakra-ui/system"
+import { ComponentStyleConfig } from '@chakra-ui/react'
 
-const CardBox  = {
+const CardBox: ComponentStyleConfig = {
 
   baseStyle: {
     fontWeight: 'btn-font-weight',
@@ -18,7 +17,7 @@ const CardBox  = {
     borderStyle: 'solid',
     display: 'flex',
     flexDirection: 'column',
-    bg: "blue"
+    // bg: "blue"
   },
   sizes: {
     sm: {
@@ -40,7 +39,9 @@ const CardBox  = {
   variants: {
     primary: {
       bg: 'card-primary-default-background-color',
-      // bg: '#ff00ff',
+      // bg: '#ff00ff', // THIS WOrKS SO WHY NOT THE CLASS NAME
+
+
       // color: 'card-primary-default-text-color',
       color: '#ffff00',
       size: "lg",
@@ -53,7 +54,7 @@ const CardBox  = {
     },
   },
   defaultProps: {
-    variant: 'outline',
+    variant: 'primary',
     size: "sm",
     // bg: 'lime',
   }

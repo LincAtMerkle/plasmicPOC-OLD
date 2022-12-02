@@ -1,19 +1,19 @@
 // theme/index.js
-import { theme as proTheme } from '@chakra-ui/pro-theme'
+// import { theme as proTheme } from '@chakra-ui/pro-theme'
 import { extendTheme } from '@chakra-ui/react'
 
-export const theme = extendTheme(
-  {
-    colors: { ...proTheme.colors, brand: proTheme.colors.purple },
-  },
-  {
-    fonts: {
-      heading: "'SignPainter HouseSlant','Albert Sans','Fira CodeVariable', -apple-system, system-ui, sans-serif",
-      body: "'Fira CodeVariable', -apple-system, system-ui, sans-serif",
-    },
-  },
-  proTheme,
-)
+// export const theme = extendTheme(
+//   {
+//     colors: { ...proTheme.colors, brand: proTheme.colors.purple },
+//   },
+//   {
+//     fonts: {
+//       heading: "'SignPainter HouseSlant','Albert Sans','Fira CodeVariable', -apple-system, system-ui, sans-serif",
+//       body: "'Fira CodeVariable', -apple-system, system-ui, sans-serif",
+//     },
+//   },
+//   proTheme,
+// )
 
 // Global style overrides
 import styles from './styles'
