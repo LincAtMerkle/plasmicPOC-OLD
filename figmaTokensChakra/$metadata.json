@@ -13,7 +13,8 @@
     "comp/card",
     "semantic/light",
     "semantic/dark",
-    "Brand-ChakraDemo/light",
-    "Brand-ChakraDemo/dark"
+    "Brands/brandA",
+    "Brands/dark",
+    "Brands/light"
   ]
 }

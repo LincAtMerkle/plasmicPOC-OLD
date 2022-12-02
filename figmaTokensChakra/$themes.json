@@ -14,8 +14,6 @@
       "semantic/dark": "enabled",
       "comp/heading": "enabled",
       "comp/text": "enabled",
-      "Brand-ChakraDemo/light": "disabled",
-      "Brand-ChakraDemo/dark": "disabled",
       "comp/card": "enabled",
       "comp/image": "enabled"
     },
@@ -36,8 +34,6 @@
       "semantic/dark": "disabled",
       "comp/heading": "enabled",
       "comp/text": "enabled",
-      "Brand-ChakraDemo/light": "disabled",
-      "Brand-ChakraDemo/dark": "disabled",
       "comp/card": "enabled",
       "comp/image": "enabled"
     },
