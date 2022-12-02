@@ -16,6 +16,7 @@
     "comp/radio",
     "comp/select",
     "comp/switch",
+    "comp/test",
     "comp/tab",
     "comp/tag",
     "comp/text",
