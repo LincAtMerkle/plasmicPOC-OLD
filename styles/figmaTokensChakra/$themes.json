@@ -4,6 +4,7 @@
     "name": "light",
     "selectedTokenSets": {
       "comp/button": "enabled",
+      "comp/card": "enabled",
       "core/border": "source",
       "core/color": "source",
       "core/opacity": "source",
@@ -35,6 +36,7 @@
     "name": "dark",
     "selectedTokenSets": {
       "comp/button": "enabled",
+      "comp/card": "enabled",
       "core/border": "source",
       "core/color": "source",
       "core/opacity": "source",
