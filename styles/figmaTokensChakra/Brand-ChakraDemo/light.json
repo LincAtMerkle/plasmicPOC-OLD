@@ -42,18 +42,10 @@
       "actions": {
         "value": "{border-radius.8}",
         "type": "borderRadius"
-      },
-      "inputs": {
-        "value": "{border-radius.8}",
-        "type": "borderRadius"
       }
     },
     "border-width": {
       "actions": {
-        "value": "{border-width.1}",
-        "type": "borderWidth"
-      },
-      "inputs": {
         "value": "{border-width.1}",
         "type": "borderWidth"
       }
