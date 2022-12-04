@@ -45,8 +45,19 @@ StyleDictionary.registerFormat({
 
 function getStyleDictionaryConfig(themeName, themeTokenSets) {
   return {
-    include: themeTokenSets,
+    source: themeTokenSets,
     platforms: {
+      css: {
+        transforms: ["name/cti/kebab"],
+        buildPath: `dist/json/`,
+        files: [
+          {
+            destination: `${themeName}.json`,
+            format: "json/variables",
+            selector: `${themeName}`,
+          },
+        ],
+      },
       ts: {
         transformGroup: "js",
         buildPath: `dist/js/`,
@@ -94,7 +105,7 @@ const themeOutput = themeMeta.map((theme) => {
     name: themeName,
     class: themeName,
     color: "#ff0000",
-    path: `${themeConfig.platforms.ts.buildPath}${themeName}.json`,
+    path: `${themeConfig.platforms.css.buildPath}${themeName}.json`,
   };
 });
 

@@ -12,6 +12,7 @@
     "comp/heading",
     "comp/icon",
     "comp/icon-button",
+    "comp/input",
     "comp/radio",
     "comp/select",
     "comp/switch",
