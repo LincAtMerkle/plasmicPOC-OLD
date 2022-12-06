@@ -1,0 +1,12 @@
+{
+  "card": {
+    "primary": {
+      "default": {
+        "background-color": {
+          "value": "#ff00ff",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
