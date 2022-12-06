@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "npm run copy-tokens && npm run resolve-tokens && npm run transform2JSON && next dev",
+    "dev": "npm run copy-tokens && npm run resolve-tokens && npm run transform2CSS && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
+    "@chakra-ui/pro-theme": "^0.0.57",
     "@chakra-ui/react": "^2.3.6",
+    "@chakra-ui/theme-tools": "^2.0.14",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@plasmicapp/host": "^1.0.80",

@@ -3881,6 +3881,16 @@
       "type": "borderWidth"
     }
   },
+  "card": {
+    "primary": {
+      "default": {
+        "background-color": {
+          "value": "#ff00ff",
+          "type": "color"
+        }
+      }
+    }
+  },
   "btn": {
     "border-radius": {
       "value": "4px",

@@ -1,55 +1,71 @@
 import { ComponentStyleConfig } from '@chakra-ui/react'
 
-const IconButton: ComponentStyleConfig = {
+const Button: ComponentStyleConfig = {
   // The styles all button have in common
+
+    // textTransform: 'uppercase',
   baseStyle: {
+    fontWeight: 'btn-font-weight',
     width: 'auto',
-    borderRadius: 'icon-button-border-radius',
+    borderRadius: 'btn-border-radius',
+    fontFamily: 'btn-font-family',
     border: 'btn-border-width',
     borderStyle: 'solid',
-    _isRound: {
-        borderRadius: 'icon-button-round-border-radius'
-    }
+    // display: 'flex',
+    // flexDirection: 'column',
   },
   // Four sizes: xs,sm,md and large
   sizes: {
     xs: {
-      height: 'icon-button-xs-height',
-      width: 'icon-button-xs-width',
-      fontSize: 'icon-button-xs-icon-size'
+      pl: 'btn-xs-padding-left',
+      pr: 'btn-xs-padding-right',
+      h: 'btn-xs-height',
+      fontSize: 'btn-xs-text-size'
     },
     sm: {
-        h: 'icon-button-sm-height',
-        minW: 'icon-button-sm-width',
-        fontSize: 'icon-button-sm-icon-size'
+      paddingLeft: 'btn-sm-padding-left',
+      // paddingLeft: '100px',
+      paddingRight: 'btn-sm-padding-right',
+      height: 'btn-sm-height',
+      fontSize: 'btn-sm-text-size'
     },
     md: {
-        h: 'icon-button-md-height',
-        minW: 'icon-button-md-width',
-        fontSize: 'icon-button-md-icon-size'
+      paddingLeft: 'btn-md-padding-left',
+      paddingRight: 'btn-md-padding-right',
+      height: 'btn-md-height',
+      fontSize: 'btn-md-text-size'
     },
     lg: {
-        h: 'icon-button-lg-height',
-        minW: 'icon-button-lg-width',
-        fontSize: 'icon-button-lg-icon-size'
+      paddingLeft: 'btn-lg-padding-left',
+      // paddingLeft: '200px',
+      paddingRight: 'btn-lg-padding-right',
+      height: 'btn-lg-height',
+      fontSize: 'btn-lg-text-size'
     }
   },
   // Two variants: outline and solid
   variants: {
+    // ghost: variantGhost,
+    // outline: variantOutline,
+    // solid: variantSolid,
+    // link: variantLink,
+    // unstyled: variantUnstyled,
     primary: {
-      bg: 'icon-button-default-background-color',
-      color: 'icon-button-default-icon-color',
-      borderColor: 'icon-button-default-border-color',
-      iconColor:"icon-button-default-icon-color",
+      bg: 'btn-primary-default-background-color',
+      // bg: '#ff00ff',
+      color: 'btn-primary-default-text-color',
+      borderColor: 'btn-primary-default-border-color',
+      iconColor:"btn-primary-default-icon-color",
       _hover: {
         bg: 'btn-primary-hover-background-color',
         color: 'btn-primary-hover-text-color',
         borderColor: 'btn-primary-hover-border-color',
         iconColor:'btn-primary-hover-icon-color'
       },
-      _isActive: {
+      _active: {
         bg: 'btn-primary-active-background-color',
-        color: 'btn-primary-active-text-color',
+        // color: 'btn-primary-active-text-color',
+        color: '#fff',
         borderColor: 'btn-primary-active-border-color',
         iconColor:'btn-primary-active-icon-color'
       },
@@ -71,7 +87,7 @@ const IconButton: ComponentStyleConfig = {
         borderColor: 'btn-secondary-hover-border-color',
         iconColor:'btn-secondary-hover-icon-color'
       },
-      _isActive: {
+      _active: {
         bg: 'btn-secondary-active-background-color',
         color: 'btn-secondary-active-text-color',
         borderColor: 'btn-secondary-active-border-color',
@@ -97,9 +113,9 @@ const IconButton: ComponentStyleConfig = {
 
         
       },
-      _isActive: {
-        bg: 'btn-negative-active-background-color',
-        color: 'btn-negative-active-text-color',
+      _acive: {
+        bg: 'btn-negative-acive-background-color',
+        color: 'btn-negative-acive-text-color',
         borderColor: 'btn-negative-active-border-color',
         iconColor:'btn-negative-active-icon-color'
 
@@ -110,13 +126,19 @@ const IconButton: ComponentStyleConfig = {
         borderColor: 'btn-negative-disabled-border-color',
         iconColor:'btn-negative-disabled-icon-color'
 
+      },
+      sm: {
+        bg: 'red',
+        fontSize: 'sm'
       }
     }
   },
   // The default size and variant values
   defaultProps: {
-    variant: 'primary'
+    variant: 'primary',
+    size: "lg",
+    // colorScheme: "red"
   }
 }
 
-export default IconButton
+export default Button

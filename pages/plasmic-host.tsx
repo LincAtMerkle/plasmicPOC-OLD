@@ -8,10 +8,6 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // How do I import this? Was it there in Esthers code?
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
-import CardBox from "../styles/CardBox";
-import CardCustom from "../styles/CardCustom";
-import CardCustomContent from "../styles/CardCustomContent";
-import CardCustomSubContent from "../styles/CardCustomSubContent";
 
 import { registerComponent } from "@plasmicapp/host";
 import {
@@ -104,24 +100,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   }
       
 
-  registerComponent(CardBox, {
-    name: 'CardBox',
-    importPath: './styles/CardBox',
-    props: {
-      title: 'string',
-      description: 'string',
-      file: 'string',
-      size: 'string',
-      Button1: 'string',
-      Button2: 'string',
-      variant: {
-        type: "choice",
-        options: ["primary", "elevated", "outline", "filled", "unstyled"],
-        defaultValue: "primary",
-        },
-      }
-    }
-  )
+  
 
   registerComponent(Card, {
     name: 'Card',
@@ -227,84 +206,6 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       }
     }
   )
-  
-  registerComponent(CardCustom, {
-    name: 'CardCustom',
-    importPath: './styles/CardCustom',
-    props: {
-      maxW: 'string',
-      padding: 'string',
-      margin: 'string',
-      bg: 'string',
-      borderRadius: 'string',
-      overflow: 'string',
-      imageSrc: 'string',
-      variant: 'string',
-      // size: 'string',
-      children: {
-        type: "slot",
-        allowedComponents: ["CardCustomContent"],
-        defaultValue: [{
-          type: "component",
-          name: "CardCustomContent",
-          props: {
-            }
-          }],
-        },
-      }
-    }
-  )
-
-  registerComponent(CardCustomContent, {
-    name: 'CardCustomContent',
-    importPath: './styles/CardCustomContent',
-    parentComponentName: "CardCustom",
-    props: {
-      mt: 'string',
-      spacing: 'string',
-      border: 'string',
-      borderRadius: 'string',
-      width: 'string',
-      fontFamily: 'string',
-      fontSize: 'string',
-      variant: 'string',
-      ButtonText: 'string',
-      children: {
-        type: "slot",
-        allowedComponents: ["CardCustomSubContent"],
-        defaultValue: [{
-          type: "component",
-          name: "CardCustomSubContent",
-          props: {
-            title: "We do Parties and Functions",
-            description: "Get ready for the craziest round of mini golf you've ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia.",
-          }
-        }],
-      },
-    }
-    }
-  )
-
-  registerComponent(CardCustomSubContent, {
-    name: 'CardCustomSubContent',
-    importPath: './styles/CardCustomSubContent',
-    parentComponentName: "CardCustomContent",
-    props: {
-      title: 'string',
-      description: 'string',
-      fontFamilyHeading: 'string',
-      fontSizeHeading: 'string',
-      fontWeightHeading: 'string',
-      colorHeading: 'string',
-      lineHeightHeading: 'string',
-      colorText: 'string',
-      fontFamilyText: 'string',
-      fontSizeText: 'string',
-      lineHeightText: 'string',
-    }
-    }
-  )
-
 
   registerComponent(Documentation, {
     name: 'Documentation',
