@@ -45,19 +45,8 @@ StyleDictionary.registerFormat({
 
 function getStyleDictionaryConfig(themeName, themeTokenSets) {
   return {
-    source: themeTokenSets,
+    include: themeTokenSets,
     platforms: {
-      css: {
-        transforms: ["name/cti/kebab"],
-        buildPath: `dist/json/`,
-        files: [
-          {
-            destination: `${themeName}.json`,
-            format: "json/variables",
-            selector: `${themeName}`,
-          },
-        ],
-      },
       ts: {
         transformGroup: "js",
         buildPath: `dist/js/`,
@@ -105,7 +94,7 @@ const themeOutput = themeMeta.map((theme) => {
     name: themeName,
     class: themeName,
     color: "#ff0000",
-    path: `${themeConfig.platforms.css.buildPath}${themeName}.json`,
+    path: `${themeConfig.platforms.ts.buildPath}${themeName}.json`,
   };
 });
 
@@ -125,7 +114,7 @@ themeList.map((theme) => {
   });
 });
 
-fs.writeFileSync("./figmaTokens.json", JSON.stringify(themeInfo, null, 2));
+fs.writeFileSync("./styles/figmaTokens.json", JSON.stringify(themeInfo, null, 2));
 
 console.log("\n==============================================");
 console.log("\nBuild completed!");

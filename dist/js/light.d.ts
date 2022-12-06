@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 04 Dec 2022 08:27:24 GMT
+ * Generated on Mon, 05 Dec 2022 00:02:42 GMT
  */
 
 export const BtnBorderRadius : string;
