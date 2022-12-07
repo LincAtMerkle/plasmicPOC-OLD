@@ -10,7 +10,6 @@
       "core/size": "source",
       "core/space": "source",
       "core/typography": "source",
-      "semantic/light": "enabled",
       "semantic/dark": "disabled",
       "comp/checkbox": "enabled",
       "comp/input": "enabled",
@@ -25,10 +24,11 @@
       "comp/tab": "enabled",
       "comp/text": "enabled",
       "comp/tooltip": "enabled",
-      "Brand-ChakraDemo/light": "disabled",
       "Brand-ChakraDemo/dark": "disabled",
       "comp/test": "disabled",
-      "comp/card": "enabled"
+      "comp/card": "enabled",
+      "semantic/lightx": "enabled",
+      "Brand-ChakraDemo/lightxx": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -43,7 +43,6 @@
       "core/size": "source",
       "core/space": "source",
       "core/typography": "source",
-      "semantic/light": "enabled",
       "semantic/dark": "enabled",
       "comp/checkbox": "enabled",
       "comp/input": "enabled",
@@ -58,10 +57,11 @@
       "comp/tab": "enabled",
       "comp/text": "enabled",
       "comp/tooltip": "enabled",
-      "Brand-ChakraDemo/light": "disabled",
       "Brand-ChakraDemo/dark": "disabled",
       "comp/test": "disabled",
-      "comp/card": "enabled"
+      "comp/card": "enabled",
+      "semantic/lightx": "enabled",
+      "Brand-ChakraDemo/lightxx": "disabled"
     },
     "$figmaStyleReferences": {}
   }
