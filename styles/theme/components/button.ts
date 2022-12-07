@@ -18,6 +18,12 @@ const sizes = {
     fontSize: 'lg',
     px: 7,
   },
+  md: {
+    // paddingLeft: 'btn-md-padding-left',
+    // paddingRight: 'btn-md-padding-right',
+    height: 'btn-md-height',
+    // fontSize: 'btn-md-text-size'
+  },
 }
 
 const variants = {
