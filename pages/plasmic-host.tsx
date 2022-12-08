@@ -207,6 +207,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     }
   )
 
+
   registerComponent(Documentation, {
     name: 'Documentation',
     importPath: './styles/Documentation',

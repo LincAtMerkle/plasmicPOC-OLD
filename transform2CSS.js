@@ -210,7 +210,8 @@ StyleDictionary.registerFormat({
     let result = '{'
     Object.keys(tokenTypes).forEach(function (key) {
       result += `\n  "${tokenTypes[key]}": {`
-      result += `\n    "${themeName}": {`
+      // result += `\n    "${themeName}": {`
+      result += `\n    "light": {`
       dictionary.allProperties.map((props) => {
         if (props.type === key) {
           result += `\n      "${props.name}": "${props.value}",`

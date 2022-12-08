@@ -1,6 +1,6 @@
 {
   "colors": {
-    "light": {
+    "lightz": {
       "btn-primary-default-background-color": "#a855f7",
       "btn-primary-default-text-color": "#ffffff",
       "btn-primary-default-border-color": "#0ea5e9",
@@ -709,7 +709,7 @@
     }
   },
   "radii": {
-    "light": {
+    "lightz": {
       "btn-border-radius": "4px",
       "semantic-border-radius-inputs": "4px",
       "semantic-border-radius-actions": "4px",
@@ -748,7 +748,7 @@
     }
   },
   "fonts": {
-    "light": {
+    "lightz": {
       "btn-font-family": "Inter",
       "semantic-font-family-actions": "Inter",
       "semantic-font-family-inputs": "Inter",
@@ -779,7 +779,7 @@
     }
   },
   "fontWeights": {
-    "light": {
+    "lightz": {
       "btn-font-weight": "undefined",
       "semantic-font-weight-actions": "undefined",
       "semantic-font-weight-inputs": "undefined",
@@ -810,7 +810,7 @@
     }
   },
   "space": {
-    "light": {
+    "lightz": {
       "btn-xs-padding-left": "16px",
       "btn-xs-padding-right": "16px",
       "btn-sm-padding-left": "16px",
@@ -960,7 +960,7 @@
     }
   },
   "lineHeights": {
-    "light": {
+    "lightz": {
       "btn-line-height": "100%",
       "semantic-line-height-typography-heading": "120%",
       "semantic-line-height-typography-display": "100%",
@@ -976,7 +976,7 @@
     }
   },
   "sizes": {
-    "light": {
+    "lightz": {
       "btn-xs-icon-size": "16px",
       "btn-xs-height": "32px",
       "btn-sm-icon-size": "16px",
@@ -1164,7 +1164,7 @@
     }
   },
   "borders": {
-    "light": {
+    "lightz": {
       "btn-border-width": "1px",
       "semantic-border-width-inputs": "1px",
       "semantic-border-width-actions": "1px",
@@ -1198,7 +1198,7 @@
     }
   },
   "fontSizes": {
-    "light": {
+    "lightz": {
       "btn-xs-text-size": "14px",
       "btn-sm-text-size": "16px",
       "btn-md-text-size": "18px",

@@ -27,8 +27,8 @@
       "Brand-ChakraDemo/dark": "disabled",
       "comp/test": "disabled",
       "comp/card": "enabled",
-      "semantic/lightx": "enabled",
-      "Brand-ChakraDemo/lightxx": "disabled"
+      "semantic/light": "enabled",
+      "Brand-ChakraDemo/light": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -60,8 +60,8 @@
       "Brand-ChakraDemo/dark": "disabled",
       "comp/test": "disabled",
       "comp/card": "enabled",
-      "semantic/lightx": "enabled",
-      "Brand-ChakraDemo/lightxx": "disabled"
+      "semantic/light": "enabled",
+      "Brand-ChakraDemo/light": "disabled"
     },
     "$figmaStyleReferences": {}
   }

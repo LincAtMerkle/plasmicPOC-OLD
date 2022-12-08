@@ -22,9 +22,9 @@
     "comp/tag",
     "comp/text",
     "comp/tooltip",
-    "semantic/lightx",
+    "semantic/light",
     "semantic/dark",
-    "Brand-ChakraDemo/lightxx",
+    "Brand-ChakraDemo/light",
     "Brand-ChakraDemo/dark"
   ]
 }

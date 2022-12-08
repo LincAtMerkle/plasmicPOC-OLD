@@ -1,5 +1,6 @@
-{  
-  "colors" : {
+{
+  "colors": {
+    "light": {
     "bg-canvas": {
       "default" : "gray.50",
       "_dark" : "gray.900"
@@ -58,8 +59,10 @@
     "on-accent" : "white",
     "on-accent-muted" : "brand.50",
     "on-accent-subtle" : "brand.100"
+  }
   },
   "sizes": {
+    "light": {
     "btn-xs-icon-size": "16px",
     "btn-xs-height": "32px",
     "btn-sm-icon-size": "16px",
@@ -67,4 +70,5 @@
     "btn-md-icon-size": "16px",
     "btn-md-height": "148px"
   }
+}
 }
