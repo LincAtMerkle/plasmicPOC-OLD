@@ -9,10 +9,17 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
 
+import CardCustom from "../styles/CardCustom";
+import CardCustomContent from "../styles/CardCustomContent";
+import CardCustomSubContent from "../styles/CardCustomSubContent";
+import AvatarGroupCustom from "../styles/AvatarGroupCustom";
+
 import { registerComponent } from "@plasmicapp/host";
 import {
   AspectRatio,
   Image,
+  Icon,
+  createIcon,
   Button,
   ButtonGroup,
   Checkbox,
@@ -98,9 +105,6 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
   export default function PlasmicHost() {
     return PLASMIC && <PlasmicCanvasHost />;
   }
-      
-
-  
 
   registerComponent(Card, {
     name: 'Card',
@@ -114,7 +118,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       variant: {
         type: "choice",
         options: ["primary", "elevated", "outline", "filled", "unstyled"],
-        // defaultValue: "primary",
+        defaultValue: "primary",
         },
       children: {
         type: "slot",
@@ -204,6 +208,83 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           }]
         }
       }
+    }
+  )
+  
+  registerComponent(CardCustom, {
+    name: 'CardCustom',
+    importPath: './styles/CardCustom',
+    props: {
+      maxW: 'string',
+      padding: 'string',
+      margin: 'string',
+      bg: 'string',
+      borderRadius: 'string',
+      overflow: 'string',
+      imageSrc: 'string',
+      variant: 'string',
+      // size: 'string',
+      children: {
+        type: "slot",
+        allowedComponents: ["CardCustomContent"],
+        defaultValue: [{
+          type: "component",
+          name: "CardCustomContent",
+          props: {
+            }
+          }],
+        },
+      }
+    }
+  )
+
+  registerComponent(CardCustomContent, {
+    name: 'CardCustomContent',
+    importPath: './styles/CardCustomContent',
+    parentComponentName: "CardCustom",
+    props: {
+      mt: 'string',
+      spacing: 'string',
+      border: 'string',
+      borderRadius: 'string',
+      width: 'string',
+      fontFamily: 'string',
+      fontSize: 'string',
+      variant: 'string',
+      ButtonText: 'string',
+      children: {
+        type: "slot",
+        allowedComponents: ["CardCustomSubContent"],
+        defaultValue: [{
+          type: "component",
+          name: "CardCustomSubContent",
+          props: {
+            title: "We do Parties and Functions",
+            description: "Get ready for the craziest round of mini golf you've ever played! Wind your way through a tantalising labyrinth inspired by your everyday everythings with a generous slathering of nostalgia.",
+          }
+        }],
+      },
+    }
+    }
+  )
+
+  registerComponent(CardCustomSubContent, {
+    name: 'CardCustomSubContent',
+    importPath: './styles/CardCustomSubContent',
+    parentComponentName: "CardCustomContent",
+    props: {
+      title: 'string',
+      description: 'string',
+      fontFamilyHeading: 'string',
+      fontSizeHeading: 'string',
+      fontWeightHeading: 'string',
+      colorHeading: 'string',
+      lineHeightHeading: 'string',
+      colorText: 'string',
+      fontFamilyText: 'string',
+      fontSizeText: 'string',
+      lineHeightText: 'string',
+    }
     }
   )
 
@@ -487,6 +568,8 @@ props: {
 });
 
 
+
+
 registerComponent(Stack, {
 name: "Stack",
 importPath: "@chakra-ui/react",
@@ -517,7 +600,39 @@ props: {
 },
 });
 
-
+registerComponent(Icon, {
+  name: "Icon",
+  importPath: "@chakra-ui/react",
+  props: {
+    as:{
+      type: "string",
+      defaultValue: "CheckCircleIcon",
+    },
+    viewBox: {
+      type: "string",
+      defaultValue: "0 0 24 24",
+    },
+    boxSize: {
+      type: "string",
+      defaultValue: "1em",
+    },
+    color: {
+      type: "string",
+      defaultValue: "currentColor",
+    },
+    // focusable: {
+    //   type: "boolean",
+    //   defaultValue: "false",
+    // },
+    // role: {
+    //   type: "string",
+    //   defaultValue: "lg",
+    // },
+    children: {
+      type: "slot",
+    },
+  },
+  });
 
 registerComponent(Box, {
   name: "Box",
@@ -2367,6 +2482,10 @@ name: "Avatar",
 importPath: "@chakra-ui/react",
 parentComponentName: "AvatarGroup",
 props: {
+  bg: {
+    type: "string",
+    defaultValue: "red.500",
+  },
   name: {
     type: "string",
     defaultValue: "Kola Tioluwani",
@@ -2384,6 +2503,15 @@ props: {
     options: ["eager", "lazy"],
   },
   showBorder: "boolean",
+  icon: {
+    type: "slot",
+    hidePlaceholder: true,
+    allowedComponents: ["CheckCircleIcon"],
+    defaultValue: {
+      type: "component",
+      name: "CheckCircleIcon",
+    },
+  },
   children: {
     type: "slot",
     hidePlaceholder: true,
@@ -2471,6 +2599,87 @@ props: {
   },
 },
 });
+
+registerComponent(AvatarGroupCustom, {
+  name: "AvatarGroupCustom",
+  importPath: "@chakra-ui/react",
+  props: {
+    size: {
+      type: "choice",
+      options: ["2xs", "xs", "sm", "md", "lg", "xl", "2xl", "full"],
+    },
+    max: {
+      type: "number",
+      description: "The maximum number of avatars to show before truncating.",
+    },
+    spacing: {
+      type: "string",
+      defaultValue: "-0.75rem",
+    },
+    children: {
+      type: "slot",
+      allowedComponents: ["Avatar"],
+      defaultValue: [
+        {
+          type: "component",
+          name: "Avatar",
+          props: {
+            name: "Dan Abrahmov",
+            src: "https://bit.ly/dan-abramov",
+          },
+        },
+        {
+          type: "component",
+          name: "Avatar",
+          props: {
+            name: "Kola Tioluwani",
+            src: "https://bit.ly/tioluwani-kolawole",
+          },
+        },
+        {
+          type: "component",
+          name: "Avatar",
+          props: {
+            name: "Kent Dodds",
+            src: "https://bit.ly/kent-c-dodds",
+          },
+        },
+        {
+          type: "component",
+          name: "Avatar",
+          props: {
+            name: "Ryan Florence",
+            src: "https://bit.ly/ryan-florence",
+          },
+        },
+        {
+          type: "component",
+          name: "Avatar",
+          props: {
+            name: "Prosper Otemuyiwa",
+            src: "https://bit.ly/prosper-baba",
+          },
+        },
+        {
+          type: "component",
+          name: "Avatar",
+          props: {
+            name: "Christian Nwamba",
+            src: "https://bit.ly/code-beast",
+          },
+        },
+        {
+          type: "component",
+          name: "Avatar",
+          props: {
+            name: "Segun Adebayo",
+            src: "https://bit.ly/sage-adebayo",
+          },
+        },
+      ],
+    },
+  },
+  });
 
 registerComponent(Accordion, {
 name: "Accordion",

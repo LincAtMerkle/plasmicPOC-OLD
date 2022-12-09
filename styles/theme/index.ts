@@ -20,7 +20,9 @@ export const theme: Record<string, any> = extendTheme({
       700: figmaTokens.colors.light['color-lime-700'],
       800: figmaTokens.colors.light['color-lime-800'],
       900: figmaTokens.colors.light['color-lime-900'],
-    }
+    },
+    
+    'card-primary-default-background-color': figmaTokens.colors.light['card-primary-default-background-color'],
    },
   space: {
     '4.5': '1.125rem',
