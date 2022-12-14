@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicTokenDocumentation,
-  DefaultTokenDocumentationProps
-} from "./plasmic/focus_poc_local_host/PlasmicTokenDocumentation";
+  PlasmicNav,
+  DefaultNavProps
+} from "./plasmic/focus_poc_local_host/PlasmicNav";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -14,36 +14,32 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // If you don't want to expose certain variants or slots as a prop, you can use
 // Omit to hide them:
 //
-// interface TokenDocumentationProps extends Omit<DefaultTokenDocumentationProps, "hideProps1"|"hideProp2"> {
+// interface NavProps extends Omit<DefaultNavProps, "hideProps1"|"hideProp2"> {
 //   // etc.
 // }
 //
-// You can also stop extending from DefaultTokenDocumentationProps altogether and have
+// You can also stop extending from DefaultNavProps altogether and have
 // total control over the props for your component.
-export interface TokenDocumentationProps
-  extends DefaultTokenDocumentationProps {}
+export interface NavProps extends DefaultNavProps {}
 
-function TokenDocumentation_(
-  props: TokenDocumentationProps,
-  ref: HTMLElementRefOf<"div">
-) {
-  // Use PlasmicTokenDocumentation to render this component as it was
+function Nav_(props: NavProps, ref: HTMLElementRefOf<"div">) {
+  // Use PlasmicNav to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicTokenDocumentation are:
+  // Props you can pass into PlasmicNav are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, we are just piping all TokenDocumentationProps here, but feel free
+  // By default, we are just piping all NavProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicTokenDocumentation root={{ ref }} {...props} />;
+  return <PlasmicNav root={{ ref }} {...props} />;
 }
 
-const TokenDocumentation = React.forwardRef(TokenDocumentation_);
-export default TokenDocumentation;
+const Nav = React.forwardRef(Nav_);
+export default Nav;

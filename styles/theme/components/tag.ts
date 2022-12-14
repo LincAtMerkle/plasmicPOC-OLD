@@ -7,9 +7,12 @@ import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/the
 
   
   const baseStyle = {
+    
     container: {
     //   bg: 'red',
-    
+    mr: "8px",
+    mb: "9px",
+    textTransform: 'uppercase',
     },
     // fontWeight: 'btn-font-weight',
     // width: 'auto',
@@ -44,7 +47,6 @@ import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/the
         bg: 'card-primary-default-background-color',
         borderRadius: "32px",
         overflow: 'hidden',
-        height: '385px',
       },
       header: {
         padding: '0px',
@@ -53,16 +55,13 @@ import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/the
       body: {
         position: "relative", 
         top: "-30px",
-        // textTransform: 'uppercase',
         // width: "300px"
       },
       footer: {
         paddingTop: '0px',
         gap: '20px',
         alignItems: 'center',
-        gridColumnGap: '48px',
-        position: "relative", 
-        top: "-30px",
+        gridColumnGap: `48px`,
       },
       
     },
