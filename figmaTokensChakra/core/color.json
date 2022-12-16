@@ -238,17 +238,17 @@
         },
         "500": {
           "description": "Red 50",
-          "value": "#F08791",
+          "value": "#e6293b",
           "type": "color"
         },
         "600": {
           "description": "Red 60",
-          "value": "#EE707C",
+          "value": "#b91f2e",
           "type": "color"
         },
         "700": {
           "description": "Red 70",
-          "value": "#EC5967",
+          "value": "#8e1521",
           "type": "color"
         },
         "800": {
@@ -258,7 +258,7 @@
         },
         "900": {
           "description": "Red 90",
-          "value": "#E6293B",
+          "value": "#3f0509",
           "type": "color"
         }
     },
