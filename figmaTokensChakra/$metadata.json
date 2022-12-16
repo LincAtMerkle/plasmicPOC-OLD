@@ -22,9 +22,20 @@
     "comp/tooltip",
     "semantic/light",
     "semantic/dark",
-    "BrandA/light",
-    "BrandA/dark",
-    "BrandB/light",
-    "BrandB/dark"
+    "fl/light",
+    "fl/dark",
+    "hm/light",
+    "hm/dark",
+    "hh/light",
+    "hh/dark",
+    "st/light",
+    "st/dark",
+    "bl/light",
+    "bl/dark",
+    "ab/light",
+    "ld/dark",
+    "ld/light",
+    "ld/dark_Copy",
+    "bl/dark_Copy"
   ]
 }
