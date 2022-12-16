@@ -22,6 +22,8 @@
     "comp/tooltip",
     "semantic/light",
     "semantic/dark",
+    "gl/light",
+    "gl/dark",
     "fl/light",
     "fl/dark",
     "hm/light",

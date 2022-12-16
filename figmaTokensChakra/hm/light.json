@@ -121,6 +121,12 @@
         "value": "{color.emerald.400}",
         "type": "color"
       }
+    },
+    "cta": {
+      "default": {
+        "value": "#00ffff",
+        "type": "color"
+      }
     }
   },
   "font-family": {
