@@ -36,10 +36,9 @@
       "bl/light": "disabled",
       "bl/dark": "disabled",
       "ab/light": "disabled",
+      "ab/dark": "disabled",
       "ld/light": "disabled",
-      "ld/dark": "disabled",
-      "ld/dark_Copy": "disabled",
-      "bl/dark_Copy": "disabled"
+      "ld/dark": "disabled"
     },
     "$figmaStyleReferences": {}
   },
@@ -80,10 +79,9 @@
       "bl/light": "disabled",
       "bl/dark": "disabled",
       "ab/light": "disabled",
+      "ab/dark": "disabled",
       "ld/light": "disabled",
-      "ld/dark": "disabled",
-      "ld/dark_Copy": "disabled",
-      "bl/dark_Copy": "disabled"
+      "ld/dark": "disabled"
     },
     "$figmaStyleReferences": {}
   }

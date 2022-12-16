@@ -33,9 +33,8 @@
     "bl/light",
     "bl/dark",
     "ab/light",
-    "ld/dark",
+    "ab/dark",
     "ld/light",
-    "ld/dark_Copy",
-    "bl/dark_Copy"
+    "ld/dark"
   ]
 }
