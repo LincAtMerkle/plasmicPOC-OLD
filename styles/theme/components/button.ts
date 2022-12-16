@@ -1,144 +1,138 @@
-import { ComponentStyleConfig } from '@chakra-ui/react'
+import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
 
-const Button: ComponentStyleConfig = {
-  // The styles all button have in common
-
-    // textTransform: 'uppercase',
-  baseStyle: {
-    fontWeight: 'btn-font-weight',
-    width: 'auto',
-    borderRadius: 'btn-border-radius',
-    fontFamily: 'btn-font-family',
-    border: 'btn-border-width',
-    borderStyle: 'solid',
-    // display: 'flex',
-    // flexDirection: 'column',
+const baseStyle = {
+  ':focus:not(:focus-visible)': {
+    boxShadow: 'none',
   },
-  // Four sizes: xs,sm,md and large
-  sizes: {
-    xs: {
-      pl: 'btn-xs-padding-left',
-      pr: 'btn-xs-padding-right',
-      h: 'btn-xs-height',
-      fontSize: 'btn-xs-text-size'
-    },
-    sm: {
-      paddingLeft: 'btn-sm-padding-left',
-      // paddingLeft: '100px',
-      paddingRight: 'btn-sm-padding-right',
-      height: 'btn-sm-height',
-      fontSize: 'btn-sm-text-size'
-    },
-    md: {
-      paddingLeft: 'btn-md-padding-left',
-      paddingRight: 'btn-md-padding-right',
-      height: 'btn-md-height',
-      fontSize: 'btn-md-text-size'
-    },
-    lg: {
-      paddingLeft: 'btn-lg-padding-left',
-      // paddingLeft: '200px',
-      paddingRight: 'btn-lg-padding-right',
-      height: 'btn-lg-height',
-      fontSize: 'btn-lg-text-size'
-    }
-  },
-  // Two variants: outline and solid
-  variants: {
-    // ghost: variantGhost,
-    // outline: variantOutline,
-    // solid: variantSolid,
-    // link: variantLink,
-    // unstyled: variantUnstyled,
-    primary: {
-      bg: 'btn-primary-default-background-color',
-      // bg: '#ff00ff',
-      color: 'btn-primary-default-text-color',
-      borderColor: 'btn-primary-default-border-color',
-      iconColor:"btn-primary-default-icon-color",
-      _hover: {
-        bg: 'btn-primary-hover-background-color',
-        color: 'btn-primary-hover-text-color',
-        borderColor: 'btn-primary-hover-border-color',
-        iconColor:'btn-primary-hover-icon-color'
-      },
-      _active: {
-        bg: 'btn-primary-active-background-color',
-        // color: 'btn-primary-active-text-color',
-        color: '#fff',
-        borderColor: 'btn-primary-active-border-color',
-        iconColor:'btn-primary-active-icon-color'
-      },
-      _disabled: {
-        bg: 'btn-primary-disabled-background-color',
-        color: 'btn-primary-disabled-text-color',
-        borderColor: 'btn-primary-disabled-border-color',
-        iconColor:'btn-primary-disabled-icon-color'
-      }
-    },
-    secondary: {
-      bg: 'btn-secondary-default-background-color',
-      color: 'btn-secondary-default-text-color',
-      borderColor: 'btn-secondary-default-border-color',
-      iconColor:'btn-secondary-default-icon-color',
-      _hover: {
-        bg: 'btn-secondary-hover-background-color',
-        color: 'btn-secondary-hover-text-color',
-        borderColor: 'btn-secondary-hover-border-color',
-        iconColor:'btn-secondary-hover-icon-color'
-      },
-      _active: {
-        bg: 'btn-secondary-active-background-color',
-        color: 'btn-secondary-active-text-color',
-        borderColor: 'btn-secondary-active-border-color',
-        iconColor:'btn-secondary-active-icon-color'
-      },
-      _disabled: {
-        bg: 'btn-secondary-disabled-background-color',
-        color: 'btn-secondary-disabled-text-color',
-        borderColor: 'btn-secondary-disabled-border-color',
-        iconColor:'btn-secondary-disabled-icon-color'
-      }
-    },
-    negative: {
-      bg: 'btn-negative-default-background-color',
-      color: 'btn-negative-default-text-color',
-      borderColor: 'btn-negative-default-border-color',
-      iconColor:'btn-negative-default-icon-color',
-      _hover: {
-        bg: 'btn-negative-hover-background-color',
-        color: 'btn-negative-hover-text-color',
-        borderColor: 'btn-negative-hover-border-color',
-        iconColor:'btn-negative-hover-icon-color'
-
-        
-      },
-      _acive: {
-        bg: 'btn-negative-acive-background-color',
-        color: 'btn-negative-acive-text-color',
-        borderColor: 'btn-negative-active-border-color',
-        iconColor:'btn-negative-active-icon-color'
-
-      },
-      _disabled: {
-        bg: 'btn-negative-disabled-background-color',
-        color: 'btn-negative-disabled-text-color',
-        borderColor: 'btn-negative-disabled-border-color',
-        iconColor:'btn-negative-disabled-icon-color'
-
-      },
-      sm: {
-        bg: 'red',
-        fontSize: 'sm'
-      }
-    }
-  },
-  // The default size and variant values
-  defaultProps: {
-    variant: 'primary',
-    size: "lg",
-    // colorScheme: "red"
-  }
+  fontWeight: 'medium',
+  borderRadius: 'lg',
 }
 
-export default Button
+const sizes = {
+  lg: {
+    fontSize: 'md',
+  },
+  xl: {
+    h: '3.75rem',
+    minW: '3.75rem',
+    fontSize: 'lg',
+    px: 7,
+  },
+  md: {
+    paddingLeft: 'btn-md-padding-left',
+    paddingRight: 'btn-md-padding-right',
+    height: 'btn-md-height',
+    fontSize: 'btn-md-text-size'
+  },
+}
+
+const variants = {
+  primary: (props: StyleFunctionProps) =>
+    props.theme.components['Button']['variants']['solid']({
+      ...props,
+      variant: 'solid',
+      colorScheme: 'brand',
+    }),
+  'primary-on-accent': () => ({
+    bg: 'brand.50',
+    color: 'brand.600',
+    _hover: { bg: 'brand.100' },
+    _active: { bg: 'brand.100' },
+  }),
+  secondary: (props: StyleFunctionProps) =>
+    props.theme.components['Button']['variants']['outline']({
+      ...props,
+      variant: 'outline',
+      colorScheme: 'gray',
+    }),
+  'secondary-on-accent': {
+    color: 'white',
+    borderColor: 'brand.50',
+    borderWidth: '1px',
+    _hover: { bg: 'whiteAlpha.200' },
+    _active: { bg: 'whiteAlpha.200' },
+  },
+  outline: (props: StyleFunctionProps) => ({
+    color: 'emphasized',
+    bg: mode('white', 'gray.800')(props),
+    _hover: {
+      bg: mode(
+        darken('gray.50', 1)(props.theme),
+        transparentize('gray.700', 0.4)(props.theme),
+      )(props),
+    },
+    _checked: {
+      bg: mode('gray.100', 'gray.700')(props),
+    },
+    _active: {
+      bg: mode('gray.100', 'gray.700')(props),
+    },
+  }),
+  ghost: (props: StyleFunctionProps) => ({
+    color: 'emphasized',
+    _hover: {
+      bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
+    },
+    _active: {
+      bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
+    },
+    _activeLink: {
+      bg: mode('gray.100', 'gray.700')(props),
+    },
+  }),
+  'ghost-on-accent': (props: StyleFunctionProps) => ({
+    color: 'brand.50',
+    _hover: {
+      bg: transparentize('brand.500', 0.67)(props.theme),
+    },
+    _activeLink: {
+      color: 'white',
+      bg: 'bg-accent-subtle',
+    },
+  }),
+  link: (props: StyleFunctionProps) => {
+    if (props.colorScheme === 'gray') {
+      return {
+        color: 'muted',
+        _hover: {
+          textDecoration: 'none',
+          color: 'default',
+        },
+        _active: {
+          color: 'default',
+        },
+      }
+    }
+    return {
+      color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props),
+      _hover: {
+        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+        textDecoration: 'none',
+      },
+      _active: {
+        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+      },
+    }
+  },
+  'link-on-accent': () => {
+    return {
+      padding: 0,
+      height: 'auto',
+      lineHeight: 'normal',
+      verticalAlign: 'baseline',
+      color: 'brand.50',
+      _hover: {
+        color: 'white',
+      },
+      _active: {
+        color: 'white',
+      },
+    }
+  },
+}
+
+export default {
+  baseStyle,
+  variants,
+  sizes,
+}

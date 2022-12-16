@@ -212,43 +212,53 @@
     },
     "red": {
       "50": {
-        "value": "#fef2f2",
+        "description": "Red 5",
+        "value": "#FDF3F4",
         "type": "color"
       },
       "100": {
-        "value": "#fee2e2",
+        "description": "Red 10",
+        "value": "#FDE8EA",
         "type": "color"
       },
       "200": {
-        "value": "#fecaca",
+        "description": "Red 20",
+        "value": "#F9CFD3",
         "type": "color"
       },
       "300": {
-        "value": "#fca5a5",
+        "description": "Red 30",
+        "value": "#F7B8BE",
         "type": "color"
       },
       "400": {
-        "value": "#f87171",
+        "description": "Red 40",
+        "value": "#F4A0A8",
         "type": "color"
       },
       "500": {
-        "value": "#ef4444",
+        "description": "Red 50",
+        "value": "#e31125",
         "type": "color"
       },
       "600": {
-        "value": "#dc2626",
+        "description": "Red 60",
+        "value": "#b50b1b",
         "type": "color"
       },
       "700": {
-        "value": "#b91c1c",
+        "description": "Red 70",
+        "value": "#890612",
         "type": "color"
       },
       "800": {
-        "value": "#991b1b",
+        "description": "Red 80",
+        "value": "#5f0309",
         "type": "color"
       },
       "900": {
-        "value": "#7f1d1d",
+        "description": "Red 90",
+        "value": "#390103",
         "type": "color"
       }
     },

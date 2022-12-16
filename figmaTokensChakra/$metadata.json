@@ -8,7 +8,6 @@
     "core/typography",
     "comp/avatar",
     "comp/button",
-    "comp/card",
     "comp/checkbox",
     "comp/heading",
     "comp/icon",
@@ -17,14 +16,15 @@
     "comp/radio",
     "comp/select",
     "comp/switch",
-    "comp/test",
     "comp/tab",
     "comp/tag",
     "comp/text",
     "comp/tooltip",
-    "semantic/lightx",
+    "semantic/light",
     "semantic/dark",
-    "Brand-ChakraDemo/lightxx",
-    "Brand-ChakraDemo/dark"
+    "BrandA/light",
+    "BrandA/dark",
+    "BrandB/light",
+    "BrandB/dark"
   ]
 }

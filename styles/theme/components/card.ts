@@ -1,26 +1,27 @@
 
 // This function creates a set of function that helps us create multipart component styles.
 // const helpers = createMultiStyleConfigHelpers(['Card'])
+import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
 
-import { defineStyleConfig } from "@chakra-ui/system"
+// card-primary-default-background-color
 
-const Card  = {
   
-  baseStyle: {
+  const baseStyle = {
     container: {
-      bg: 'lime',
-    }
+    //   bg: 'red',
+    
+    },
     // fontWeight: 'btn-font-weight',
     // width: 'auto',
     // borderRadius: 'btn-border-radius',
+
     // fontFamily: 'btn-font-family',
     // border: 'btn-border-width',
     // borderStyle: 'solid',
     // display: 'flex',
     // flexDirection: 'column',
-  },
-  sizes: {
-      bg: 'red',
+  }
+  const sizes = {
     sm: {
       // fontSize: 'sm',
       px: 100, // <-- px is short for paddingLeft and paddingRight
@@ -36,12 +37,34 @@ const Card  = {
       px: '100px', // <-- these values are tokens from the design system
       py: '100px', // <-- these values are tokens from the design system
       },
-    },
-  variants: {
+  }
+  const variants = {
     primary: {
       container: {
         bg: 'card-primary-default-background-color',
+        borderRadius: "32px",
+        overflow: 'hidden',
+        height: '385px',
       },
+      header: {
+        padding: '0px',
+        margin: '0px',
+      },
+      body: {
+        position: "relative", 
+        top: "-30px",
+        // textTransform: 'uppercase',
+        // width: "300px"
+      },
+      footer: {
+        paddingTop: '0px',
+        gap: '20px',
+        alignItems: 'center',
+        gridColumnGap: '48px',
+        position: "relative", 
+        top: "-30px",
+      },
+      
     },
     outline: {
       // bg: 'card-primary-default-background-color',
@@ -49,12 +72,10 @@ const Card  = {
       // color: 'card-primary-default-text-color',
       color: '#ffff00',
     },
-  },
-  defaultProps: {
-    variant: 'primary',
-    size: "sm",
-    // bg: 'lime',
   }
-}
 
-export default Card
+export default {
+    baseStyle,
+    variants,
+    sizes,
+  }

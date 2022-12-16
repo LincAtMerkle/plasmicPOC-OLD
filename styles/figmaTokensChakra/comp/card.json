@@ -3,17 +3,9 @@
     "primary": {
       "default": {
         "background-color": {
-          "value": "{semantic.color.actions.cta.default.background-color}",
+          "value": "#ff00ff",
           "type": "color"
         }
-      }
-    }
-  },
-  "semantic": {
-    "border-width": {
-      "inputs": {
-        "value": "{border-width.1}",
-        "type": "borderWidth"
       }
     }
   }

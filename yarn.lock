@@ -128,6 +128,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/anatomy@npm:2.0.7":
+  version: 2.0.7
+  resolution: "@chakra-ui/anatomy@npm:2.0.7"
+  checksum: 3f75782e7fd7e4b52c4a719a6869953cdf37da799386c02c6eec00f52a1307a4be22a18c25ec4fb46159251bb5cc7dc5d3f6d61087dbdc42133ae2893f16e2b7
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/anatomy@npm:2.1.0":
   version: 2.1.0
   resolution: "@chakra-ui/anatomy@npm:2.1.0"
@@ -612,6 +619,17 @@ __metadata:
     react: ">=18"
     react-dom: ">=18"
   checksum: c56e78686979ce64077bb116610f28625a0b81c03c41a6d53fa59be59d2bf22991be48cdaa6918bdd0820b489cf9ff2281fd3d1b68950f5e2d4794567cc3cc98
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/pro-theme@npm:^0.0.57":
+  version: 0.0.57
+  resolution: "@chakra-ui/pro-theme@npm:0.0.57"
+  dependencies:
+    "@chakra-ui/theme-tools": 2.0.12
+  peerDependencies:
+    "@chakra-ui/react": 1.8.x || 2.x
+  checksum: 431a7a90da72cecb201525578cb91ac67789f43c98b8c5459cc59b2b1a187e82759f3c4e67bf6d67013f3f17a5ede6bdc15ac870b3f17c4b2f1fbab9a8cfa9af
   languageName: node
   linkType: hard
 
@@ -1126,7 +1144,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme-tools@npm:2.0.14":
+"@chakra-ui/theme-tools@npm:2.0.12":
+  version: 2.0.12
+  resolution: "@chakra-ui/theme-tools@npm:2.0.12"
+  dependencies:
+    "@chakra-ui/anatomy": 2.0.7
+    "@ctrl/tinycolor": ^3.4.0
+  peerDependencies:
+    "@chakra-ui/styled-system": ">=2.0.0"
+  checksum: 8ee0db748566930c7d92b2fef737af5d9ad9598e32b1fdac20074ba02a5f24660f0b39556a3e54f838d07d7762595665772fbfbbb3ac1c7f27288849746adf6c
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/theme-tools@npm:2.0.14, @chakra-ui/theme-tools@npm:^2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/theme-tools@npm:2.0.14"
   dependencies:
@@ -1229,6 +1259,13 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: 393de247808220f0c5e63b0801f769c2342e9da48aaaf23e3994ea3e917f6b6e27bec225b99949d23884d3615624ef520b05d6fc419019f998549ed85e4b1491
+  languageName: node
+  linkType: hard
+
+"@ctrl/tinycolor@npm:^3.4.0":
+  version: 3.5.0
+  resolution: "@ctrl/tinycolor@npm:3.5.0"
+  checksum: 4f0cc0005b53ca7e42b5137ff7069f95f05873168534e1c04e64429070eeb5e04dd309b52fb437601235807af7dedd4c43bbfce1df5fb11bfd3fb3c05a0eb3a5
   languageName: node
   linkType: hard
 
@@ -2606,7 +2643,9 @@ __metadata:
   resolution: "PlasmicPOC@workspace:."
   dependencies:
     "@chakra-ui/icons": ^2.0.11
+    "@chakra-ui/pro-theme": ^0.0.57
     "@chakra-ui/react": ^2.3.6
+    "@chakra-ui/theme-tools": ^2.0.14
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
     "@plasmicapp/host": ^1.0.80

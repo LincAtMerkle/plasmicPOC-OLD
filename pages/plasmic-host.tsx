@@ -8,17 +8,36 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // How do I import this? Was it there in Esthers code?
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
-import CardBox from "../styles/CardBox";
+
 import CardCustom from "../styles/CardCustom";
 import CardCustomContent from "../styles/CardCustomContent";
 import CardCustomSubContent from "../styles/CardCustomSubContent";
+import ImageWithOverlay from "../styles/ImageWithOverlay";
+import {IconButtonGolf} from "../styles/IconButtonGolf";
+import {IconButtonBowling} from "../styles/IconButtonBowling";
+import {IconButtonArcade} from "../styles/IconButtonArcade";
+import {IconButtonEscaperoom} from "../styles/IconButtonEscaperoom";
+import {IconButtonFunPass} from "../styles/IconButtonFunPass";
+import {IconButtonHijinx} from "../styles/IconButtonHijinx";
+import {IconButtonDarts} from "../styles/IconButtonDarts";
+import {IconButtonKaraoke} from "../styles/IconButtonKaraoke";
+import {IconButtonLaser} from "../styles/IconButtonLaser";
+import {IconButtonWonderville} from "../styles/IconButtonWonderville";
+import {TagCustom} from "../styles/TagCustom";
 
 import { registerComponent } from "@plasmicapp/host";
 import {
   AspectRatio,
   Image,
+  Icon,
+  createIcon,
   Button,
   ButtonGroup,
+  IconButton,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  TagRightIcon,
   Checkbox,
   CheckboxGroup,
   Card,
@@ -97,31 +116,9 @@ import {
 } from "@chakra-ui/react";
 import {CheckCircleIcon} from "@chakra-ui/icons";
 
-
-  
   export default function PlasmicHost() {
     return PLASMIC && <PlasmicCanvasHost />;
   }
-      
-
-  registerComponent(CardBox, {
-    name: 'CardBox',
-    importPath: './styles/CardBox',
-    props: {
-      title: 'string',
-      description: 'string',
-      file: 'string',
-      size: 'string',
-      Button1: 'string',
-      Button2: 'string',
-      variant: {
-        type: "choice",
-        options: ["primary", "elevated", "outline", "filled", "unstyled"],
-        defaultValue: "primary",
-        },
-      }
-    }
-  )
 
   registerComponent(Card, {
     name: 'Card',
@@ -135,16 +132,16 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       variant: {
         type: "choice",
         options: ["primary", "elevated", "outline", "filled", "unstyled"],
-        // defaultValue: "primary",
+        defaultValue: "primary",
         },
       children: {
         type: "slot",
         allowedComponents: ["CardBody,CardHeader, CardFooter"],
         defaultValue: [
-          // {
-          //   type: "component",
-          //   name: "CardHeader",
-          // },
+          {
+            type: "component",
+            name: "CardHeader",
+          },
           {
             type: "component",
             name: "CardBody",
@@ -171,10 +168,11 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
       },
       children: {
         type: 'slot',
+        allowedComponents: ["ImageWithOverlay"],
         defaultValue: [
           {
-            type: 'component',
-            name: 'Heading',
+          type: "component",
+          name: "ImageWithOverlay",
           },
         ],
       },
@@ -187,30 +185,53 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     props: {
       children: {
         type: "slot",
-        allowedComponents: ["Stack", "Image"],
+        allowedComponents: ["Text", "Tag"],
         defaultValue: [
-          {
-          type: "component",
-          name: "Image",
-          },
-          {
-            type: "component",
-            name: "Stack",
-            props: {
-              children: 
-                [
-                  {type: "component", name: "Heading"},
-                  {type: "component", name: "Text"},
-                  {type: "component", name: "Text"}
-                ]
-              
-            }
-            }
-          ]
+            {type: "component", name: "Tag"},
+            {type: "component", name: "Tag"},
+            {type: "component", name: "Tag"},
+            {type: "component", name: "Tag"},
+            {type: "component", name: "Tag"},
+            {type: "component", name: "Tag"},
+            {type: "component", name: "Text"},           
+          ],
         }
       }
     }
   )
+
+  // registerComponent(CardBody, {
+  //   name: 'CardBody',
+  //   importPath: '@chakra-ui/react',
+  //   props: {
+  //     children: {
+  //       type: "slot",
+  //       allowedComponents: ["Stack", "Image"],
+  //       defaultValue: [
+  //         {
+  //         type: "component",
+  //         name: "Image",
+  //         },
+  //         {
+  //           type: "component",
+  //           name: "Stack",
+  //           props: {
+  //             children: 
+  //               [
+  //                 {type: "component", name: "Heading"},
+  //                 {type: "component", name: "Text"},
+  //                 {type: "component", name: "Text"}
+  //               ]
+              
+  //           }
+  //           }
+  //         ]
+  //       }
+  //     }
+  //   }
+  // )
+
+  
 
   registerComponent(CardFooter, {
     name: 'CardFooter',
@@ -218,14 +239,54 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
     props: {
       children: {
         type: "slot",
-        allowedComponents: ["Button"],
-        defaultValue: [{
-          type: "component",
-          name: "Button",
-          }]
+        allowedComponents: ["Button, ButtonGroup"],
+        defaultValue: [
+          {type: "component", name: "ButtonGroup"},
+          {type: "component", name: "TagCustom"}
+          ]
         }
       }
     }
+  )
+
+  // registerComponent(CardFooter, {
+  //   name: 'CardFooter',
+  //   importPath: '@chakra-ui/react',
+  //   props: {
+  //     children: {
+  //       type: "slot",
+  //       allowedComponents: ["Button"],
+  //       defaultValue: [{
+  //         type: "component",
+  //         name: "Button",
+  //         }]
+  //       }
+  //     }
+  //   }
+  // )
+
+  registerComponent(ImageWithOverlay, {
+    name: 'ImageWithOverlay',
+    importPath: './styles/ImageWithOverlay',
+    props: {
+      title: 'string',
+      description: 'string',
+      url: 'string',
+      alt: 'string',
+      src: 'string',
+      spacing: 'string',
+      children: {
+        type: "slot",
+        allowedComponents: ["Heading"],
+        defaultValue: [{
+          type: "component",
+          name: "Heading",
+          props: {size: "4xl"},
+          styles: {color:"white"}
+          }],
+        },      
+    },
+  },
   )
   
   registerComponent(CardCustom, {
@@ -248,6 +309,7 @@ import {CheckCircleIcon} from "@chakra-ui/icons";
           type: "component",
           name: "CardCustomContent",
           props: {
+            // title: "We do Parties and Functions",
             }
           }],
         },
@@ -437,78 +499,6 @@ props: {
 },
 });
 
-registerComponent(ButtonGroup, {
-name: "ButtonGroup",
-importPath: "@chakra-ui/react",
-props: {
-  colorScheme: {
-    type: "choice",
-    options: [
-      "whiteAlpha",
-      "blackAlpha",
-      "gray",
-      "red",
-      "orange",
-      "yellow",
-      "green",
-      "teal",
-      "blue",
-      "cyan",
-      "purple",
-      "pink",
-      "linkedin",
-      "facebook",
-      "messenger",
-      "whatsapp",
-      "twitter",
-      "telegram",
-    ],
-  },
-  size: {
-    type: "choice",
-    options: ["xl", "sm", "md", "lg"],
-    defaultValue: "md",
-  },
-  isAttached: {
-    type: "boolean",
-    defaultValue: false,
-  },
-  isDisabled: {
-    type: "boolean",
-    defaultValue: false,
-  },
-  spacing: {
-    type: "string",
-    defaultValue: "0.5rem",
-  },
-  children: {
-    type: "slot",
-    defaultValue: [
-      {
-        type: "component",
-        name: "Button",
-        props: {
-          children: {
-            type: "text",
-            value: "Button 1",
-          },
-        },
-      },
-      {
-        type: "component",
-        name: "Button",
-        props: {
-          children: {
-            type: "text",
-            value: "Button 2",
-          },
-        },
-      },
-    ],
-  },
-},
-});
-
 registerComponent(Button, {
 name: "Button",
 importPath: "@chakra-ui/react",
@@ -585,6 +575,920 @@ props: {
 });
 
 
+registerComponent(IconButton, {
+  name: "IconButton",
+  importPath: "@chakra-ui/react",
+  // parentComponentName: "ButtonGroup",
+  props: {
+    // ariaLabel: {
+    //   type: "string",
+    //   defaultValue: "icon",
+    // },
+    // spinner: {}
+    size: {
+      type: "choice",
+      options: ["xs", "sm", "md", "lg"],
+      defaultValue: "md",
+    },
+    variant: {
+      type: "choice",
+      options: ["ghost", "outline", "solid", "link", "unstyled"],
+      defaultValue: "solid",
+    },
+    colorScheme: {
+      type: "choice",
+      options: [
+        "whiteAlpha",
+        "blackAlpha",
+        "gray",
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "teal",
+        "blue",
+        "cyan",
+        "purple",
+        "pink",
+        "linkedin",
+        "facebook",
+        "messenger",
+        "whatsapp",
+        "twitter",
+        "telegram",
+      ],
+    },
+    isActive: {
+      type: "boolean",
+    },
+    isDisabled: {
+      type: "boolean",
+    },
+    isLoading: {
+      type: "boolean",
+    },
+    isRound: {
+      type: "boolean",
+      defaultValue: true,
+    },
+    icon: {
+      type: "slot",
+      // hidePlaceholder: true,
+      // allowedComponents: ["CheckCircleIcon"],
+      // defaultValue: {
+      //   type: "component",
+      //   name: "CheckCircleIcon",
+      // },
+    },
+    // children: {
+    //   type: "slot",
+    //   defaultValue: {
+    //     type: "text",
+    //     value: "Button",
+    //   },
+    // },
+  }
+  });
+
+  registerComponent(IconButtonGolf, {
+    name: "IconButtonGolf",
+    importPath: "../styles/IconButtonGolf",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+
+  registerComponent(IconButtonBowling, {
+    name: "IconButtonBowling",
+    importPath: "../styles/IconButtonBowling",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonArcade, {
+    name: "IconButtonArcade",
+    importPath: "../styles/IconButtonArcade",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonEscaperoom, {
+    name: "IconButtonEscaperoom",
+    importPath: "../styles/IconButtonEscaperoom",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonFunPass, {
+    name: "IconButtonFunPass",
+    importPath: "../styles/IconButtonFunPass",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonHijinx, {
+    name: "IconButtonHijinx",
+    importPath: "../styles/IconButtonHijinx",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonDarts, {
+    name: "IconButtonDarts",
+    importPath: "../styles/IconButtonDarts",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonKaraoke, {
+    name: "IconButtonKaraoke",
+    importPath: "../styles/IconButtonKaraoke",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonLaser, {
+    name: "IconButtonLaser",
+    importPath: "../styles/IconButtonLaser",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+  registerComponent(IconButtonWonderville, {
+    name: "IconButtonWonderville",
+    importPath: "../styles/IconButtonWonderville",
+    props: {
+      // ariaLabel: {
+      //   type: "string",
+      //   defaultValue: "icon",
+      // },
+      // spinner: {}
+      size: {
+        type: "choice",
+        options: ["xs", "sm", "md", "lg"],
+        defaultValue: "lg",
+      },
+      variant: {
+        type: "choice",
+        options: ["ghost", "outline", "solid", "link", "unstyled"],
+        defaultValue: "solid",
+      },
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      isActive: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isLoading: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isRound: {
+        type: "boolean",
+        defaultValue: true,
+      },
+      // Type error while registering code components
+      // Failed to register code component named "IconButtonGolf". Unknown type for prop children. Received: [object Object]
+      // children: {
+      //   defaultValue: 
+      //     {
+      //       type: "component",
+      //       name: "GolfIcon"
+      //     },
+      // },
+    }
+  });
+
+  registerComponent(TagCustom, {
+    name: "TagCustom",
+    importPath: "../styles/TagCustom",
+    props: {
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      size: {
+        type: "choice",
+        options: ["sm", "md", "lg"],
+      },
+      bg: {
+        type: "string",
+        defaultValue: "full",
+      },
+      rounded: {
+        type: "string",
+        defaultValue: "full",
+      },
+    },
+  });
+
+registerComponent(Tag, {
+  name: "Tag",
+  importPath: "@chakra-ui/react",
+  props: {
+    borderRadius: {
+      type: "string",
+      defaultValue: "full",
+    },
+    size: {
+      type: "choice",
+      options: ["sm", "md", "lg"],
+    },
+    variant: {
+      type: "choice",
+      options: ["subtle", "solid", "outline"],
+      defaultValue: "subtle",
+    },
+    colorScheme: {
+      type: "choice",
+      options: [
+        "whiteAlpha",
+        "blackAlpha",
+        "gray",
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "teal",
+        "blue",
+        "cyan",
+        "purple",
+        "pink",
+        "linkedin",
+        "facebook",
+        "messenger",
+        "whatsapp",
+        "twitter",
+        "telegram",
+      ],
+    },
+    children: {
+      type: "slot",
+      defaultValue: [
+        {
+          type: "component",
+          name: "TagLabel",
+          props: {
+            children: {
+              type: "text",
+              value: "tag",
+            },
+          },
+        },
+      ],
+    },
+  }
+  });
+  registerComponent(TagLabel, {
+    name: "TagLabel",
+    importPath: "@chakra-ui/react",
+    props: {
+      children: {
+        type: "slot",
+        defaultValue: {
+          type: "text",
+          value: "Tag",
+        },
+      },
+    }
+  });
+  // registerComponent(TagRightIcon, {
+  //   name: "TagRightIcon",
+  //   importPath: "@chakra-ui/react",
+  //   props: {
+  //     children: {
+  //       type: "slot",
+  //       defaultValue: {
+  //         type: "text",
+  //         value: "Tag",
+  //       },
+  //     },
+  //   }
+  // });
+  registerComponent(TagLeftIcon, {
+    name: "TagLeftIcon",
+    importPath: "@chakra-ui/react",
+    props: {
+      boxSize: {
+        type: "string",
+        defaultValue: "20px",
+      },
+      // as: {
+        children: {
+          type: "slot",
+          defaultValue: [{
+            type: "component",
+            name: "IconButtonGolf",
+          }],
+        },
+      // },
+
+    }
+  });
+
+
 registerComponent(Stack, {
 name: "Stack",
 importPath: "@chakra-ui/react",
@@ -614,8 +1518,6 @@ props: {
   },
 },
 });
-
-
 
 registerComponent(Box, {
   name: "Box",
@@ -1446,7 +2348,7 @@ props: {
     defaultValue: [
       {
         type: "text",
-        value: "Some Text",
+        value: "Century City Walk, 285 Springvale Road, Glen Waverley, Victoria, 3150",
       },
     ],
   },
@@ -2315,7 +3217,7 @@ props: {
     defaultValue: {
       type: "text",
       value:
-        "Basic text writing, including headings, body text, lists, and more.",
+        "Heading",
     },
   },
   size: {
@@ -2465,13 +3367,17 @@ name: "Avatar",
 importPath: "@chakra-ui/react",
 parentComponentName: "AvatarGroup",
 props: {
+  bg: {
+    type: "string",
+    defaultValue: "red.500",
+  },
   name: {
     type: "string",
-    defaultValue: "Kola Tioluwani",
+    defaultValue: "",
   },
   src: {
     type: "string",
-    defaultValue: "https://bit.ly/dan-abramov",
+    defaultValue: "",
   },
   size: {
     type: "choice",
@@ -2482,11 +3388,41 @@ props: {
     options: ["eager", "lazy"],
   },
   showBorder: "boolean",
-  children: {
+  icon: {
     type: "slot",
-    hidePlaceholder: true,
-    allowedComponents: ["AvatarBadge"]
+    // hidePlaceholder: true,
+    // allowedComponents: ["CheckCircleIcon"],
+    // defaultValue: [{
+    //   type: "component",
+    //   name: "CheckCircleIcon",
+    // }],
   },
+  // icon: {
+  //   type: "slot",
+  //   hidePlaceholder: false,
+  //   allowedComponents: ["GolfIcon"],
+  //   defaultValue: [
+  //     {
+  //       type: 'component',
+  //       name: 'GolfIcon',//GolfIcon
+  //     },
+  //   ],
+  // },
+  // children: {
+  //   type: "slot",
+  //   defaultValue: [
+  //     {
+  //       type: 'component',
+  //       name: 'GolfIcon',
+  //       props: {
+  //         children: {
+  //           type: "color",
+  //           value: "red",
+  //         },
+  //       },//GolfIcon
+  //     },
+  //   ],
+  // },
 },
 });
 registerComponent(AvatarGroup, {
@@ -2507,68 +3443,88 @@ props: {
   },
   children: {
     type: "slot",
-    allowedComponents: ["Avatar"],
     defaultValue: [
       {
         type: "component",
         name: "Avatar",
-        props: {
-          name: "Dan Abrahmov",
-          src: "https://bit.ly/dan-abramov",
-        },
       },
-      {
-        type: "component",
-        name: "Avatar",
-        props: {
-          name: "Kola Tioluwani",
-          src: "https://bit.ly/tioluwani-kolawole",
-        },
-      },
-      {
-        type: "component",
-        name: "Avatar",
-        props: {
-          name: "Kent Dodds",
-          src: "https://bit.ly/kent-c-dodds",
-        },
-      },
-      {
-        type: "component",
-        name: "Avatar",
-        props: {
-          name: "Ryan Florence",
-          src: "https://bit.ly/ryan-florence",
-        },
-      },
-      {
-        type: "component",
-        name: "Avatar",
-        props: {
-          name: "Prosper Otemuyiwa",
-          src: "https://bit.ly/prosper-baba",
-        },
-      },
-      {
-        type: "component",
-        name: "Avatar",
-        props: {
-          name: "Christian Nwamba",
-          src: "https://bit.ly/code-beast",
-        },
-      },
-      {
-        type: "component",
-        name: "Avatar",
-        props: {
-          name: "Segun Adebayo",
-          src: "https://bit.ly/sage-adebayo",
-        },
-      },
-    ],
+    ]
+  },
   },
 },
-});
+);
+
+  registerComponent(ButtonGroup, {
+    name: "ButtonGroup",
+    importPath: "@chakra-ui/react",
+    props: {
+      colorScheme: {
+        type: "choice",
+        options: [
+          "whiteAlpha",
+          "blackAlpha",
+          "gray",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "teal",
+          "blue",
+          "cyan",
+          "purple",
+          "pink",
+          "linkedin",
+          "facebook",
+          "messenger",
+          "whatsapp",
+          "twitter",
+          "telegram",
+        ],
+      },
+      size: {
+        type: "choice",
+        options: ["xl", "sm", "md", "lg"],
+        defaultValue: "sm",
+      },
+      isAttached: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      isDisabled: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      spacing: {
+        type: "string",
+        defaultValue: "0.5rem",
+      },
+      children: {
+        type: "slot",
+        defaultValue: [
+          {
+            type: "component",
+            name: "IconButtonGolf",
+          },
+          {
+            type: "component",
+            name: "IconButtonBowling",
+          },
+          {
+            type: "component",
+            name: "IconButtonArcade",
+          },
+          {
+            type: "component",
+            name: "IconButtonHijinx",
+          },
+          {
+            type: "component",
+            name: "IconButtonWonderville",
+          },
+        ],
+      },
+    },
+    });
 
 registerComponent(Accordion, {
 name: "Accordion",
@@ -2706,13 +3662,24 @@ props: {
 
 registerComponent(CheckCircleIcon, {
   name: "CheckCircleIcon",
-  importPath: "@chakra-ui/react",
-  parentComponentName: "Button",
+  importPath: "@chakra-ui/icons",
   props: {
-    children: 'slot',
-    name: 'string'
+    // children: 'slot',
+    // name: 'string'
+    // type: "string",
+    // name: "viewBox",
   }
   });
+
+// registerComponent(CheckCircleIcon, {
+//   name: "CheckCircleIcon",
+//   importPath: "@chakra-ui/react",
+//   // parentComponentName: "Button",
+//   props: {
+//     children: 'slot',
+//     name: 'string'
+//   }
+//   });
 
 registerComponent(FormControl, {
 name: "FormControl",

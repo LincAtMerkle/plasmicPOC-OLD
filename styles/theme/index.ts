@@ -1,58 +1,33 @@
-// theme/index.js
-// import { theme as proTheme } from '@chakra-ui/pro-theme'
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, theme as baseTheme } from '@chakra-ui/react'
+import * as components from './components'
+import * as foundations from './foundations'
+import figmaTokens from './foundations/figmaTokens'
 
-// export const theme = extendTheme(
-//   {
-//     colors: { ...proTheme.colors, brand: proTheme.colors.purple },
-//   },
-//   {
-//     fonts: {
-//       heading: "'SignPainter HouseSlant','Albert Sans','Fira CodeVariable', -apple-system, system-ui, sans-serif",
-//       body: "'Fira CodeVariable', -apple-system, system-ui, sans-serif",
-//     },
-//   },
-//   proTheme,
-// )
-
-// Global style overrides
-import styles from './styles'
-
-// Foundational style overrides
-// import borders from './foundations/borders'
-
-// Component style overrides
-import Button from './components/button'
-import Avatar from './components/avatar'
-import Checkbox from './components/checkbox'
-import Tag from './components/tag'
-import Switch from './components/switch'
-import IconButton from './components/iconbutton'
-import Heading from './components/heading'
-import Text from './components/text'
-import Card from './components/card'
-import CardBox from './components/cardBox'
-import getChakraSemanticTokens from '../getChakraSemanticTokens'
-import figmaTokensJson from '../figmaTokens.json'
-const semanticTokens = getChakraSemanticTokens(figmaTokensJson)
-
-const overrides = {
-  styles,
-  semanticTokens,
-  // Other foundational style overrides go here
-  components: {
-    Button,
-    Avatar,
-    Checkbox,
-    Tag,
-    Switch,
-    IconButton,
-    Heading,
-    Text,
-    Card,
-    CardBox
-    // Other components go here
-  }
-}
-
-export default extendTheme(overrides)
+export const theme: Record<string, any> = extendTheme({
+  ...foundations,
+  components: { ...components },
+  colors: { 
+    ...baseTheme.colors, 
+    // brand: baseTheme.colors.purple
+    brand: {
+      50: figmaTokens.colors.light['color-lime-50'],
+      100: figmaTokens.colors.light['color-lime-100'],
+      200: figmaTokens.colors.light['color-lime-200'],
+      300: figmaTokens.colors.light['color-lime-300'],
+      400: figmaTokens.colors.light['color-lime-400'],
+      500: figmaTokens.colors.light['color-lime-500'],
+      600: figmaTokens.colors.light['color-lime-600'],
+      700: figmaTokens.colors.light['color-lime-700'],
+      800: figmaTokens.colors.light['color-lime-800'],
+      900: figmaTokens.colors.light['color-lime-900'],
+    },
+    
+    'card-primary-default-background-color': figmaTokens.colors.light['card-primary-default-background-color'],
+   },
+  space: {
+    '4.5': '1.125rem',
+  },
+  sizes: {
+    'btn-md-height': figmaTokens.sizes.light['btn-md-height'],
+  },
+})

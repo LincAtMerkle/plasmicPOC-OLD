@@ -1,0 +1,54 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+}
+.buttonGroup:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.button__xwy4:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.checkCircleIcon___5BBdc:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__akHdH {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.checkCircleIcon__d4MkG:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.button__mft2L:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.checkCircleIcon__p5MXd:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text___1EZcg {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.checkCircleIcon__vIWx0:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}

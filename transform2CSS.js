@@ -210,7 +210,8 @@ StyleDictionary.registerFormat({
     let result = '{'
     Object.keys(tokenTypes).forEach(function (key) {
       result += `\n  "${tokenTypes[key]}": {`
-      result += `\n    "${themeName}": {`
+      // result += `\n    "${themeName}": {`
+      result += `\n    "light": {`
       dictionary.allProperties.map((props) => {
         if (props.type === key) {
           result += `\n      "${props.name}": "${props.value}",`
@@ -257,7 +258,7 @@ StyleDictionary.registerFormat({
 
 function getStyleDictionaryConfig(themeName, themeTokenSets) {
   return {
-    source: themeTokenSets,
+    include: themeTokenSets,
     platforms: {
       css: {
         transforms: ['resolveMath', 'size/px', 'size/letterspacing', 'type/fontWeight', 'color/hexrgba', 'typography/shorthand', 'shadow/shorthand', 'name/cti/kebab'],
