@@ -122,9 +122,15 @@
         "type": "color"
       }
     },
+    "neutral": {
+      "fg": {
+        "value": "{color.red.400}",
+        "type": "color"
+      }
+    },
     "cta": {
       "default": {
-        "value": "#00ffff",
+        "value": "{color.red.500}",
         "type": "color"
       }
     }
