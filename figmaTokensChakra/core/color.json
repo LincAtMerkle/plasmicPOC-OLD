@@ -212,55 +212,55 @@
     },
     "red": {
       "50": {
-          "description": "Red 5",
-          "value": "#FDF3F4",
-          "type": "color"
-        },
-        "100": {
-          "description": "Red 10",
-          "value": "#FDE8EA",
-          "type": "color"
-        },
-        "200": {
-          "description": "Red 20",
-          "value": "#F9CFD3",
-          "type": "color"
-        },
-        "300": {
-          "description": "Red 30",
-          "value": "#F7B8BE",
-          "type": "color"
-        },
-        "400": {
-          "description": "Red 40",
-          "value": "#F4A0A8",
-          "type": "color"
-        },
-        "500": {
-          "description": "Red 50",
-          "value": "#e31125",
-          "type": "color"
-        },
-        "600": {
-          "description": "Red 60",
-          "value": "#b50b1b",
-          "type": "color"
-        },
-        "700": {
-          "description": "Red 70",
-          "value": "#890612",
-          "type": "color"
-        },
-        "800": {
-          "description": "Red 80",
-          "value": "#5f0309",
-          "type": "color"
-        },
-        "900": {
-          "description": "Red 90",
-          "value": "#390103",
-          "type": "color"
-        }
+        "description": "Red 5",
+        "value": "#FDF3F4",
+        "type": "color"
+      },
+      "100": {
+        "description": "Red 10",
+        "value": "#FDE8EA",
+        "type": "color"
+      },
+      "200": {
+        "description": "Red 20",
+        "value": "#F9CFD3",
+        "type": "color"
+      },
+      "300": {
+        "description": "Red 30",
+        "value": "#F7B8BE",
+        "type": "color"
+      },
+      "400": {
+        "description": "Red 40",
+        "value": "#F4A0A8",
+        "type": "color"
+      },
+      "500": {
+        "description": "Red 50",
+        "value": "#e31125",
+        "type": "color"
+      },
+      "600": {
+        "description": "Red 60",
+        "value": "#b50b1b",
+        "type": "color"
+      },
+      "700": {
+        "description": "Red 70",
+        "value": "#890612",
+        "type": "color"
+      },
+      "800": {
+        "description": "Red 80",
+        "value": "#5f0309",
+        "type": "color"
+      },
+      "900": {
+        "description": "Red 90",
+        "value": "#390103",
+        "type": "color"
+      }
     },
     "orange": {
       "50": {

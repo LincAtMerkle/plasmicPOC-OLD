@@ -22,7 +22,9 @@
     "comp/tooltip",
     "semantic/light",
     "semantic/dark",
-    "Brand-ChakraDemo/light",
-    "Brand-ChakraDemo/dark"
+    "BrandA/light",
+    "BrandA/dark",
+    "BrandB/light",
+    "BrandB/dark"
   ]
 }
