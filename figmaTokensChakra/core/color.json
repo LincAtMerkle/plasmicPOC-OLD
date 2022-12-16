@@ -238,27 +238,27 @@
         },
         "500": {
           "description": "Red 50",
-          "value": "#e6293b",
+          "value": "#e31125",
           "type": "color"
         },
         "600": {
           "description": "Red 60",
-          "value": "#b91f2e",
+          "value": "#b50b1b",
           "type": "color"
         },
         "700": {
           "description": "Red 70",
-          "value": "#8e1521",
+          "value": "#890612",
           "type": "color"
         },
         "800": {
           "description": "Red 80",
-          "value": "#650c14",
+          "value": "#5f0309",
           "type": "color"
         },
         "900": {
           "description": "Red 90",
-          "value": "#3f0509",
+          "value": "#390103",
           "type": "color"
         }
     },
