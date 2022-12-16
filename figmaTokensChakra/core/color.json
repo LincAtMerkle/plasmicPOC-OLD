@@ -1,57 +1,57 @@
 {
   "color": {
     "green": {
-      "5": {
+      "50": {
           "description": "Green 5",
           "value": "#FCFFF6",
           "type": "color"
         },
-        "10": {
+        "100": {
           "description": "Green 10",
           "value": "#F9FFED",
           "type": "color"
         },
-        "20": {
+        "200": {
           "description": "Green 20",
           "value": "#F2FFDC",
           "type": "color"
         },
-        "30": {
+        "300": {
           "description": "Green 30",
           "value": "#ECFFCA",
           "type": "color"
         },
-        "40": {
+        "400": {
           "description": "Green 40",
           "value": "#E6FFB8",
           "type": "color"
         },
-        "50": {
+        "500": {
           "description": "Green 50",
           "value": "#E0FFA6",
           "type": "color"
         },
-        "60": {
+        "600": {
           "description": "Green 60",
           "value": "#D9FE95",
           "type": "color"
         },
-        "70": {
+        "700": {
           "description": "Green 70",
           "value": "#D3FE83",
           "type": "color"
         },
-        "80": {
+        "800": {
           "description": "Green 80",
           "value": "#CDFE71",
           "type": "color"
         },
-        "90": {
+        "900": {
           "description": "Green 90",
           "value": "#C6FE60",
           "type": "color"
         },
-        "100": {
+        "1000": {
           "description": "Green 100",
           "value": "#C0FE4E",
           "type": "color"
