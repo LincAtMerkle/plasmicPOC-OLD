@@ -182,19 +182,19 @@
     },
     "success": {
       "fg": {
-        "value": "{color.success.400}",
+        "value": "{color.fl_success.400}",
         "type": "color"
       },
       "emphasised": {
-        "value": "{color.success.500}",
+        "value": "{color.fl_success.500}",
         "type": "color"
       },
       "muted": {
-        "value": "{color.success.300}",
+        "value": "{color.fl_success.300}",
         "type": "color"
       },
       "subtle": {
-        "value": "{color.success.100}",
+        "value": "{color.fl_success.100}",
         "type": "color"
       },
       "on-success": {
