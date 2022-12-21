@@ -133,6 +133,12 @@
         "value": "{color.red.500}",
         "type": "color"
       }
+    },
+    "primary": {
+      "default": {
+        "value": "{color.hm_navy.500}",
+        "type": "color"
+      }
     }
   },
   "font-family": {
