@@ -138,19 +138,19 @@
     },
     "error": {
       "fg": {
-        "value": "{color.red.400}",
+        "value": "{color.fl_error.400}",
         "type": "color"
       },
       "emphasised": {
-        "value": "{color.red.500}",
+        "value": "{color.fl_error.500}",
         "type": "color"
       },
       "muted": {
-        "value": "{color.red.300}",
+        "value": "{color.fl_error.300}",
         "type": "color"
       },
       "subtle": {
-        "value": "{color.red.100}",
+        "value": "{color.fl_error.100}",
         "type": "color"
       },
       "on-error": {
@@ -160,19 +160,19 @@
     },
     "info": {
       "fg": {
-        "value": "{color.teal.400}",
+        "value": "{color.fl_info.400}",
         "type": "color"
       },
       "emphasised": {
-        "value": "{color.blue.500}",
+        "value": "{color.fl_info.500}",
         "type": "color"
       },
       "muted": {
-        "value": "{color.blue.300}",
+        "value": "{color.fl_info.300}",
         "type": "color"
       },
       "subtle": {
-        "value": "{color.blue.100}",
+        "value": "{color.fl_info.100}",
         "type": "color"
       },
       "on-info": {
@@ -182,19 +182,19 @@
     },
     "success": {
       "fg": {
-        "value": "{color.emerald.400}",
+        "value": "{color.fl_success.400}",
         "type": "color"
       },
       "emphasised": {
-        "value": "{color.emerald.500}",
+        "value": "{color.fl_success.500}",
         "type": "color"
       },
       "muted": {
-        "value": "{color.emerald.300}",
+        "value": "{color.fl_success.300}",
         "type": "color"
       },
       "subtle": {
-        "value": "{color.emerald.100}",
+        "value": "{color.fl_success.100}",
         "type": "color"
       },
       "on-success": {
