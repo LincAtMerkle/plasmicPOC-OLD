@@ -19,24 +19,20 @@ export interface TagCustomProps {
 
 export function TagCustom({
   className,
-  size='sm',
-  variant='outline',
-  colorScheme= "blue",
-  rounded="full",
   children,
-  boxSize='12px',
+  boxSize,
 }:TagCustomProps) {  
   return (
-    <Tag
-      className={className}
-      variant={variant}
-      colorScheme = {colorScheme}
-      bg ="#fff"
-      rounded={rounded}
-      size={size}
-      >
-      <TagLeftIcon boxSize={boxSize} as={LocationPinIcon} />
-      <TagLabel>7km</TagLabel>
-    </Tag>
+      <Tag
+        className={className}
+        variant='solid'
+        // colorScheme = {colorScheme}
+        // bg ="#fff"
+        // rounded={rounded}
+        // size={size}
+        >
+        <TagLeftIcon boxSize={boxSize} as={LocationPinIcon} />
+        <TagLabel>7km</TagLabel>
+      </Tag>
   );
 }

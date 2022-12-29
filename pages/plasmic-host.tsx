@@ -38,6 +38,7 @@ import {
   TagLabel,
   TagLeftIcon,
   TagRightIcon,
+  TagCloseButton,
   Checkbox,
   CheckboxGroup,
   Card,
@@ -115,6 +116,7 @@ import {
   Box
 } from "@chakra-ui/react";
 import {CheckCircleIcon} from "@chakra-ui/icons";
+import { FaBeer } from 'react-icons/fa'
 
   export default function PlasmicHost() {
     return PLASMIC && <PlasmicCanvasHost />;
@@ -507,11 +509,12 @@ props: {
   size: {
     type: "choice",
     options: ["xs", "sm", "md", "lg"],
+    // defaultValue: "md",
   },
   variant: {
     type: "choice",
-    options: ["primary", "secondary", "negative", "ghost", "outline", "solid", "link", "unstyled"],
-    defaultValue: "primary",
+    options: ["ghost", "outline", "solid", "link", "unstyled"],
+    // defaultValue: "solid",
   },
   colorScheme: {
     type: "choice",
@@ -535,24 +538,28 @@ props: {
       "twitter",
       "telegram",
     ],
+    // defaultValue: "gray",
   },
   iconSpacing: "number",
   isActive: {
     type: "boolean",
+    // defaultValue: true,
   },
   isDisabled: {
     type: "boolean",
+    // defaultValue: false,
   },
   isLoading: {
     type: "boolean",
+    // defaultValue: false,
   },
   leftIcon: {
     type: "slot",
     hidePlaceholder: true,
-    allowedComponents: ["CheckCircleIcon"],
+    allowedComponents: ["FaBeer"],
     defaultValue: {
       type: "component",
-      name: "CheckCircleIcon",
+      name: "FaBeer",
     },
   },
   rightIcon: {
@@ -633,12 +640,12 @@ registerComponent(IconButton, {
     },
     icon: {
       type: "slot",
-      // hidePlaceholder: true,
-      // allowedComponents: ["CheckCircleIcon"],
-      // defaultValue: {
-      //   type: "component",
-      //   name: "CheckCircleIcon",
-      // },
+      hidePlaceholder: true,
+      allowedComponents: ["FaBeer"],
+      defaultValue: {
+        type: "component",
+        name: "FaBeer",
+      },
     },
     // children: {
     //   type: "slot",
@@ -1346,6 +1353,14 @@ registerComponent(IconButton, {
     name: "TagCustom",
     importPath: "../styles/TagCustom",
     props: {
+      size: {
+        type: "choice",
+        options: ["sm", "md", "lg"],
+      },
+      variant: {
+        type: "choice",
+        options: ["subtle", "solid", "outline", "unstyled"],
+      },
       colorScheme: {
         type: "choice",
         options: [
@@ -1369,17 +1384,8 @@ registerComponent(IconButton, {
           "telegram",
         ],
       },
-      size: {
-        type: "choice",
-        options: ["sm", "md", "lg"],
-      },
-      bg: {
-        type: "string",
-        defaultValue: "full",
-      },
       rounded: {
         type: "string",
-        defaultValue: "full",
       },
     },
   });
@@ -1388,18 +1394,13 @@ registerComponent(Tag, {
   name: "Tag",
   importPath: "@chakra-ui/react",
   props: {
-    borderRadius: {
-      type: "string",
-      defaultValue: "full",
-    },
     size: {
       type: "choice",
       options: ["sm", "md", "lg"],
     },
     variant: {
       type: "choice",
-      options: ["subtle", "solid", "outline"],
-      defaultValue: "subtle",
+      options: ["primary", "subtle", "solid", "outline", "unstyled"],
     },
     colorScheme: {
       type: "choice",
@@ -1424,9 +1425,18 @@ registerComponent(Tag, {
         "telegram",
       ],
     },
+    borderRadius: {
+      type: "string",
+    },
     children: {
       type: "slot",
       defaultValue: [
+        {
+          type: "component",
+          name: "CheckCircleIcon",
+          props: {
+          },
+        },
         {
           type: "component",
           name: "TagLabel",
@@ -1437,10 +1447,36 @@ registerComponent(Tag, {
             },
           },
         },
+        {
+          type: "component",
+          name: "CheckCircleIcon",
+          props: {
+          },
+        },
+        {
+          type: "component",
+          name: "TagCloseButton",
+          props: {
+          },
+        },
       ],
     },
   }
   });
+  registerComponent(TagLeftIcon, {
+    name: "TagLeftIcon",
+    importPath: "@chakra-ui/react",
+    props: {
+      children: {
+          type: "slot",
+          defaultValue: [{
+            type: "component",
+            name: "FaBeer",
+          }],
+        },
+    }
+  });
+
   registerComponent(TagLabel, {
     name: "TagLabel",
     importPath: "@chakra-ui/react",
@@ -1454,40 +1490,26 @@ registerComponent(Tag, {
       },
     }
   });
-  // registerComponent(TagRightIcon, {
-  //   name: "TagRightIcon",
-  //   importPath: "@chakra-ui/react",
-  //   props: {
-  //     children: {
-  //       type: "slot",
-  //       defaultValue: {
-  //         type: "text",
-  //         value: "Tag",
-  //       },
-  //     },
-  //   }
-  // });
-  registerComponent(TagLeftIcon, {
-    name: "TagLeftIcon",
+
+  registerComponent(TagRightIcon, {
+    name: "TagRightIcon",
     importPath: "@chakra-ui/react",
     props: {
-      boxSize: {
-        type: "string",
-        defaultValue: "20px",
-      },
-      // as: {
-        children: {
+      children: {
           type: "slot",
           defaultValue: [{
             type: "component",
-            name: "IconButtonGolf",
+            name: "FaBeer",
           }],
         },
-      // },
-
     }
   });
-
+  registerComponent(TagCloseButton, {
+    name: "TagCloseButton",
+    importPath: "@chakra-ui/react",
+    props: {
+    }
+  });
 
 registerComponent(Stack, {
 name: "Stack",
@@ -3668,6 +3690,14 @@ registerComponent(CheckCircleIcon, {
     // name: 'string'
     // type: "string",
     // name: "viewBox",
+  }
+  });
+
+registerComponent(FaBeer, {
+  name: "FaBeer",
+  importPath: "react-icons/fa",
+  props: {
+    // viewBox: "0 0 16 16"
   }
   });
 

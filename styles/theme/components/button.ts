@@ -4,7 +4,7 @@ const baseStyle = {
   ':focus:not(:focus-visible)': {
     boxShadow: 'none',
   },
-  fontWeight: 'medium',
+  fontWeight: 'bold',
   borderRadius: 'lg',
 }
 
@@ -54,7 +54,8 @@ const variants = {
   },
   outline: (props: StyleFunctionProps) => ({
     color: 'emphasized',
-    bg: mode('white', 'gray.800')(props),
+    // color: 'red',
+    bg: mode('white', 'red.800')(props),
     _hover: {
       bg: mode(
         darken('gray.50', 1)(props.theme),
@@ -65,7 +66,8 @@ const variants = {
       bg: mode('gray.100', 'gray.700')(props),
     },
     _active: {
-      bg: mode('gray.100', 'gray.700')(props),
+      // bg: mode('gray.100', 'gray.700')(props),
+      bg: mode('red.100', 'red.700')(props),
     },
   }),
   ghost: (props: StyleFunctionProps) => ({
@@ -128,11 +130,18 @@ const variants = {
         color: 'white',
       },
     }
-  },
+  }
+}
+
+const defaultProps = {
+  size: 'sm', // default is md
+  variant: 'solid', // default is solid
+  colorScheme: 'red', // default is gray
 }
 
 export default {
   baseStyle,
   variants,
   sizes,
+  defaultProps
 }

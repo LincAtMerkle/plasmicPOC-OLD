@@ -16,18 +16,6 @@ import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/the
       }
   }
   const variants = {
-    primary: (props: StyleFunctionProps) =>
-    props.theme.components['Button']['variants']['solid']({
-      ...props,
-      variant: 'solid',
-      // colorScheme: 'brand',
-    }),
-  'primary-on-accent': () => ({
-    bg: 'brand.50',
-    color: 'brand.600',
-    _hover: { bg: 'brand.100' },
-    _active: { bg: 'brand.100' },
-  }),
     subtle: {
       bg: 'red',
       color: '#ffff00',
@@ -56,8 +44,8 @@ import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/the
 
   const defaultProps = {
     size: 'sm', // default is md
-    variant: 'solid', // default is solid
-    colorScheme: 'red', // default is gray
+    variant: 'outline', // default is solid
+    colorScheme: 'blue', // default is gray
   }
 export default {
     baseStyle,
