@@ -22,6 +22,7 @@
     "@plasmicapp/host": "^1.0.80",
     "@plasmicapp/loader-nextjs": "^1.0.187",
     "@plasmicapp/react-web": "^0.2.112",
+    "@plasmicpkgs/plasmic-chakra-ui": "^0.0.5",
     "color2k": "^2.0.0",
     "cp": "^0.2.0",
     "expr-eval": "^2.0.2",
