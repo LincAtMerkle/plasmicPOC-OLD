@@ -40,7 +40,7 @@ export function IconButtonFunPass({
   return (
     <IconButton
       className={className}
-      ariaLabel={ariaLabel}
+      // ariaLabel={ariaLabel}
       fontSize={fontSize}
       isRound = {isRound}
       colorScheme = {colorScheme}
