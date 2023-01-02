@@ -8,4 +8,3 @@ We did a live stream on this: https://www.youtube.com/watch?v=7St9GZlJH4k
 
 
 In addition many more Chakra UI compoents have been added by Mr Bisket.
-x
