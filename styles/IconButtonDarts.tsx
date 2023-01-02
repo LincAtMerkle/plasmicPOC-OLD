@@ -40,7 +40,7 @@ export function IconButtonDarts({
   return (
     <IconButton
       className={className}
-      // ariaLabel={ariaLabel}
+      aria-label={ariaLabel}
       fontSize={fontSize}
       isRound = {isRound}
       colorScheme = {colorScheme}
