@@ -30,6 +30,7 @@ import {
   AspectRatio,
   Image,
   Icon,
+  IconProps,
   createIcon,
   Button,
   ButtonGroup,
