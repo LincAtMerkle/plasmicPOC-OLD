@@ -9,6 +9,9 @@ import ButtonPreview  from "../styles/ButtonPreview";
 // import tokenSetOrder from "../styles/figmaTokensChakra/$metadata.json"
 import { Documentation } from "../styles/Documentation";
 
+// plasmic-chakra-ui
+import { registerAll } from "@plasmicpkgs/plasmic-chakra-ui";
+
 import CardCustom from "../styles/CardCustom";
 import CardCustomContent from "../styles/CardCustomContent";
 import CardCustomSubContent from "../styles/CardCustomSubContent";
@@ -435,6 +438,9 @@ import { FaBeer } from 'react-icons/fa'
       }
     }
   });
+
+registerAll()
+
 
 // Mr Biscuits Charkra UI registraions 
 
@@ -1395,6 +1401,10 @@ registerComponent(Tag, {
   name: "Tag",
   importPath: "@chakra-ui/react",
   props: {
+    spacing: {
+      type: "string",
+      defaultValue: "24px",
+    },
     size: {
       type: "choice",
       options: ["sm", "md", "lg"],
