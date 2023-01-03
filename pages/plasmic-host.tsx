@@ -1350,167 +1350,167 @@ registerComponent(IconButton, {
     }
   });
 
-  registerComponent(TagCustom, {
-    name: "TagCustom",
-    importPath: "../styles/TagCustom",
-    props: {
-      size: {
-        type: "choice",
-        options: ["sm", "md", "lg"],
-      },
-      variant: {
-        type: "choice",
-        options: ["subtle", "solid", "outline", "unstyled"],
-      },
-      colorScheme: {
-        type: "choice",
-        options: [
-          "whiteAlpha",
-          "blackAlpha",
-          "gray",
-          "red",
-          "orange",
-          "yellow",
-          "green",
-          "teal",
-          "blue",
-          "cyan",
-          "purple",
-          "pink",
-          "linkedin",
-          "facebook",
-          "messenger",
-          "whatsapp",
-          "twitter",
-          "telegram",
-        ],
-      },
-      rounded: {
-        type: "string",
-      },
-    },
-  });
+  // registerComponent(TagCustom, {
+  //   name: "TagCustom",
+  //   importPath: "../styles/TagCustom",
+  //   props: {
+  //     size: {
+  //       type: "choice",
+  //       options: ["sm", "md", "lg"],
+  //     },
+  //     variant: {
+  //       type: "choice",
+  //       options: ["subtle", "solid", "outline", "unstyled"],
+  //     },
+  //     colorScheme: {
+  //       type: "choice",
+  //       options: [
+  //         "whiteAlpha",
+  //         "blackAlpha",
+  //         "gray",
+  //         "red",
+  //         "orange",
+  //         "yellow",
+  //         "green",
+  //         "teal",
+  //         "blue",
+  //         "cyan",
+  //         "purple",
+  //         "pink",
+  //         "linkedin",
+  //         "facebook",
+  //         "messenger",
+  //         "whatsapp",
+  //         "twitter",
+  //         "telegram",
+  //       ],
+  //     },
+  //     rounded: {
+  //       type: "string",
+  //     },
+  //   },
+  // });
 
-registerComponent(Tag, {
-  name: "Tag",
-  importPath: "@chakra-ui/react",
-  props: {
-    size: {
-      type: "choice",
-      options: ["sm", "md", "lg"],
-    },
-    variant: {
-      type: "choice",
-      options: ["primary", "subtle", "solid", "outline", "unstyled"],
-    },
-    colorScheme: {
-      type: "choice",
-      options: [
-        "whiteAlpha",
-        "blackAlpha",
-        "gray",
-        "red",
-        "orange",
-        "yellow",
-        "green",
-        "teal",
-        "blue",
-        "cyan",
-        "purple",
-        "pink",
-        "linkedin",
-        "facebook",
-        "messenger",
-        "whatsapp",
-        "twitter",
-        "telegram",
-      ],
-    },
-    borderRadius: {
-      type: "string",
-    },
-    children: {
-      type: "slot",
-      defaultValue: [
-        {
-          type: "component",
-          name: "CheckCircleIcon",
-          props: {
-          },
-        },
-        {
-          type: "component",
-          name: "TagLabel",
-          props: {
-            children: {
-              type: "text",
-              value: "tag",
-            },
-          },
-        },
-        {
-          type: "component",
-          name: "CheckCircleIcon",
-          props: {
-          },
-        },
-        {
-          type: "component",
-          name: "TagCloseButton",
-          props: {
-          },
-        },
-      ],
-    },
-  }
-  });
-  registerComponent(TagLeftIcon, {
-    name: "TagLeftIcon",
-    importPath: "@chakra-ui/react",
-    props: {
-      children: {
-          type: "slot",
-          defaultValue: [{
-            type: "component",
-            name: "FaBeer",
-          }],
-        },
-    }
-  });
+// registerComponent(Tag, {
+//   name: "Tag",
+//   importPath: "@chakra-ui/react",
+//   props: {
+//     size: {
+//       type: "choice",
+//       options: ["sm", "md", "lg"],
+//     },
+//     variant: {
+//       type: "choice",
+//       options: ["primary", "subtle", "solid", "outline", "unstyled"],
+//     },
+//     colorScheme: {
+//       type: "choice",
+//       options: [
+//         "whiteAlpha",
+//         "blackAlpha",
+//         "gray",
+//         "red",
+//         "orange",
+//         "yellow",
+//         "green",
+//         "teal",
+//         "blue",
+//         "cyan",
+//         "purple",
+//         "pink",
+//         "linkedin",
+//         "facebook",
+//         "messenger",
+//         "whatsapp",
+//         "twitter",
+//         "telegram",
+//       ],
+//     },
+//     borderRadius: {
+//       type: "string",
+//     },
+//     children: {
+//       type: "slot",
+//       defaultValue: [
+//         {
+//           type: "component",
+//           name: "FaBeer",
+//           props: {
+//           },
+//         },
+//         {
+//           type: "component",
+//           name: "TagLabel",
+//           props: {
+//             children: {
+//               type: "text",
+//               value: "tag",
+//             },
+//           },
+//         },
+//         {
+//           type: "component",
+//           name: "FaBeer",
+//           props: {
+//           },
+//         },
+//         {
+//           type: "component",
+//           name: "TagCloseButton",
+//           props: {
+//           },
+//         },
+//       ],
+//     },
+//   }
+//   });
+//   registerComponent(TagLeftIcon, {
+//     name: "TagLeftIcon",
+//     importPath: "@chakra-ui/react",
+//     props: {
+//       children: {
+//           type: "slot",
+//           defaultValue: [{
+//             type: "component",
+//             name: "FaBeer",
+//           }],
+//         },
+//     }
+//   });
 
-  registerComponent(TagLabel, {
-    name: "TagLabel",
-    importPath: "@chakra-ui/react",
-    props: {
-      children: {
-        type: "slot",
-        defaultValue: {
-          type: "text",
-          value: "Tag",
-        },
-      },
-    }
-  });
+//   registerComponent(TagLabel, {
+//     name: "TagLabel",
+//     importPath: "@chakra-ui/react",
+//     props: {
+//       children: {
+//         type: "slot",
+//         defaultValue: {
+//           type: "text",
+//           value: "Tag",
+//         },
+//       },
+//     }
+//   });
 
-  registerComponent(TagRightIcon, {
-    name: "TagRightIcon",
-    importPath: "@chakra-ui/react",
-    props: {
-      children: {
-          type: "slot",
-          defaultValue: [{
-            type: "component",
-            name: "FaBeer",
-          }],
-        },
-    }
-  });
-  registerComponent(TagCloseButton, {
-    name: "TagCloseButton",
-    importPath: "@chakra-ui/react",
-    props: {
-    }
-  });
+//   registerComponent(TagRightIcon, {
+//     name: "TagRightIcon",
+//     importPath: "@chakra-ui/react",
+//     props: {
+//       children: {
+//           type: "slot",
+//           defaultValue: [{
+//             type: "component",
+//             name: "FaBeer",
+//           }],
+//         },
+//     }
+//   });
+//   registerComponent(TagCloseButton, {
+//     name: "TagCloseButton",
+//     importPath: "@chakra-ui/react",
+//     props: {
+//     }
+//   });
 
 registerComponent(Stack, {
 name: "Stack",
