@@ -437,9 +437,21 @@ import { FaBeer } from 'react-icons/fa'
         description: "Token set",
       }
     }
-  });
+  })
 
-registerAll()
+  registerAll(PLASMIC)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Mr Biscuits Charkra UI registraions 
