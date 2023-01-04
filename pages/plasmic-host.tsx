@@ -439,8 +439,8 @@ import { FaBeer } from 'react-icons/fa'
     }
   })
 
-  registerAll(PLASMIC)
-  
+  // registerAll(PLASMIC) // Can't use as creates TS issue and then can't deploy to Vercel
+  registerAll()
 
 
 
