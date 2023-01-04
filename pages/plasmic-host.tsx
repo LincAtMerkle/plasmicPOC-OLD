@@ -439,8 +439,8 @@ import { FaBeer } from 'react-icons/fa'
     }
   })
 
-  registerAll()
-
+  registerAll(PLASMIC)
+  
 
 
 
