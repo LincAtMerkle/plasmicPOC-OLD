@@ -46,7 +46,7 @@ import { TabPanels } from "@chakra-ui/react"; // plasmic-import: AB2xSLDEjMl_Kp/
 import { TabPanel } from "@chakra-ui/react"; // plasmic-import: r6nlMZjR1r4zub/codeComponent
 import { Button } from "@chakra-ui/react"; // plasmic-import: 1zjFflbhvmK0o/codeComponent
 import { CheckCircleIcon } from "@chakra-ui/react"; // plasmic-import: GSuP1QQXRL2iP/codeComponent
-import { ButtonPreview } from "../../../styles/ButtonPreview"; // plasmic-import: PcwhN-FHyr0-AH/codeComponent
+import { ButtonPreview } from "../../ButtonPreview"; // plasmic-import: PcwhN-FHyr0-AH/codeComponent
 import { ChakraDocs } from "../../../styles/ChakraDocs"; // plasmic-import: wtErYCFh5X4hT/codeComponent
 
 import { useScreenVariants as useScreenVariantssqj7Gi5LUgTnD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: SQJ7GI5lUG-TnD/globalVariant

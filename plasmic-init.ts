@@ -1,4 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { registerAll } from "./registrations";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -24,3 +25,4 @@ export const PLASMIC = initPlasmicLoader({
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // PLASMIC.registerComponent(...);
+registerAll();

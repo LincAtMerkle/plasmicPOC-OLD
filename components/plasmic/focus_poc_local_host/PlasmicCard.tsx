@@ -59,7 +59,7 @@ import { Button } from "@chakra-ui/react"; // plasmic-import: 1zjFflbhvmK0o/code
 import { CardCustom } from "../../../styles/CardCustom"; // plasmic-import: sWvaMs0net/codeComponent
 import { CardCustomContent } from "../../../styles/CardCustomContent"; // plasmic-import: LVGuXO51uB/codeComponent
 import { CardCustomSubContent } from "../../../styles/CardCustomSubContent"; // plasmic-import: ujFSR7JwYm/codeComponent
-import { ButtonPreview } from "../../../styles/ButtonPreview"; // plasmic-import: PcwhN-FHyr0-AH/codeComponent
+import { ButtonPreview } from "../../ButtonPreview"; // plasmic-import: PcwhN-FHyr0-AH/codeComponent
 import { ChakraDocs } from "../../../styles/ChakraDocs"; // plasmic-import: wtErYCFh5X4hT/codeComponent
 
 import { useScreenVariants as useScreenVariantssqj7Gi5LUgTnD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: SQJ7GI5lUG-TnD/globalVariant

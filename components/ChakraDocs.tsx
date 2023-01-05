@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Documentation } from "./Documentation"
-import TokenDocumentation from "../components/TokenDocumentation"
+import TokenDocumentation from "./TokenDocumentation"
 
 export default function ChakraDocs(props: JSX.IntrinsicAttributes & { 
     set?: string; path?: string; theme?: string; render: (data: any) => JSX.Element }) {

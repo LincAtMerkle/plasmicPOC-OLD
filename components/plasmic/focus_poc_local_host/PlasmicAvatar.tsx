@@ -44,7 +44,7 @@ import { TabList } from "@chakra-ui/react"; // plasmic-import: FXQF_HUkAEK9Dn/co
 import { Tab } from "@chakra-ui/react"; // plasmic-import: _ZE645AF17I4h0/codeComponent
 import { TabPanels } from "@chakra-ui/react"; // plasmic-import: AB2xSLDEjMl_Kp/codeComponent
 import { TabPanel } from "@chakra-ui/react"; // plasmic-import: r6nlMZjR1r4zub/codeComponent
-import { ButtonPreview } from "../../../styles/ButtonPreview"; // plasmic-import: PcwhN-FHyr0-AH/codeComponent
+import { ButtonPreview } from "../../ButtonPreview"; // plasmic-import: PcwhN-FHyr0-AH/codeComponent
 import { ChakraDocs } from "../../../styles/ChakraDocs"; // plasmic-import: wtErYCFh5X4hT/codeComponent
 import { AvatarGroup } from "@chakra-ui/react"; // plasmic-import: KNrHKGUA3YZjG3/codeComponent
 import { Avatar } from "@chakra-ui/react"; // plasmic-import: svHVam3f06ie2b/codeComponent
