@@ -1,4 +1,7 @@
 import { createIcon } from '@chakra-ui/icons'
+import { 
+  IconProps
+ } from "@chakra-ui/react";
 
 export const GolfIcon = createIcon({
   displayName: 'GolfIcon',

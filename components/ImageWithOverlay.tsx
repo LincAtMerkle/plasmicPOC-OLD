@@ -1,20 +1,15 @@
 import { ReactNode } from 'react';
 import * as React from 'react'
 import {
+  ImageProps,
+  Image,
   Box,
   BoxProps,
-  Button,
-  Heading,
-  Image,
-  LightMode,
   Skeleton,
-  Stack,
-  Text,
   Center,
 } from '@chakra-ui/react'
 
-
-type ImageWithOverlayProps = BoxProps & {
+export type ImageWithOverlayProps = BoxProps & {
   title: string
   description?: string
   url?: string
@@ -26,13 +21,6 @@ type ImageWithOverlayProps = BoxProps & {
 
 export default function ImageWithOverlay({
   className,
-  title = "venue name",
-  description,
-  url,
-  src = "Image.png",
-  alt,
-  spacing = '8',
-  objectPosition = 'cover',
   children,
   ...rest
   }: ImageWithOverlayProps) {
@@ -43,10 +31,10 @@ export default function ImageWithOverlay({
       <Image
         boxSize="full"
         maxHeight={{ base: '240px', md: '100%' }}
-        src={src}
-        alt={alt}
-        objectFit="cover"
-        objectPosition={objectPosition}
+        src = "http://placekitten.com/200/300"
+        alt = "image"
+        objectFit = "cover"
+        objectPosition = 'cover'
         fallback={<Skeleton />}
       />
       <Box
@@ -57,11 +45,8 @@ export default function ImageWithOverlay({
       >
         <Center height="100%">
         {children}
-            {/* <Heading  size="4xl" color="white">
-              {title}
-            </Heading> */}
         </Center>
       </Box>
-    </Box>
+      </Box>
   )
 }
