@@ -6,9 +6,9 @@ import figmaTokens from './foundations/figmaTokens'
 export const theme: Record<string, any> = extendTheme({
   ...foundations,
   components: { ...components },
-  // colors: { 
-    // ...baseTheme.colors, 
-    // brand: baseTheme.colors.red,
+  colors: { 
+    ...baseTheme.colors, 
+    brand: baseTheme.colors.red,
     // brand: {
     //   50: figmaTokens.colors.light['color-lime-50'],
     //   100: figmaTokens.colors.light['color-lime-100'],
@@ -22,12 +22,12 @@ export const theme: Record<string, any> = extendTheme({
     //   900: figmaTokens.colors.light['color-lime-900'],
     // },
     
-    // 'card-primary-default-background-color': figmaTokens.colors.light['card-primary-default-background-color'],
-  //  },
-  // space: {
-  //   '4.5': '1.125rem',
-  // },
-  // sizes: {
-  //   'btn-md-height': figmaTokens.sizes.light['btn-md-height'],
-  // },
+    'card-primary-default-background-color': figmaTokens.colors.light['card-primary-default-background-color'],
+   },
+  space: {
+    '4.5': '1.125rem',
+  },
+  sizes: {
+    'btn-md-height': figmaTokens.sizes.light['btn-md-height'],
+  },
 })
