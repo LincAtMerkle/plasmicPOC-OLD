@@ -1,6 +1,6 @@
 
 import { ComponentMeta } from "@plasmicapp/host/registerComponent";
-import { ChakraDocsProps } from "../../components/ChakraDocs";
+import { ChakraDocsProps } from "../components/ChakraDocs";
 import {
   getComponentNameAndImportMeta,
   getPlasmicComponentName,

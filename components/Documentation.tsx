@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
 
-import metadata from './figmaTokensChakra/$metadata.json'
-import lightTokens from './documentationTokens/light.json'
-import darkTokens from './documentationTokens/dark.json'
+import metadata from '../styles/figmaTokensChakra/$metadata.json'
+import lightTokens from '../styles/documentationTokens/light.json'
+import darkTokens from '../styles/documentationTokens/dark.json'
 
 export default interface DocumentationComponentProps {
   value: string
@@ -23,7 +23,7 @@ export function Documentation({ set = 'comp/button', path = '', theme = 'light',
         if (metadata.tokenSetOrder.includes(set)) {
           // const data = await import(`./figmaTokensChakra/${tempSet}.json`)
           // const data = await import(`./figmaTokensChakra/comp/button.json`)
-          const data = await import(`./figmaTokensChakra/${set}.json`)
+          const data = await import(`../styles/figmaTokensChakra/${set}.json`)
           setData(data.default)
         } else {
           setError(`Token set not found: ${set}. No such path found in metadata.json`)

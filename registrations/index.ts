@@ -100,9 +100,10 @@ import {
   EscaperoomIcon,
   FunPassIcon,
   LocationPinIcon
-} from "../../components/CustomIcons";
-import ImageWithOverlay from "../../components/ImageWithOverlay";
-import ChakraDocs from "../../components/ChakraDocs";
+} from "../components/CustomIcons";
+import ImageWithOverlay from "../components/ImageWithOverlay";
+import ChakraDocs from "../components/ChakraDocs";
+import ButtonPreview from "../components/ButtonPreview";
 
 // Registrations
 import { Registerable } from "./registerable";
@@ -228,6 +229,7 @@ import {
 } from "./registerCard";
 import {stackMeta} from "./registerStack";
 import {chakraDocsMeta} from "./registerChakraDocs";
+import {buttonPreviewMeta} from "./registerButtonPreview";
 
 // import {
 //   iconsMeta,
@@ -280,6 +282,7 @@ export * from "./registerImageWithOverlay";
 export * from "./registerCard";
 export * from "./registerStack";
 export * from "./registerChakraDocs";
+export * from "./registerButtonPreview";
 
 export function registerAll(loader?: Registerable) {
   const _registerComponent = <T extends React.ComponentType<any>>(
@@ -389,6 +392,8 @@ export function registerAll(loader?: Registerable) {
   _registerComponent(IconButton, iconButtonMeta);
   _registerComponent(ImageWithOverlay, imageWithOverlayMeta);
   _registerComponent(ChakraDocs, chakraDocsMeta);
+  _registerComponent(ButtonPreview, buttonPreviewMeta);
+  
   //Custom icons
   _registerComponent(GolfIcon, golfIconMeta);
   _registerComponent(BowlingIcon, bowlingIconMeta);

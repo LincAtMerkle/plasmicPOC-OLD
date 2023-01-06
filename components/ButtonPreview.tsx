@@ -2,13 +2,13 @@ import React from 'react'
 import {Button} from "@chakra-ui/react";
 import { LiveProvider, LiveEditor, LivePreview } from 'react-live'
 
-const scope = { Button }
+export type ButtonPreviewProps = {
 
-const code = `
-  <Button variant="primary">Button</Button>
-`
+}
 
-const ButtonPreview = () => {
+export default function ButtonPreview({}: ButtonPreviewProps) { 
+  const scope = { Button }
+  const code = `<Button variant="primary">Button</Button>`
   return (
     <LiveProvider code={code} scope={scope}>
       <LiveEditor style={{ height: '100px', background: '#000', color: '#fff' }} />
@@ -16,5 +16,3 @@ const ButtonPreview = () => {
     </LiveProvider>
   )
 }
-
-export default ButtonPreview;
