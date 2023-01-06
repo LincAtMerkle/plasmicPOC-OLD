@@ -1,6 +1,6 @@
 
 import { ComponentMeta } from "@plasmicapp/host/registerComponent";
-import { ImageWithOverlayProps } from "../../components/ImageWithOverlay";
+import { ImageWithOverlayProps } from "../components/ImageWithOverlay";
 import {
   getComponentNameAndImportMeta,
   getPlasmicComponentName,
