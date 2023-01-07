@@ -5,7 +5,6 @@ import extendTheme from '../styles/theme'
 function MyApp({ Component, pageProps }) {
     return (
       <ChakraProvider resetCSS theme={extendTheme}>
-        XXXXX
           <Component {...pageProps} />
       </ChakraProvider>
 )
@@ -13,6 +12,7 @@ function MyApp({ Component, pageProps }) {
   
 export default MyApp
 
+// THIS WAS WHEN TESTING "ThemeProNextTest2" see FigJam section
 // pages/_app.js
 // import {theme} from '../styles/theme/index.ts'
 // import { ChakraProvider } from '@chakra-ui/react'
