@@ -9,10 +9,10 @@ import * as foundations from './foundations'
 // Added this back in as removed this IMPORTANT step when did "Chakra Pro Theme Test"
 import getChakraSemanticTokens from '../getChakraSemanticTokens'
 import figmaTokensJson from '../figmaTokens.json'
+// import figmaTokens from './foundations/figmaTokens'// Changed location after "Chakra Pro Theme Test"
+
 const semanticTokens = getChakraSemanticTokens(figmaTokensJson)
 
-// Not in "Chakra Pro Theme Test"
-// import figmaTokens from './foundations/figmaTokens'
 
 // ************
 

@@ -1,6 +1,6 @@
 {
   "colors": {
-    "light": {
+    "hh-light": {
       "color-fl-green-50": "#fcfff6",
       "color-fl-green-100": "#f2ffdc",
       "color-fl-green-200": "#e6ffb8",
@@ -988,7 +988,7 @@
     }
   },
   "radii": {
-    "light": {
+    "hh-light": {
       "border-radius-0": "0px",
       "border-radius-1": "1px",
       "border-radius-2": "2px",
@@ -1027,7 +1027,7 @@
     }
   },
   "fonts": {
-    "light": {
+    "hh-light": {
       "font-family-serif": "Inter",
       "font-family-sans-serif": "General Sans",
       "font-family-mono": "IBM Plex Mono",
@@ -1058,7 +1058,7 @@
     }
   },
   "fontWeights": {
-    "light": {
+    "hh-light": {
       "font-weight-semi-bold": "undefined",
       "font-weight-regular": "400",
       "font-weight-light": "300",
@@ -1092,7 +1092,7 @@
     }
   },
   "space": {
-    "light": {
+    "hh-light": {
       "space-0": "0px",
       "space-25": "2px",
       "space-50": "4px",
@@ -1242,7 +1242,7 @@
     }
   },
   "lineHeights": {
-    "light": {
+    "hh-light": {
       "line-height-1": "130%",
       "line-height-2": "150%",
       "line-height-100": "100%",
@@ -1258,7 +1258,7 @@
     }
   },
   "sizes": {
-    "light": {
+    "hh-light": {
       "size-0": "0px",
       "size-12": "1px",
       "size-25": "2px",
@@ -1446,7 +1446,7 @@
     }
   },
   "borders": {
-    "light": {
+    "hh-light": {
       "border-width-0": "0px",
       "border-width-1": "1px",
       "border-width-2": "2px",
@@ -1480,7 +1480,7 @@
     }
   },
   "fontSizes": {
-    "light": {
+    "hh-light": {
       "font-size-0": " 8px",
       "font-size-1": "10px",
       "font-size-2": "12px",

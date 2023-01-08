@@ -210,8 +210,7 @@ StyleDictionary.registerFormat({
     let result = '{'
     Object.keys(tokenTypes).forEach(function (key) {
       result += `\n  "${tokenTypes[key]}": {`
-      // result += `\n    "${themeName}": {`
-      result += `\n    "light": {`
+      result += `\n    "${themeName}": {`
       dictionary.allProperties.map((props) => {
         if (props.type === key) {
           result += `\n      "${props.name}": "${props.value}",`
@@ -305,7 +304,6 @@ themeList.map((theme) => {
   })
 })
 
-fs.writeFileSync('./styles/figmaTokens.json', JSON.stringify(themeInfo, null, 2))
-
+fs.writeFileSync('./styles/theme/foundations/FigmaTokens.json', JSON.stringify(themeInfo, null, 2))
 console.log('\n==============================================')
 console.log('\nBuild completed!')
